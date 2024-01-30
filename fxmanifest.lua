@@ -2,9 +2,9 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-name "newbsnames"
+name "MrNewbNameChanger"
 author "MrNewb"
-description 'Newbs Name Change'
+description 'Easy and free way to change names in qb without relog'
 
 shared_scripts {
 	'@ox_lib/init.lua',
