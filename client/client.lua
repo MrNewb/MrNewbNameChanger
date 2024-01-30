@@ -8,10 +8,8 @@ function SubmitName(status)
 		if not input then return end
 		local submittedfirstname, submittedlastname = input[1], input[2]
 		if not status then
-			lib.notify({ title = 'Name Change Application', description = 'Successfully Changed Name To '..submittedfirstname.."  "..submittedlastname , type = 'success' })
 			TriggerServerEvent("MrNewbNameChanger:change", submittedfirstname, submittedlastname)
 		else
-			lib.notify({ title = 'Name Change Application', description = 'Successfully Created Certificate for '..submittedfirstname.."  "..submittedlastname , type = 'success' })
 			TriggerServerEvent("MrNewbNameChanger:metaItem", submittedfirstname, submittedlastname)
 		end
 	else
