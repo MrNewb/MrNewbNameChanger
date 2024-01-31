@@ -1,4 +1,4 @@
-```markdown
+``markdown
 # MrNewb Name Changer
 
 ## Description
@@ -41,7 +41,7 @@ This script was developed to address the need for immediate name changes without
 	filledcertificate				= {name = 'filledcertificate',				label = 'filledcertificate',				weight = 200,         type = 'item',         image = 'filledcertificate.png',			unique = true,        useable = true,     shouldClose = true,       combinable = nil,                     description = ''},
 
 
-```
+``
 
 
 
