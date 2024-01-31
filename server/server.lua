@@ -119,7 +119,7 @@ QBCore.Functions.CreateUseableItem(Config.filledcertificate, function(source, it
 		saveData(src, charInfo)
 		notifyPlayer(src, 'Successfully Changed Name To '..item.info.firstname.."  "..item.info.lastname, 'success')
 
-		Player.Functions.RemoveItem(item, 1)
+		Player.Functions.RemoveItem(Config.filledcertificate, 1)
 
 		if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 	end
