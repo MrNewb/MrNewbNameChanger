@@ -27,9 +27,9 @@ end
 
 function logs(src, msg)
 	if Config.ox_lib_logging then
-		TriggerEvent('qb-log:server:CreateLog', 'namechangelog', 'MrNewbNameChanger', 'red', msg)
-	elseif qb_logging then
 		lib.logger(src, 'MrNewbNameChanger', msg)
+	elseif Config.qb_logging then
+		TriggerEvent('qb-log:server:CreateLog', 'namechangelog', 'MrNewbNameChanger', 'red', msg)
 	end
 end
 
