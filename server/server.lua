@@ -9,7 +9,7 @@ function saveData(src, charInfo)
 	Player.Functions.Save()
 	Player.Functions.UpdatePlayerData(false)
 	TriggerClientEvent('QBCore:Player:UpdatePlayerData', src)
-	
+
 	logs(src, " | Has changed names to "..charInfo.firstname..charInfo.lastname)
 end
 
@@ -19,7 +19,7 @@ function ReceivedName(Player, submittedfirstname, submittedlastname)
 	if Config.debugprints then print("Received Data from Client | firstname: ", submittedfirstname, " | lastname: ", submittedlastname) end
 	charInfo.firstname = charInfo.firstname ~= '' and submittedfirstname
 	charInfo.lastname = charInfo.lastname ~= '' and submittedlastname
-	
+
 	saveData(source, charInfo)
 
 	if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
@@ -32,7 +32,6 @@ function logs(src, msg)
 		lib.logger(src, 'MrNewbNameChanger', msg)
 	end
 end
-
 
 function notifyPlayer(src, msg, status)
 	if Config.ox_lib_notification then
@@ -49,7 +48,7 @@ RegisterNetEvent("MrNewbNameChanger:change", function(submittedfirstname, submit
 
 	if not Player then print("Player not found!") return end
 
-	if Config.ox_inv then
+	if Config.ox_inventory then
 	    local items = exports.ox_inventory:Search(src, 'count', item)
 		if items >= 1 then
 			ReceivedName(Player, submittedfirstname, submittedlastname)
@@ -74,7 +73,7 @@ RegisterNetEvent("MrNewbNameChanger:metaItem", function(submittedfirstname, subm
 
 	if not Player then print("Player not found!") return end
 
-	if Config.ox_inv then
+	if Config.ox_inventory then
 	    local items = exports.ox_inventory:Search(src, 'count', item)
 		if items >= 1 then
 			exports.ox_inventory:RemoveItem(src, item, 1)
@@ -91,7 +90,6 @@ RegisterNetEvent("MrNewbNameChanger:metaItem", function(submittedfirstname, subm
 			Player.Functions.RemoveItem(item, 1)
 			local info = { firstname = submittedfirstname, lastname = submittedlastname, }
 			Player.Functions.AddItem(filleditem, 1, nil, info)
-			print(info)
 			notifyPlayer(src, 'Successfully Created Certificate for '..submittedfirstname.."  "..submittedlastname, 'success')
 			logs(src, " | Has created name change certificate for "..submittedfirstname..submittedlastname)
 		end
@@ -104,25 +102,25 @@ QBCore.Functions.CreateUseableItem(Config.filledcertificate, function(source, it
     local Player = QBCore.Functions.GetPlayer(src)
 	local charInfo = Player.PlayerData.charinfo
     if not Player then print("Player not found!") return end
-	
-	if Config.ox_inv then
+
+	if Config.ox_inventory then
 		charInfo.firstname = charInfo.firstname ~= '' and item.metadata.firstname
 		charInfo.lastname = charInfo.lastname ~= '' and item.metadata.lastname
-		
+
 		saveData(src, charInfo)
 		notifyPlayer(src, 'Successfully Changed Name To '..item.metadata.firstname.."  "..item.metadata.lastname, 'success')
 		exports.ox_inventory:RemoveItem(src, item, 1)
-		
+
 		if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 	else
 		charInfo.firstname = charInfo.firstname ~= '' and item.info.firstname
 		charInfo.lastname = charInfo.lastname ~= '' and item.info.lastname
-		
+
 		saveData(src, charInfo)
 		notifyPlayer(src, 'Successfully Changed Name To '..item.info.firstname.."  "..item.info.lastname, 'success')
-		
+
 		Player.Functions.RemoveItem(item, 1)
-		
+
 		if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 	end
 end)
@@ -136,7 +134,7 @@ QBCore.Functions.CreateUseableItem(Config.marriagecertificate, function(source, 
     local Player = QBCore.Functions.GetPlayer(src)
     if not Player then return end
 
-	if Config.jobcheck then
+	if Config.joblock then
 		if not Player.PlayerData.job.name == Config.jobname then return end
 		TriggerClientEvent('newbsnamechange:client:openName', src, true)
 	else

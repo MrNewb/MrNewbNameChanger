@@ -10,7 +10,7 @@ This script implements an item that, when used, prompts an OxLib input allowing 
 - No relog required for changes to take effect
 
 ## Usage
-1. Acquire the "Name Changer" item. (Example item configuration for QBCore below)
+1. Acquire the Name Changer item. (Example item configuration for QBCore below)
 2. Use the item to prompt the OxLib input for name modification.
 3. Enter the desired first and last names and submit the changes.
 4. The item is automatically removed, and the player's name is updated in character info and metadata.
@@ -27,5 +27,6 @@ This script was developed because existing free alternatives did not meet the re
 
 
 ## Item Configuration for QBCore
-```lua
-['namechanger'] = {['name'] = 'namechanger',['label'] = 'Name Changer',['weight'] = 200,['type'] = 'item',['image'] = 'namechanger.png',['unique'] = true,['useable'] = true,['shouldClose'] = true,['combinable'] = nil,['description'] = 'An item that allows you to change your character\'s name instantly.'},
+	['namechangevoucher'] 			 = {['name'] = 'namechangevoucher', 			['label'] = 'namechangevoucher', 		    	 ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'namechangevoucher.png', 		['unique'] = true,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,                     ['description'] = ''},
+	['blankmarriagecertificate'] 	 = {['name'] = 'blankmarriagecertificate', 		['label'] = 'blankmarriagecertificate', 		 ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'blankmarriagecertificate.png', ['unique'] = true,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,                     ['description'] = ''},
+	['filledcertificate'] 			 = {['name'] = 'filledcertificate', 			['label'] = 'filledcertificate', 		    	 ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'filledcertificate.png', 		['unique'] = true,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,                     ['description'] = ''},
