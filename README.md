@@ -29,6 +29,14 @@ The MrNewb Name Changer script introduces a convenient item that, when used, tri
 ## Notes
 This script was developed to address the need for immediate name changes without requiring a relog. The item approach was chosen for its simplicity and user-friendly interface.
 
+
+## QBCore logging Configuration
+If you intend to use the QB logs from qb-smallresources, it's necessary to set up your own webhook. You can find the webhook creation in the logs.lua file at the following location:
+
+[QB Smallresources logs.lua](https://github.com/qbcore-framework/qb-smallresources/blob/0dbfc5157fe21133ad2bd5ce1239c56c4d56f3d3/server/logs.lua#L2)
+
+Make sure to name the webhook as "namechangelog"
+
 ## Item Configuration for QBCore
 ```lua
 	['namechangevoucher'] 			 = {['name'] = 'namechangevoucher', 			['label'] = 'namechangevoucher', 		    	 ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'namechangevoucher.png', 		['unique'] = true,		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,                     ['description'] = ''},
@@ -52,3 +60,5 @@ case "filledcertificate":
     return `<p><strong>First Name: </strong><span>${itemData.info.firstname}</span></p>
     <p><strong>Last Name: </strong><span>${itemData.info.lastname}</span></p>`;
 ```
+
+
