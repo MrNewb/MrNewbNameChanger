@@ -21,8 +21,8 @@ The MrNewb Name Changer script introduces a convenient item that, when used, tri
 
 ## Credits ❤️
 - **Dirk:** Script concept and encouragement to create my version. ([DirkScripts](https://www.dirkscripts.com/))
-- **Blue:** Feedback on using an item for name changes (originally command-based).
-- **Kamui Kody:** Provided the charInfo table. ([GitHub](https://github.com/KamuiKody))
+- **Blue:** Feedback on using an item for name changes (originally command-based)([Blue](https://github.com/JustBlueDolphin))
+- **Kamui Kody:** Provided the charInfo table. ([Kamui Kody](https://github.com/KamuiKody))
 - **Pickle:** Emotional support. ([PickleModifications](https://github.com/PickleModifications))
 - **OnlyCure & mr.olson:** Testing assistance.
 
