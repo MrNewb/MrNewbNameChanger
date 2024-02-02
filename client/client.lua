@@ -4,7 +4,7 @@ end)
 
 function SubmitName(status)
 	if Config.ox_lib then
-		local input = lib.inputDialog('Name Change Application', {'First Name', 'Last Name'})
+		local input = lib.inputDialog(Config.lang.namechange_title, {Config.lang.firstname, Config.lang.lastname})
 		if not input then return end
 		local submittedfirstname, submittedlastname = input[1], input[2]
 		if not status then
@@ -14,11 +14,11 @@ function SubmitName(status)
 		end
 	else
         local qbnameinput = exports['qb-input']:ShowInput({
-            header = "Name Change Application",
+            header = Config.lang.namechange_title,
             submitText = "Confirm",
             inputs = {
-                { type = 'text', isRequired = true, text = "First Name", name = 'submittedfirstname',},
-                { type = 'text', isRequired = true, text = "Last Name", name = 'submittedlastname',}
+                { type = 'text', isRequired = true, text = Config.lang.firstname, name = 'submittedfirstname',},
+                { type = 'text', isRequired = true, text = Config.lang.lastname, name = 'submittedlastname',}
             }
         })
         local namemenu = qbnameinput and qbnameinput.submittedfirstname and qbnameinput.submittedlastname or nil

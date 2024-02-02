@@ -11,5 +11,14 @@ Config = {
 	marriagecertificate = "blankmarriagecertificate",   -- set this to item for a judge or someone like a pastor to give an item to change name on use
 	filledcertificate = "filledcertificate",       		-- set this to item for a filled certificate to apply on use (by a judge or something)
 	joblock = true,             						-- set this to true to prevent any job from randomly creating these, I can't imagine the chaos that would come otherwise
-	jobname = "police"           						-- set this to a desired job name that can use this item, to use this Config.joblock must be set to true
+	jobname = "police",           						-- set this to a desired job name that can use this item, to use this Config.joblock must be set to true
+	
+	-- Language Configuration
+
+	lang = {
+		namechange_title = "Name Change Application",
+		firstname = "First Name",
+		lastname = "Last Name",
+	}
+
 }
