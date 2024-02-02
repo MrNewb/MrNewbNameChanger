@@ -71,10 +71,12 @@ RegisterNetEvent("MrNewbNameChanger:change", function(submittedfirstname, submit
 	else
 		local namechangeitem = Player.Functions.GetItemByName(item)
 		if namechangeitem ~= nil then
-			ReceivedName(Player, submittedfirstname, submittedlastname)
-			notifyPlayer(src, 'Successfully Changed Name To '..submittedfirstname.."  "..submittedlastname, 'success')
-			Player.Functions.RemoveItem(item, 1, item.slot)
-			if Config.debugprints then print("item removed | ", item, " | from ID| # ", src) end
+			if Player.Functions.RemoveItem(item, 1, item.slot) then
+				ReceivedName(Player, submittedfirstname, submittedlastname)
+				notifyPlayer(src, 'Successfully Changed Name To '..submittedfirstname.."  "..submittedlastname, 'success')
+				
+				if Config.debugprints then print("item removed | ", item, " | from ID| # ", src) end
+			end
 		end
 	end
 end)
@@ -95,20 +97,18 @@ RegisterNetEvent("MrNewbNameChanger:metaItem", function(submittedfirstname, subm
 				description = "Certificate for legal name change to "..submittedfirstname.."  "..submittedlastname 
 			}
 			exports.ox_inventory:AddItem(src, filleditem, 1, metadata)
-			notifyPlayer(src, 'Successfully Created Certificate for '..submittedfirstname.."  "..submittedlastname, 'success')
-			logs(src, " | Has created name change certificate for "..submittedfirstname..submittedlastname)
 		end
 	else
 		local namechangeitem = Player.Functions.GetItemByName(item)
 		if namechangeitem ~= nil then
-			Player.Functions.RemoveItem(item, 1, item.slot)
-			local info = { firstname = submittedfirstname, lastname = submittedlastname, }
-			Player.Functions.AddItem(filleditem, 1, nil, info)
-			notifyPlayer(src, 'Successfully Created Certificate for '..submittedfirstname.."  "..submittedlastname, 'success')
-			logs(src, " | Has created name change certificate for "..submittedfirstname..submittedlastname)
+			if Player.Functions.RemoveItem(item, 1, item.slot) then 
+				local info = { firstname = submittedfirstname, lastname = submittedlastname, }
+				Player.Functions.AddItem(filleditem, 1, nil, info)
+			end
 		end
 	end
-
+	notifyPlayer(src, 'Successfully Created Certificate for '..submittedfirstname.." "..submittedlastname, 'success')
+	logs(src, " | Has created name change certificate for "..submittedfirstname..submittedlastname)
 end)
 
 QBCore.Functions.CreateUseableItem(Config.filledcertificate, function(source, item)
@@ -121,22 +121,16 @@ QBCore.Functions.CreateUseableItem(Config.filledcertificate, function(source, it
 		charInfo.firstname = charInfo.firstname ~= '' and item.metadata.firstname
 		charInfo.lastname = charInfo.lastname ~= '' and item.metadata.lastname
 
-		saveData(src, charInfo)
-		notifyPlayer(src, 'Successfully Changed Name To '..item.metadata.firstname.."  "..item.metadata.lastname, 'success')
 		exports.ox_inventory:RemoveItem(src, item, 1)
-
-		if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 	else
 		charInfo.firstname = charInfo.firstname ~= '' and item.info.firstname
 		charInfo.lastname = charInfo.lastname ~= '' and item.info.lastname
-
-		saveData(src, charInfo)
-		notifyPlayer(src, 'Successfully Changed Name To '..item.info.firstname.."  "..item.info.lastname, 'success')
-
+		
 		Player.Functions.RemoveItem(Config.filledcertificate, 1, item.slot)
-
-		if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 	end
+	saveData(src, charInfo)
+	notifyPlayer(src, 'Successfully Changed Name To '..charInfo.firstname.."  "..charInfo.lastname, 'success')
+	if Config.debugprints then print("Player Name Changed To | ", charInfo.firstname, " | ", charInfo.lastname) end
 end)
 
 QBCore.Functions.CreateUseableItem(Config.namechangeitem, function(source, item)
@@ -150,9 +144,6 @@ QBCore.Functions.CreateUseableItem(Config.marriagecertificate, function(source, 
 
 	if Config.joblock then
 		if not Player.PlayerData.job.name == Config.jobname then return end
-		TriggerClientEvent('newbsnamechange:client:openName', src, true)
-	else
-		TriggerClientEvent('newbsnamechange:client:openName', src, false)
 	end
-
+	TriggerClientEvent('newbsnamechange:client:openName', src, Config.joblock)
 end)
