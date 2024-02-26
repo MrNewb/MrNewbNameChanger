@@ -21,8 +21,8 @@ The MrNewb Name Changer script introduces a convenient item that, when used, tri
 
 ## Credits ❤️
 - **Dirk:** Script concept and encouragement to create my version. ([DirkScripts](https://www.dirkscripts.com/))
-- **Blue:** Feedback on using an item for name changes (originally command-based)([Blue](https://github.com/JustBlueDolphin))
-- **Kamui Kody:** Provided the charInfo table. ([Kamui Kody](https://github.com/KamuiKody))
+- **Blue:** Feedback on using an item for name changes (originally command-based).
+- **Kamui Kody:** Provided the charInfo table. ([GitHub](https://github.com/KamuiKody))
 - **Pickle:** Emotional support. ([PickleModifications](https://github.com/PickleModifications))
 - **OnlyCure & mr.olson:** Testing assistance.
 
@@ -60,17 +60,8 @@ case "filledcertificate":
     return `<p><strong>First Name: </strong><span>${itemData.info.firstname}</span></p>
     <p><strong>Last Name: </strong><span>${itemData.info.lastname}</span></p>`;
 ```
-## ps-inventory Edit for Metadata/Info Display on Hover
-On line 647 of [ps-inventory](https://github.com/Project-Sloth/ps-inventory/blob/d8e99de867b2b6d49186f707548c4f4ecde201ab/html/js/app.js#L647), add the following line:
-```javascript
-        } else if (itemData.name == "filledcertificate") {
-            $(".item-info-title").html("<p>" + itemLabel + "</p>");
-            $(".item-info-description").html(
-                "<p><strong>First Name: </strong><span>" +
-                itemData.info.firstname +
-                "</span></p><p><strong>Last Name: </strong><span>" +
-                itemData.info.lastname +
-                "</span></p>"
-            );
-        }
-```
+
+## Acknowledgments
+
+Special thanks to Decay Studios for creating the inventory icons used in this release. You can find them on Discord [here](https://discord.gg/yDXZwZPjdN).
+[![Decay Studios](https://i.imgur.com/a6n1J4u.png)]([https://i.imgur.com/a6n1J4u.png](https://i.imgur.com/a6n1J4u.png))
