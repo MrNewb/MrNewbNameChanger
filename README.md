@@ -4,6 +4,8 @@
 ## Description
 The MrNewb Name Changer script introduces a convenient item that, when used, triggers an input menu, allowing players to seamlessly modify their character's first and last names. Upon submission, the item is automatically removed, and the changes are reflected in both the character info and metadata for the QBCore and QBx_Core frameworks. This feature empowers players to update their names without the hassle of a relog.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R76BIM9)
+
 ## Features
 - **User-Friendly Interface:** Utilizes OxLib input for a smooth and intuitive name-changing experience.
 - **Framework Compatibility:** Compatible with both QBCore and QBx_Core frameworks.
