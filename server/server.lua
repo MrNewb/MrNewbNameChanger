@@ -2,15 +2,25 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 function saveData(src, charInfo)
     local Player = QBCore.Functions.GetPlayer(src)
-	Player.Functions.SetPlayerData("charinfo", charInfo)
-	Player.Functions.SetMetaData("firstname", charInfo.firstname)
-	Player.Functions.SetMetaData("lastname", charInfo.lastname)
+    
+    -- Retrieve current (old) character data before updating
+    local oldCharInfo = Player.PlayerData.charinfo
+    local oldFirstName = oldCharInfo.firstname
+    local oldLastName = oldCharInfo.lastname
+    local citizenId = Player.PlayerData.citizenid
 
-	Player.Functions.Save()
-	Player.Functions.UpdatePlayerData(false)
-	TriggerClientEvent('QBCore:Player:UpdatePlayerData', src)
+    -- Update character data
+    Player.Functions.SetPlayerData("charinfo", charInfo)
+    Player.Functions.SetMetaData("firstname", charInfo.firstname)
+    Player.Functions.SetMetaData("lastname", charInfo.lastname)
 
-	logs(src, " | Has changed names to "..charInfo.firstname..charInfo.lastname)
+    -- Save and update player data
+    Player.Functions.Save()
+    Player.Functions.UpdatePlayerData(false)
+    TriggerClientEvent('QBCore:Player:UpdatePlayerData', src)
+
+    -- Log the old and new names with Citizen ID
+    logs(src, oldFirstName .. " " .. oldLastName .. " (" .. citizenId .. ") | Has changed names to " .. charInfo.firstname .. " " .. charInfo.lastname)
 end
 
 function ReceivedName(Player, submittedfirstname, submittedlastname)
