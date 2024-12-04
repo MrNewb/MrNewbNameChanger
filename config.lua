@@ -22,9 +22,8 @@ Config = {
 	filledcertificate = "filledcertificate",       		-- set this to item for a filled certificate to apply on use (by a judge or something)
 	joblock = true,             						-- set this to true to prevent any job from randomly creating these, I can't imagine the chaos that would come otherwise
 	jobname = "police",           						-- set this to a desired job name that can use this item, to use this Config.joblock must be set to true
-	paymentType = "none",         						-- set this to the payment type, can be "item", "cash", "bank", or "none"
+	paymentType = "none",         						-- set this to the payment type, can be "cash", "bank", or "none"
 	namechangeprice = 1000,        						-- set this to the price of the name change
-	currencyItem = "cash",         						-- set this to the item name if paymentType is set to "item"
 
 
 	-- Language Configuration

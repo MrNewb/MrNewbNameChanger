@@ -57,9 +57,7 @@ end
 
 local function canBillPlayer(src)
 	local price = Config.namechangeprice
-	if Config.paymentType == "item" then
-		return (exports.ox_inventory:search(src, 'count', Config.currencyItem) >= price)
-	elseif Config.paymentType == "cash" then
+	if Config.paymentType == "cash" then
 		return Player.Functions.GetMoney('cash') >= price
 	elseif Config.paymentType == "bank" then
 		return Player.Functions.GetMoney('bank') >= price
@@ -72,9 +70,7 @@ local function billPlayer(src)
 
 	if not Player then return end
 
-	if Config.paymentType == "item" then
-		exports.ox_inventory:RemoveItem(src, Config.currencyItem, price)
-	elseif Config.paymentType == "cash" then
+	if Config.paymentType == "cash" then
 		Player.Functions.RemoveMoney('cash', price)
 	elseif Config.paymentType == "bank" then
 		Player.Functions.RemoveMoney('bank', price)
