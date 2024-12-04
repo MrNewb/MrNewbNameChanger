@@ -53,6 +53,34 @@ function notifyPlayer(src, msg, status)
 
 end
 
+-- Bill Functions
+
+local function canBillPlayer(src)
+	local price = Config.namechangeprice
+	if Config.paymentType == "item" then
+		return (exports.ox_inventory:search(src, 'count', Config.currencyItem) >= price)
+	elseif Config.paymentType == "cash" then
+		return Player.Functions.GetMoney('cash') >= price
+	elseif Config.paymentType == "bank" then
+		return Player.Functions.GetMoney('bank') >= price
+	end
+end
+
+local function billPlayer(src)
+	local Player = QBCore.Functions.GetPlayer(src)
+	local price = Config.namechangeprice
+
+	if not Player then return end
+
+	if Config.paymentType == "item" then
+		exports.ox_inventory:RemoveItem(src, Config.currencyItem, price)
+	elseif Config.paymentType == "cash" then
+		Player.Functions.RemoveMoney('cash', price)
+	elseif Config.paymentType == "bank" then
+		Player.Functions.RemoveMoney('bank', price)
+	end
+end
+
 RegisterNetEvent("MrNewbNameChanger:change", function(submittedfirstname, submittedlastname)
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
@@ -71,11 +99,16 @@ RegisterNetEvent("MrNewbNameChanger:change", function(submittedfirstname, submit
 	else
 		local namechangeitem = Player.Functions.GetItemByName(item)
 		if namechangeitem ~= nil then
-			if Player.Functions.RemoveItem(item, 1, item.slot) then
-				ReceivedName(Player, submittedfirstname, submittedlastname)
-				notifyPlayer(src, 'Successfully Changed Name To '..submittedfirstname.."  "..submittedlastname, 'success')
-				
-				if Config.debugprints then print("item removed | ", item, " | from ID| # ", src) end
+			if Config.paymentType == "none" or canBillPlayer(src) then
+				if Config.paymentType ~= "none" then 
+					billPlayer(src)
+				end
+				if Player.Functions.RemoveItem(item, 1, item.slot) then
+					ReceivedName(Player, submittedfirstname, submittedlastname)
+					notifyPlayer(src, 'Successfully Changed Name To '..submittedfirstname.."  "..submittedlastname, 'success')
+					
+					if Config.debugprints then print("item removed | ", item, " | from ID| # ", src) end
+				end
 			end
 		end
 	end

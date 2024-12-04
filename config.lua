@@ -6,7 +6,7 @@
 --		\_|  |_/|_|   \_| \_/ \___|  \_/\_/  |_.__/ \____/  \___||_|   |_|| .__/  \__||___/		
 --                                                                  | |              			
 --                                                                  |_|              			
---		  Need support? Join our Discord server for help: https://discord.gg/d3Kh2vz3a7		
+--		  Need support? Join our Discord server for help: https://discord.gg/mrnewbscripts		
 
 Config = {
 	ox_lib = true,										-- set this to true if using ox_lib, if false comment it out in the manifest
@@ -22,7 +22,11 @@ Config = {
 	filledcertificate = "filledcertificate",       		-- set this to item for a filled certificate to apply on use (by a judge or something)
 	joblock = true,             						-- set this to true to prevent any job from randomly creating these, I can't imagine the chaos that would come otherwise
 	jobname = "police",           						-- set this to a desired job name that can use this item, to use this Config.joblock must be set to true
-	
+	paymentType = "none",         						-- set this to the payment type, can be "item", "cash", "bank", or "none"
+	namechangeprice = 1000,        						-- set this to the price of the name change
+	currencyItem = "cash",         						-- set this to the item name if paymentType is set to "item"
+
+
 	-- Language Configuration
 
 	lang = {
