@@ -1,20 +1,32 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
-
 name "MrNewbNameChanger"
 author "MrNewb"
-description 'Easy and free way to change names in qb without relog'
+version '2.0.0'
 
 shared_scripts {
-	'@ox_lib/init.lua', --- comment this out if you dont for some reason use it?
-	'config.lua'
+	'@ox_lib/init.lua',
+	'src/shared/init.lua',
+	'src/shared/config.lua'
 }
 
 client_scripts {
-	'client/*.lua',
+	'src/client/*.lua',
 }
 
 server_scripts {
-	'server/*.lua'
+	'@oxmysql/lib/MySQL.lua',
+	'src/server/*.lua'
+}
+
+files {
+	'locales/*.json',
+}
+
+dependencies {
+    '/server:6116',
+    '/onesync',
+    'ox_lib',
+    'community_bridge',
 }
