@@ -22,3 +22,4 @@ lib.callback.register('MrNewbNameChanger:callback:openInput', function()
 		return nil, nil
 	end
 end)
+

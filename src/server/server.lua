@@ -2,7 +2,7 @@ local function updatePlayerData(src, submittedfirstname, submittedlastname)
 	local frameworkName = Bridge.Framework.GetFrameworkName()
 	local oldFirst, oldLast = Bridge.Framework.GetPlayerName(src)
 	Bridge.Logs.Send(src, locale("LogMessages.NameChangeSubmitted")..tostring(src).." "..submittedfirstname.." "..submittedlastname.." "..oldFirst.." "..oldLast)
-	if frameworkName == "qbcore" then
+	if frameworkName == "qb-core" then
 		local QBCore = exports['qb-core']:GetCoreObject()
 		local Player = QBCore.Functions.GetPlayer(src)
 		local charInfo = Player.PlayerData.charinfo
