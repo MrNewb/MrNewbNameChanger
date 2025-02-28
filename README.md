@@ -1,7 +1,7 @@
 
 # MrNewb Name Changer
--- Docs available at https://mrnewbs-scrips.gitbook.io/guide
--- Community_Bridge available at https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge
+- Docs available at https://mrnewbs-scrips.gitbook.io/guide
+- Community_Bridge available at https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge
 
 ## Description
 The MrNewb Name Changer script introduces a convenient item that, when used, triggers an input menu, allowing players to seamlessly modify their character's first and last names. Upon submission, the item is automatically removed, and the changes are reflected in both the character info and metadata for the QBCore/QBX/ESX frameworks. This feature empowers players to update their names without the hassle of a relog.
