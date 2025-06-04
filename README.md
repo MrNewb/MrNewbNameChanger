@@ -1,6 +1,6 @@
 # MrNewb Name Changer
 
-> **Professional FiveM Character Name System** - Seamless in-game name changing with Community Bridge integration and real-time updates across all supported frameworks.
+> **Professional FiveM Character Name System** - Seamless in-game name changing with Community Bridge integration and real-time updates across supported frameworks.
 
 ![GitHub Stars](https://img.shields.io/github/stars/MrNewb/MrNewbNameChanger?style=for-the-badge&color=FFD700) ![GitHub Downloads](https://img.shields.io/github/downloads/MrNewb/MrNewbNameChanger/total?style=for-the-badge&color=00FF00) ![GitHub Views](https://img.shields.io/badge/Views-1.8K+-purple?style=for-the-badge&logo=github) ![Framework](https://img.shields.io/badge/Framework-ESX%20%7C%20QBCore%20%7C%20Qbox-blue?style=for-the-badge)
 
