@@ -14,7 +14,7 @@
 
 ### Key Features
 
-- **Universal Compatibility** - ESX, QBCore, and Qbox/QBX via Community Bridge
+- **Compatibility** - QBCore, and Qbox/QBX via Community Bridge
 - **Real-Time Updates** - Instant name changes without relog requirement
 - **Automatic Item Removal** - Seamless item consumption upon successful use
 - **OxLib Integration** - Modern input interface for name entry
@@ -82,9 +82,9 @@ For detailed configuration guides, visit our complete documentation.
 - **Inventory System** - Any system supported by Community Bridge
 
 ### Framework Support
-![ESX](https://img.shields.io/badge/ESX-✅_Compatible-green?style=flat-square) ![QBCore](https://img.shields.io/badge/QBCore-✅_Compatible-green?style=flat-square) ![Qbox](https://img.shields.io/badge/Qbox/QBX-✅_Compatible-green?style=flat-square)
+![QBCore](https://img.shields.io/badge/QBCore-✅_Compatible-green?style=flat-square) ![Qbox](https://img.shields.io/badge/Qbox/QBX-✅_Compatible-green?style=flat-square)
 
-**Supported:** ESX • QBCore • Qbox/QBX (Qbox and QBX are the same framework)
+**Supported:** QBCore • Qbox/QBX (Qbox and QBX are the same framework)
 
 ---
 
@@ -156,7 +156,7 @@ For detailed configuration guides, visit our complete documentation.
 
 **Character Management:** FiveM name changer • Character name change • Player name system • FiveM character management • Name update script • Character customization • Player identity • Character modification
 
-**Framework Compatibility:** ESX scripts • QBCore scripts • Qbox scripts • QBX scripts • QB-Core resources • Multi-framework scripts • ESX resources • QBCore resources • Framework compatibility • Universal FiveM scripts • Cross-framework development • ESX QBCore Qbox compatibility
+**Framework Compatibility:** QBCore scripts • Qbox scripts • QBX scripts • QB-Core resources • Multi-framework scripts • QBCore resources • Framework compatibility • Universal FiveM scripts • Cross-framework development • ESX QBCore Qbox compatibility
 
 **User Experience:** No relog required • Real-time updates • Seamless integration • Modern interface • OxLib integration • User-friendly scripts • Quality of life • Player convenience
 
@@ -166,7 +166,7 @@ For detailed configuration guides, visit our complete documentation.
 
 **Technical Features:** Lua programming • Lua scripting • FiveM development • Lightweight scripts • Performance optimization • Community Bridge integration • Ox Library integration • Modern framework support • Item-based systems
 
-**Search Tags:** `fivem-scripts` `name-changer` `character-management` `esx-scripts` `qbcore-scripts` `qbox-scripts` `qbx-scripts` `player-identity` `character-customization` `no-relog` `real-time-updates` `free-fivem` `lua-programming` `gta5-roleplay` `roleplay-scripts` `oxlib-integration` `community-bridge` `item-based` `professional-scripts` `open-source` `multi-framework` `qb-core` `qbox` `qbx` `free` `script` `mrnewb` `community_bridge`
+**Search Tags:** `fivem-scripts` `name-changer` `character-management`  `qbcore-scripts` `qbox-scripts` `qbx-scripts` `player-identity` `character-customization` `no-relog` `real-time-updates` `free-fivem` `lua-programming` `gta5-roleplay` `roleplay-scripts` `oxlib-integration` `community-bridge` `item-based` `professional-scripts` `open-source` `multi-framework` `qb-core` `qbox` `qbx` `free` `script` `mrnewb` `community_bridge`
 
 </details>
 
