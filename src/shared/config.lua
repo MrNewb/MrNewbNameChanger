@@ -25,7 +25,5 @@ Config.AllowedJobNames = {
 }
 
 Config.BadWords = {
-	"fart",
-	"bitch",
-	"fuck",
+	"fart", "bitch", "fuck",
 }

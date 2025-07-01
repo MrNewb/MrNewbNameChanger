@@ -3,10 +3,9 @@ game 'gta5'
 lua54 'yes'
 name "MrNewbNameChanger"
 author "MrNewb"
-version '2.0.1'
+version '2.1.0'
 
 shared_scripts {
-	'@ox_lib/init.lua',
 	'src/shared/init.lua',
 	'src/shared/config.lua'
 }
@@ -27,6 +26,5 @@ files {
 dependencies {
     '/server:6116',
     '/onesync',
-    'ox_lib',
     'community_bridge',
 }

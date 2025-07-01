@@ -1,8 +1,31 @@
 {
-    "NameChangeMenu": {"Title":"Name Change Document", "Submit": "Submit New Name", "FirstName": "First Name", "DescriptionFirstName": "Put In The FirstName You Want.", "LastName": "Last Name", "DescriptionLastName": "Put In The LastName You Want."},
-    "Notifications": {"NameChangeSuccess": "Successfully Changed Name To ", "CertificateCreated": "Successfully Created Certificate For "},
-    "LogMessages": {"NameChangeSubmitted": "Name Change Set On Player ID# "},
-    "JobRequired": {"YouDoNotHaveTheJob": "You Do Not Have The Job Required To Use This"},
-    "BadWordFilter": {"FailedFilter": "You Cannot Use That Name"},
-    "ItemDescription": {"DescriptionField": "Certificate for legal name change to "}
+    "NameChangeMenu": {
+        "Title":"Name Change Document",
+        "Submit": "Submit New Name",
+        "FirstName": "First Name",
+        "DescriptionFirstName": "Put In The First Name You Want.",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Put In The Last Name You Want."
+    },
+    "MarriageMenu": {
+        "Title": "Marriage Certificate",
+        "Submit": "Submit New Name",
+        "FirstName": "First Name",
+        "DescriptionFirstName": "Put In The First Name For The Marriage Certificate.",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Put In The Last Name For The Marriage Certificate."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Successfully Changed Name To %s %s",
+        "CertificateCreated": "Successfully Created Certificate For %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "You Do Not Have The Job Required To Use This"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "You Cannot Use The Name %s %s, It Contains A Bad Word"
+    },
+    "FilledCertificate": {
+        "Description": "Certificate for legal name change to %s %s"
+    }
 }
