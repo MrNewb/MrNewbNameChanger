@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "이름 변경 문서",
+        "Submit": "새 이름 제출",
+        "FirstName": "이름",
+        "DescriptionFirstName": "원하는 이름을 입력하세요.",
+        "LastName": "성",
+        "DescriptionLastName": "원하는 성을 입력하세요."
+    },
+    "MarriageMenu": {
+        "Title": "결혼 증명서",
+        "Submit": "새 이름 제출",
+        "FirstName": "이름",
+        "DescriptionFirstName": "결혼 증명서에 들어갈 이름을 입력하세요.",
+        "LastName": "성",
+        "DescriptionLastName": "결혼 증명서에 들어갈 성을 입력하세요."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "이름이 %s %s로 성공적으로 변경되었습니다",
+        "CertificateCreated": "%s %s에 대한 증명서가 성공적으로 생성되었습니다"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "이것을 사용하는 데 필요한 직업이 없습니다"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "이름 %s %s를 사용할 수 없습니다. 금지된 단어가 포함되어 있습니다"
+    },
+    "FilledCertificate": {
+        "Description": "%s %s로의 법적 이름 변경 증명서"
+    }
+}

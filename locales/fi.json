@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Nimen Muutosdokumentti",
+        "Submit": "Lähetä Uusi Nimi",
+        "FirstName": "Etunimi",
+        "DescriptionFirstName": "Syötä haluamasi etunimi.",
+        "LastName": "Sukunimi",
+        "DescriptionLastName": "Syötä haluamasi sukunimi."
+    },
+    "MarriageMenu": {
+        "Title": "Avioliittotodistus",
+        "Submit": "Lähetä Uusi Nimi",
+        "FirstName": "Etunimi",
+        "DescriptionFirstName": "Syötä etunimi avioliittotodistukseen.",
+        "LastName": "Sukunimi",
+        "DescriptionLastName": "Syötä sukunimi avioliittotodistukseen."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Nimi vaihdettu onnistuneesti nimeen %s %s",
+        "CertificateCreated": "Todistus luotu onnistuneesti henkilölle %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Sinulla ei ole tarvittavaa työtä tämän käyttöön"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Et voi käyttää nimeä %s %s, se sisältää sopimattoman sanan"
+    },
+    "FilledCertificate": {
+        "Description": "Todistus laillisesta nimenmuutoksesta nimeen %s %s"
+    }
+}

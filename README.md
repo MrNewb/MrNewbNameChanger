@@ -1,4 +1,5 @@
 # MrNewb Name Changer
+-- Docs available at https://mrnewbs-scrips.gitbook.io/guide
 
 > **Professional FiveM Character Name System** - Seamless in-game name changing with Community Bridge integration and real-time updates across supported frameworks.
 

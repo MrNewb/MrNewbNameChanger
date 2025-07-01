@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "เอกสารเปลี่ยนชื่อ",
+        "Submit": "ส่งชื่อใหม่",
+        "FirstName": "ชื่อ",
+        "DescriptionFirstName": "ใส่ชื่อที่คุณต้องการ",
+        "LastName": "นามสกุล",
+        "DescriptionLastName": "ใส่นามสกุลที่คุณต้องการ"
+    },
+    "MarriageMenu": {
+        "Title": "ใบสูจิบัตรการแต่งงาน",
+        "Submit": "ส่งชื่อใหม่",
+        "FirstName": "ชื่อ",
+        "DescriptionFirstName": "ใส่ชื่อสำหรับใบสูจิบัตรการแต่งงาน",
+        "LastName": "นามสกุล",
+        "DescriptionLastName": "ใส่นามสกุลสำหรับใบสูจิบัตรการแต่งงาน"
+    },
+    "Notifications": {
+        "NameChangeSuccess": "เปลี่ยนชื่อเป็น %s %s สำเร็จแล้ว",
+        "CertificateCreated": "สร้างใบสูจิบัตรสำหรับ %s %s สำเร็จแล้ว"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "คุณไม่มีงานที่จำเป็นในการใช้สิ่งนี้"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "คุณไม่สามารถใช้ชื่อ %s %s ได้ เนื่องจากมีคำไม่สุภาพ"
+    },
+    "FilledCertificate": {
+        "Description": "ใบสูจิบัตรสำหรับการเปลี่ยนชื่อตามกฎหมายเป็น %s %s"
+    }
+}

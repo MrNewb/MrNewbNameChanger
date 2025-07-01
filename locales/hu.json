@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Névváltoztatási Okmány",
+        "Submit": "Új Név Beküldése",
+        "FirstName": "Keresztnév",
+        "DescriptionFirstName": "Add meg a kívánt keresztnevet.",
+        "LastName": "Vezetéknév",
+        "DescriptionLastName": "Add meg a kívánt vezetéknevet."
+    },
+    "MarriageMenu": {
+        "Title": "Házassági Okmány",
+        "Submit": "Új Név Beküldése",
+        "FirstName": "Keresztnév",
+        "DescriptionFirstName": "Add meg a keresztnevet a házassági okmányhoz.",
+        "LastName": "Vezetéknév",
+        "DescriptionLastName": "Add meg a vezetéknevet a házassági okmányhoz."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "A név sikeresen megváltoztatva erre: %s %s",
+        "CertificateCreated": "Tanúsítvány sikeresen létrehozva ehhez: %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Nincs meg a szükséges munkád ennek használatához"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Nem használhatod a %s %s nevet, káromkodást tartalmaz"
+    },
+    "FilledCertificate": {
+        "Description": "Tanúsítvány a törvényes névváltoztatáshoz erre: %s %s"
+    }
+}

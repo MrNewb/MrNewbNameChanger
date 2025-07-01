@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Document de Schimbare a Numelui",
+        "Submit": "Trimite Numele Nou",
+        "FirstName": "Prenume",
+        "DescriptionFirstName": "Introdu prenumele pe care îl vrei.",
+        "LastName": "Nume de Familie",
+        "DescriptionLastName": "Introdu numele de familie pe care îl vrei."
+    },
+    "MarriageMenu": {
+        "Title": "Certificat de Căsătorie",
+        "Submit": "Trimite Numele Nou",
+        "FirstName": "Prenume",
+        "DescriptionFirstName": "Introdu prenumele pentru certificatul de căsătorie.",
+        "LastName": "Nume de Familie",
+        "DescriptionLastName": "Introdu numele de familie pentru certificatul de căsătorie."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Numele a fost schimbat cu succes în %s %s",
+        "CertificateCreated": "Certificatul a fost creat cu succes pentru %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Nu ai jobul necesar pentru a folosi aceasta"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Nu poți folosi numele %s %s, conține un cuvânt rău"
+    },
+    "FilledCertificate": {
+        "Description": "Certificat pentru schimbarea legală a numelui în %s %s"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "姓名更改文件",
+        "Submit": "提交新姓名",
+        "FirstName": "名字",
+        "DescriptionFirstName": "輸入您想要的名字。",
+        "LastName": "姓氏",
+        "DescriptionLastName": "輸入您想要的姓氏。"
+    },
+    "MarriageMenu": {
+        "Title": "結婚證",
+        "Submit": "提交新姓名",
+        "FirstName": "名字",
+        "DescriptionFirstName": "輸入結婚證上的名字。",
+        "LastName": "姓氏",
+        "DescriptionLastName": "輸入結婚證上的姓氏。"
+    },
+    "Notifications": {
+        "NameChangeSuccess": "成功將姓名更改為 %s %s",
+        "CertificateCreated": "成功為 %s %s 創建證書"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "您沒有使用此功能所需的工作"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "您不能使用姓名 %s %s，它包含不當詞彙"
+    },
+    "FilledCertificate": {
+        "Description": "合法更改姓名為 %s %s 的證書"
+    }
+}

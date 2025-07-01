@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Dokument Endring av Navn",
+        "Submit": "Send Inn Nytt Navn",
+        "FirstName": "Fornavn",
+        "DescriptionFirstName": "Skriv inn fornavnet du ønsker.",
+        "LastName": "Etternavn",
+        "DescriptionLastName": "Skriv inn etternavnet du ønsker."
+    },
+    "MarriageMenu": {
+        "Title": "Ekteskapsattest",
+        "Submit": "Send Inn Nytt Navn",
+        "FirstName": "Fornavn",
+        "DescriptionFirstName": "Skriv inn fornavnet for ekteskapsattesten.",
+        "LastName": "Etternavn",
+        "DescriptionLastName": "Skriv inn etternavnet for ekteskapsattesten."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Navn endret til %s %s",
+        "CertificateCreated": "Sertifikat opprettet for %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Du har ikke den nødvendige jobben for å bruke dette"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Du kan ikke bruke navnet %s %s, det inneholder et dårlig ord"
+    },
+    "FilledCertificate": {
+        "Description": "Sertifikat for lovlig navneendring til %s %s"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Documento de Mudança de Nome",
+        "Submit": "Enviar Novo Nome",
+        "FirstName": "Primeiro Nome",
+        "DescriptionFirstName": "Digite o primeiro nome que você quer.",
+        "LastName": "Sobrenome",
+        "DescriptionLastName": "Digite o sobrenome que você quer."
+    },
+    "MarriageMenu": {
+        "Title": "Certidão de Casamento",
+        "Submit": "Enviar Novo Nome",
+        "FirstName": "Primeiro Nome",
+        "DescriptionFirstName": "Digite o primeiro nome para a certidão de casamento.",
+        "LastName": "Sobrenome",
+        "DescriptionLastName": "Digite o sobrenome para a certidão de casamento."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Nome alterado com sucesso para %s %s",
+        "CertificateCreated": "Certificado criado com sucesso para %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Você não tem o trabalho necessário para usar isto"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Você não pode usar o nome %s %s, ele contém uma palavra proibida"
+    },
+    "FilledCertificate": {
+        "Description": "Certificado para mudança legal de nome para %s %s"
+    }
+}

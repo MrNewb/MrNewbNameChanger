@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "وثيقة تغيير الاسم",
+        "Submit": "إرسال الاسم الجديد",
+        "FirstName": "الاسم الأول",
+        "DescriptionFirstName": "أدخل الاسم الأول الذي تريده.",
+        "LastName": "اسم العائلة",
+        "DescriptionLastName": "أدخل اسم العائلة الذي تريده."
+    },
+    "MarriageMenu": {
+        "Title": "شهادة الزواج",
+        "Submit": "إرسال الاسم الجديد",
+        "FirstName": "الاسم الأول",
+        "DescriptionFirstName": "أدخل الاسم الأول لشهادة الزواج.",
+        "LastName": "اسم العائلة",
+        "DescriptionLastName": "أدخل اسم العائلة لشهادة الزواج."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "تم تغيير الاسم بنجاح إلى %s %s",
+        "CertificateCreated": "تم إنشاء الشهادة بنجاح لـ %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "ليس لديك الوظيفة المطلوبة لاستخدام هذا"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "لا يمكنك استخدام الاسم %s %s، يحتوي على كلمة سيئة"
+    },
+    "FilledCertificate": {
+        "Description": "شهادة تغيير الاسم القانوني إلى %s %s"
+    }
+}

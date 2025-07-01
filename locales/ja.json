@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "姓名変更書類",
+        "Submit": "新しい名前を送信",
+        "FirstName": "名前",
+        "DescriptionFirstName": "希望する名前を入力してください。",
+        "LastName": "姓",
+        "DescriptionLastName": "希望する姓を入力してください。"
+    },
+    "MarriageMenu": {
+        "Title": "結婚証明書",
+        "Submit": "新しい名前を送信",
+        "FirstName": "名前",
+        "DescriptionFirstName": "結婚証明書の名前を入力してください。",
+        "LastName": "姓",
+        "DescriptionLastName": "結婚証明書の姓を入力してください。"
+    },
+    "Notifications": {
+        "NameChangeSuccess": "名前が %s %s に正常に変更されました",
+        "CertificateCreated": "%s %s の証明書が正常に作成されました"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "これを使用するために必要な職業を持っていません"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "名前 %s %s は使用できません。不適切な単語が含まれています"
+    },
+    "FilledCertificate": {
+        "Description": "%s %s への法的な姓名変更の証明書"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Namensänderungsdokument",
+        "Submit": "Neuen Namen einreichen",
+        "FirstName": "Vorname",
+        "DescriptionFirstName": "Geben Sie den gewünschten Vornamen ein.",
+        "LastName": "Nachname",
+        "DescriptionLastName": "Geben Sie den gewünschten Nachnamen ein."
+    },
+    "MarriageMenu": {
+        "Title": "Heiratsurkunde",
+        "Submit": "Neuen Namen einreichen",
+        "FirstName": "Vorname",
+        "DescriptionFirstName": "Geben Sie den Vornamen für die Heiratsurkunde ein.",
+        "LastName": "Nachname",
+        "DescriptionLastName": "Geben Sie den Nachnamen für die Heiratsurkunde ein."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Name erfolgreich geändert zu %s %s",
+        "CertificateCreated": "Zertifikat erfolgreich erstellt für %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Sie haben nicht den erforderlichen Job, um dies zu verwenden"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Sie können den Namen %s %s nicht verwenden, er enthält ein schlechtes Wort"
+    },
+    "FilledCertificate": {
+        "Description": "Zertifikat für legale Namensänderung zu %s %s"
+    }
+}

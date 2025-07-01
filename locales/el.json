@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Έγγραφο Αλλαγής Ονόματος",
+        "Submit": "Υποβολή Νέου Ονόματος",
+        "FirstName": "Όνομα",
+        "DescriptionFirstName": "Εισάγετε το όνομα που θέλετε.",
+        "LastName": "Επώνυμο",
+        "DescriptionLastName": "Εισάγετε το επώνυμο που θέλετε."
+    },
+    "MarriageMenu": {
+        "Title": "Πιστοποιητικό Γάμου",
+        "Submit": "Υποβολή Νέου Ονόματος",
+        "FirstName": "Όνομα",
+        "DescriptionFirstName": "Εισάγετε το όνομα για το πιστοποιητικό γάμου.",
+        "LastName": "Επώνυμο",
+        "DescriptionLastName": "Εισάγετε το επώνυμο για το πιστοποιητικό γάμου."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Το όνομα άλλαξε επιτυχώς σε %s %s",
+        "CertificateCreated": "Το πιστοποιητικό δημιουργήθηκε επιτυχώς για %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Δεν έχετε την απαιτούμενη εργασία για να χρησιμοποιήσετε αυτό"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Δεν μπορείτε να χρησιμοποιήσετε το όνομα %s %s, περιέχει κακή λέξη"
+    },
+    "FilledCertificate": {
+        "Description": "Πιστοποιητικό για νόμιμη αλλαγή ονόματος σε %s %s"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Dokument Zmiany Nazwiska",
+        "Submit": "Prześlij Nowe Nazwisko",
+        "FirstName": "Imię",
+        "DescriptionFirstName": "Wprowadź imię, które chcesz.",
+        "LastName": "Nazwisko",
+        "DescriptionLastName": "Wprowadź nazwisko, które chcesz."
+    },
+    "MarriageMenu": {
+        "Title": "Akt Małżeństwa",
+        "Submit": "Prześlij Nowe Nazwisko",
+        "FirstName": "Imię",
+        "DescriptionFirstName": "Wprowadź imię dla aktu małżeństwa.",
+        "LastName": "Nazwisko",
+        "DescriptionLastName": "Wprowadź nazwisko dla aktu małżeństwa."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Nazwisko pomyślnie zmienione na %s %s",
+        "CertificateCreated": "Certyfikat pomyślnie utworzony dla %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Nie masz wymaganej pracy, aby to wykorzystać"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Nie możesz użyć nazwiska %s %s, zawiera nieprzyzwoite słowo"
+    },
+    "FilledCertificate": {
+        "Description": "Certyfikat prawnej zmiany nazwiska na %s %s"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Документ Смены Имени",
+        "Submit": "Отправить Новое Имя",
+        "FirstName": "Имя",
+        "DescriptionFirstName": "Введите имя, которое вы хотите.",
+        "LastName": "Фамилия",
+        "DescriptionLastName": "Введите фамилию, которую вы хотите."
+    },
+    "MarriageMenu": {
+        "Title": "Свидетельство о Браке",
+        "Submit": "Отправить Новое Имя",
+        "FirstName": "Имя",
+        "DescriptionFirstName": "Введите имя для свидетельства о браке.",
+        "LastName": "Фамилия",
+        "DescriptionLastName": "Введите фамилию для свидетельства о браке."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Имя успешно изменено на %s %s",
+        "CertificateCreated": "Сертификат успешно создан для %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "У вас нет необходимой работы для использования этого"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Вы не можете использовать имя %s %s, оно содержит плохое слово"
+    },
+    "FilledCertificate": {
+        "Description": "Сертификат для законной смены имени на %s %s"
+    }
+}

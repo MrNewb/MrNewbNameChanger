@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Dokument för Namnändring",
+        "Submit": "Skicka Nytt Namn",
+        "FirstName": "Förnamn",
+        "DescriptionFirstName": "Ange det förnamn du vill ha.",
+        "LastName": "Efternamn",
+        "DescriptionLastName": "Ange det efternamn du vill ha."
+    },
+    "MarriageMenu": {
+        "Title": "Äktenskapsbevis",
+        "Submit": "Skicka Nytt Namn",
+        "FirstName": "Förnamn",
+        "DescriptionFirstName": "Ange förnamnet för äktenskapsbeviset.",
+        "LastName": "Efternamn",
+        "DescriptionLastName": "Ange efternamnet för äktenskapsbeviset."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Namn ändrat till %s %s",
+        "CertificateCreated": "Certifikat skapat för %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Du har inte det jobb som krävs för att använda detta"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Du kan inte använda namnet %s %s, det innehåller ett dåligt ord"
+    },
+    "FilledCertificate": {
+        "Description": "Certifikat för laglig namnändring till %s %s"
+    }
+}

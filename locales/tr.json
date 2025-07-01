@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "İsim Değişikliği Belgesi",
+        "Submit": "Yeni İsim Gönder",
+        "FirstName": "Ad",
+        "DescriptionFirstName": "İstediğiniz adı girin.",
+        "LastName": "Soyad",
+        "DescriptionLastName": "İstediğiniz soyadı girin."
+    },
+    "MarriageMenu": {
+        "Title": "Evlilik Sertifikası",
+        "Submit": "Yeni İsim Gönder",
+        "FirstName": "Ad",
+        "DescriptionFirstName": "Evlilik sertifikası için adı girin.",
+        "LastName": "Soyad",
+        "DescriptionLastName": "Evlilik sertifikası için soyadı girin."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "İsim başarıyla %s %s olarak değiştirildi",
+        "CertificateCreated": "%s %s için sertifika başarıyla oluşturuldu"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Bunu kullanmak için gerekli işe sahip değilsiniz"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "%s %s ismini kullanamazsınız, kötü bir kelime içeriyor"
+    },
+    "FilledCertificate": {
+        "Description": "%s %s için yasal isim değişikliği sertifikası"
+    }
+}

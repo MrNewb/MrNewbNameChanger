@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Dokument Promene Imena",
+        "Submit": "Pošaljite Novo Ime",
+        "FirstName": "Ime",
+        "DescriptionFirstName": "Unesite ime koje želite.",
+        "LastName": "Prezime",
+        "DescriptionLastName": "Unesite prezime koje želite."
+    },
+    "MarriageMenu": {
+        "Title": "Sertifikat Braka",
+        "Submit": "Pošaljite Novo Ime",
+        "FirstName": "Ime",
+        "DescriptionFirstName": "Unesite ime za sertifikat braka.",
+        "LastName": "Prezime",
+        "DescriptionLastName": "Unesite prezime za sertifikat braka."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Ime je uspešno promenjeno u %s %s",
+        "CertificateCreated": "Sertifikat je uspešno kreiran za %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Nemate potreban posao da biste ovo koristili"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Ne možete koristiti ime %s %s, sadrži lošu reč"
+    },
+    "FilledCertificate": {
+        "Description": "Sertifikat za legalnu promenu imena u %s %s"
+    }
+}

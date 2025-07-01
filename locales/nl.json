@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title": "Document van Naamsverandering",
+        "Submit": "Nieuwe Naam Indienen",
+        "FirstName": "Voornaam",
+        "DescriptionFirstName": "Voer de voornaam in die je wilt.",
+        "LastName": "Achternaam",
+        "DescriptionLastName": "Voer de achternaam in die je wilt."
+    },
+    "MarriageMenu": {
+        "Title": "Huwelijksakte",
+        "Submit": "Nieuwe Naam Indienen",
+        "FirstName": "Voornaam",
+        "DescriptionFirstName": "Voer de voornaam in voor de huwelijksakte.",
+        "LastName": "Achternaam",
+        "DescriptionLastName": "Voer de achternaam in voor de huwelijksakte."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Naam succesvol gewijzigd naar %s %s",
+        "CertificateCreated": "Certificaat succesvol aangemaakt voor %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Je hebt de vereiste baan niet om dit te gebruiken"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Je kunt de naam %s %s niet gebruiken, het bevat een slecht woord"
+    },
+    "FilledCertificate": {
+        "Description": "Certificaat voor legale naamsverandering naar %s %s"
+    }
+}
