@@ -28,3 +28,7 @@ dependencies {
     '/onesync',
     'community_bridge',
 }
+
+escrow_ignore {
+	'src/**/*.lua',     	-- escrowignore
+}
