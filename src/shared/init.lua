@@ -1,29 +1,18 @@
 Bridge = exports.community_bridge:Bridge()
 
-function locale(message)
-    return Bridge.Language.Locale(message)
+function locale(message, ...)
+    return Bridge.Language.Locale(message, ...)
 end
 
-function TableContains(table, value, nested)
-    return Bridge.Tables.TableContains(table, value, nested)
-end
+TableContains = Bridge.Tables.TableContains
 
 if not IsDuplicityVersion() then return end
 
-function SendNotify(src, message, type, duration)
-    if not src or not message then return end
-    Bridge.Notify.SendNotify(src, message, type or "info", duration or 5000)
-end
+SendNotify = Bridge.Notify.SendNotify
 
-function RemoveItem(src, item, count, slot, metadata)
-    if not src or not item or not count then return end
-    return Bridge.Inventory.RemoveItem(src, item, count, slot, metadata)
-end
+RemoveItem = Bridge.Inventory.RemoveItem
 
-function AddItem(src, item, count, slot, metadata)
-    if not src or not item or not count then return end
-    return Bridge.Inventory.AddItem(src, item, count, slot, metadata)
-end
+AddItem = Bridge.Inventory.AddItem
 
 function RegisterUsableItems()
     Bridge.Framework.RegisterUsableItem(Config.Items.FilledCertificate, function(src, itemData)
@@ -53,5 +42,5 @@ end
 AddEventHandler('onResourceStart', function(resource)
     if resource ~= GetCurrentResourceName() then return end
     RegisterUsableItems()
-    Bridge.Version.VersionChecker("MrNewb/MrNewbNameChanger")
+    Bridge.Version.VersionChecker("MrNewb/patchnotes", false, true, "MrNewbNameChanger", "MrNewb/MrNewbNameChanger")
 end)

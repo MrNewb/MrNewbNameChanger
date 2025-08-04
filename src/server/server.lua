@@ -44,17 +44,17 @@ end
 function ChangeName(src, submittedfirstname, submittedlastname, itemname, slot)
 	local itemCount = Bridge.Inventory.GetItemCount(src, itemname, nil)
 	if itemCount <= 0 then return end
-	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, string.format(locale("BadWordFilter.FailedFilter"), submittedfirstname, submittedlastname), "error", 6000) end
+	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
 	updatePlayerData(src, submittedfirstname, submittedlastname)
-	SendNotify(src, string.format(locale("Notifications.NameChangeSuccess"), submittedfirstname, submittedlastname), "success", 6000)
+	SendNotify(src, locale("Notifications.NameChangeSuccess", submittedfirstname, submittedlastname), "success", 6000)
 	RemoveItem(src, itemname, 1, slot, nil)
 end
 
 function GenerateFilledCertificate(src, submittedfirstname, submittedlastname)
 	local itemCount = Bridge.Inventory.GetItemCount(src, Config.Items.MarriageCertificate, nil)
 	if itemCount <= 0 then return end
-	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, string.format(locale("BadWordFilter.FailedFilter"), submittedfirstname, submittedlastname), "error", 6000) end
+	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
 	RemoveItem(src, Config.Items.MarriageCertificate, 1, nil, nil)
-	AddItem(src, Config.Items.FilledCertificate, 1, nil, {firstname = submittedfirstname, lastname = submittedlastname, description = string.format(locale("FilledCertificate.Description"), submittedfirstname, submittedlastname)})
-	SendNotify(src, string.format(locale("Notifications.CertificateCreated"), submittedfirstname, submittedlastname), "success", 6000)
+	AddItem(src, Config.Items.FilledCertificate, 1, nil, {firstname = submittedfirstname, lastname = submittedlastname, description = locale("FilledCertificate.Description", submittedfirstname, submittedlastname)})
+	SendNotify(src, locale("Notifications.CertificateCreated", submittedfirstname, submittedlastname), "success", 6000)
 end
