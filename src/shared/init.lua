@@ -42,5 +42,5 @@ end
 AddEventHandler('onResourceStart', function(resource)
     if resource ~= GetCurrentResourceName() then return end
     RegisterUsableItems()
-    Bridge.Version.VersionChecker("MrNewb/patchnotes", false, true, "MrNewbNameChanger", "MrNewb/MrNewbNameChanger")
+    Bridge.Version.AdvancedVersionChecker("MrNewb/patchnotes", resource)
 end)
