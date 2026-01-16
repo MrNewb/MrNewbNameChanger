@@ -31,5 +31,5 @@ dependencies {
 }
 
 escrow_ignore {
-	'***/**/*.lua',     	-- escrowignore
+	'**/*.lua',
 }
