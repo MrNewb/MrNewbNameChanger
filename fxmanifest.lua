@@ -3,20 +3,21 @@ game 'gta5'
 lua54 'yes'
 name "MrNewbNameChanger"
 author "MrNewb"
-version '2.1.2'
+version '2.2.0'
 
 shared_scripts {
-	'src/shared/init.lua',
-	'src/shared/config.lua'
+	'core/init.lua',
+	'data/config.lua',
+	'modules/**/shared/*.lua',
 }
 
 client_scripts {
-	'src/client/*.lua',
+	'modules/**/client/*.lua',
 }
 
 server_scripts {
 	'@oxmysql/lib/MySQL.lua',
-	'src/server/*.lua'
+	'modules/**/server/*.lua',
 }
 
 files {
@@ -30,5 +31,5 @@ dependencies {
 }
 
 escrow_ignore {
-	'src/**/*.lua',     	-- escrowignore
+	'***/**/*.lua',     	-- escrowignore
 }

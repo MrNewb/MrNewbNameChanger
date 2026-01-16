@@ -1,4 +1,4 @@
-local function updatePlayerData(src, submittedfirstname, submittedlastname)
+function UpdatePlayerData(src, submittedfirstname, submittedlastname)
 	local frameworkName = Bridge.Framework.GetFrameworkName()
 	if frameworkName == "qb-core" then
 		local QBCore = exports['qb-core']:GetCoreObject()
@@ -33,28 +33,20 @@ local function updatePlayerData(src, submittedfirstname, submittedlastname)
 	end
 end
 
-local function isABadWord(name)
-	if not name:match("^[%a]+$") then return true end
-	for _, badWord in ipairs(Config.BadWords) do
-		if name:lower():find(badWord) then return true end
-	end
-	return false
-end
-
 function ChangeName(src, submittedfirstname, submittedlastname, itemname, slot)
 	local itemCount = Bridge.Inventory.GetItemCount(src, itemname, nil)
 	if itemCount <= 0 then return end
-	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
-	updatePlayerData(src, submittedfirstname, submittedlastname)
-	SendNotify(src, locale("Notifications.NameChangeSuccess", submittedfirstname, submittedlastname), "success", 6000)
-	RemoveItem(src, itemname, 1, slot, nil)
+	if WordFilter(submittedfirstname) or WordFilter(submittedlastname) then return Bridge.Notify.SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
+	UpdatePlayerData(src, submittedfirstname, submittedlastname)
+	Bridge.Notify.SendNotify(src, locale("Notifications.NameChangeSuccess", submittedfirstname, submittedlastname), "success", 6000)
+	Bridge.Inventory.RemoveItem(src, itemname, 1, slot, nil)
 end
 
 function GenerateFilledCertificate(src, submittedfirstname, submittedlastname)
 	local itemCount = Bridge.Inventory.GetItemCount(src, Config.Items.MarriageCertificate, nil)
 	if itemCount <= 0 then return end
-	if isABadWord(submittedfirstname) or isABadWord(submittedlastname) then return SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
-	RemoveItem(src, Config.Items.MarriageCertificate, 1, nil, nil)
-	AddItem(src, Config.Items.FilledCertificate, 1, nil, {firstname = submittedfirstname, lastname = submittedlastname, description = locale("FilledCertificate.Description", submittedfirstname, submittedlastname)})
-	SendNotify(src, locale("Notifications.CertificateCreated", submittedfirstname, submittedlastname), "success", 6000)
+	if WordFilter(submittedfirstname) or WordFilter(submittedlastname) then return Bridge.Notify.SendNotify(src, locale("BadWordFilter.FailedFilter", submittedfirstname, submittedlastname), "error", 6000) end
+	Bridge.Inventory.RemoveItem(src, Config.Items.MarriageCertificate, 1, nil, nil)
+	Bridge.Inventory.AddItem(src, Config.Items.FilledCertificate, 1, nil, {firstname = submittedfirstname, lastname = submittedlastname, description = locale("FilledCertificate.Description", submittedfirstname, submittedlastname)})
+	Bridge.Notify.SendNotify(src, locale("Notifications.CertificateCreated", submittedfirstname, submittedlastname), "success", 6000)
 end

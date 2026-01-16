@@ -1,0 +1,31 @@
+{
+    "NameChangeMenu": {
+        "Title":"Документ за смяна на име",
+        "Submit": "Подаване на ново име",
+        "FirstName": "Собствено име",
+        "DescriptionFirstName": "Въведете желаното собствено име.",
+        "LastName": "Фамилия",
+        "DescriptionLastName": "Въведете желаната фамилия."
+    },
+    "MarriageMenu": {
+        "Title": "Брачно свидетелство",
+        "Submit": "Подаване на ново име",
+        "FirstName": "Собствено име",
+        "DescriptionFirstName": "Въведете собственото име за брачното свидетелство.",
+        "LastName": "Фамилия",
+        "DescriptionLastName": "Въведете фамилията за брачното свидетелство."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Успешно сменихте името на %s %s",
+        "CertificateCreated": "Успешно създадохте свидетелство за %s %s"
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Нямате необходимата работа за да използвате това"
+    },
+    "BadWordFilter": {
+        "FailedFilter": "Не можете да използвате името %s %s, то съдържа неподходяща дума"
+    },
+    "FilledCertificate": {
+        "Description": "Свидетелство за законна смяна на име на %s %s"
+    }
+}
