@@ -4,7 +4,7 @@
 
 ![GitHub Stars](https://img.shields.io/github/stars/MrNewb/MrNewbNameChanger?style=for-the-badge&color=FFD700)
 
-[![Discord](https://img.shields.io/discord/1204398264812830720?label=Discord&logo=discord&color=7289DA&style=for-the-badge)](https://discord.gg/mrnewbscripts) [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/R5R76BIM9) [![Documentation](https://img.shields.io/badge/Docs-GitBook-blue?style=for-the-badge&logo=gitbook)](https://mrnewbs-scripts.gitbook.io/guide)
+[![Discord](https://img.shields.io/discord/1204398264812830720?label=Discord&logo=discord&color=7289DA&style=for-the-badge)](https://discord.gg/mrnewbscripts) [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/R5R76BIM9) [![Documentation](https://img.shields.io/badge/Docs-GitBook-blue?style=for-the-badge&logo=gitbook)](https://mrnewbs-scrips.gitbook.io/guide)
 
 ---
 
@@ -67,11 +67,5 @@
 [![Discord](https://discordapp.com/api/guilds/1204398264812830720/widget.png?style=banner2)](https://discord.gg/mrnewbscripts)
 
 **Join our Discord for support, feature requests, and community feedback.**
-
----
-
-## Credits
-
-Special thanks to **[Decay Studios](https://discord.gg/yDXZwZPjdN)** for the professional inventory icons.
 
 ---
