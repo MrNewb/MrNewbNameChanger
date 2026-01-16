@@ -59,7 +59,7 @@
 ## Support & Documentation
 
 - **[Tebex](https://mrnewbscripts.tebex.io/)**
-- **[Install guide](https://mrnewbs-scripts.gitbook.io/guide)**
+- **[Install guide](https://mrnewbs-scrips.gitbook.io/guide)**
 - **[Youtube](https://www.youtube.com/@mrnewb2819)**
 - **[GitHub Repository](https://github.com/MrNewb/MrNewbNameChanger)**
 
