@@ -20,7 +20,7 @@ Config.Items = {
 	FilledCertificate = "filledcertificate",
 }
 
-Config.JobLockedItem = true
+Config.JobLockedItem = false
 
 Config.AllowedJobNames = {
 	"police",
