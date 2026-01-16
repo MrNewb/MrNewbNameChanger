@@ -8,6 +8,7 @@
 --									          							  |_|
 --
 --		  Need support? Join our Discord server for help: https://discord.gg/mrnewbscripts
+--		  Check out my paid scripts and freebies at https://mrnewbscripts.tebex.io/
 --		  If you need help with configuration or have any questions, please do not hesitate to ask.
 --		  Docs Are Always Available At -- https://mrnewbs-scrips.gitbook.io/guide
 --

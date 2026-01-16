@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 name "MrNewbNameChanger"
 author "MrNewb"
-version '2.3.0'
+version '2.3.1'
 
 shared_scripts {
 	'core/init.lua',
