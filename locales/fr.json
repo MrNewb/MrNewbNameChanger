@@ -15,15 +15,55 @@
         "LastName": "Nom de Famille",
         "DescriptionLastName": "Entrez le nom de famille pour le certificat de mariage."
     },
+    "PedNameChangeMenu": {
+        "Title": "Demande de changement légal de nom",
+        "FirstName": "Prénom",
+        "DescriptionFirstName": "Prénom",
+        "LastName": "Nom de famille",
+        "DescriptionLastName": "Nom de famille"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Demander un changement légal de nom",
+        "NotEnoughMoney": "Vous avez besoin de $%s pour un changement légal de nom.",
+        "OnCooldown": "Vous devez attendre %s avant de changer à nouveau de nom.",
+        "TooFar": "Vous êtes trop loin du greffier.",
+        "Failed": "Le changement de nom n’a pas pu être effectué."
+    },
+    "Certificate": {
+        "Issuer": "Service de l’état civil",
+        "Subtitle": "État de San Andreas",
+        "Certifies": "Le présent document certifie que",
+        "Petitions": "Le présent document demande que",
+        "IssuedOn": "Délivré le",
+        "CertificateNo": "Certificat n°",
+        "Registrar": "Officier d’état civil",
+        "Confirm": "Déposer",
+        "Close": "Annuler",
+        "FileHint": "Lettres uniquement · 32 caractères · dépôt immédiat",
+        "Marriage": {
+            "Title": "Certificat de mariage",
+            "Body": "A été légalement uni(e) en mariage et est autorisé(e) à utiliser le nom légal indiqué ci-dessus sur tous les documents officiels.",
+            "PetitionBody": "Lors du dépôt, les noms ci-dessus sont enregistrés comme légalement unis en mariage."
+        },
+        "NameChange": {
+            "Title": "Certificat de changement légal de nom",
+            "Body": "A demandé et obtenu un changement légal de nom. Le nouveau nom légal ci-dessus prend effet immédiatement lors du dépôt.",
+            "PetitionBody": "Lors du dépôt, le nom ci-dessus devient le nom légal enregistré."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Nom changé avec succès en %s %s",
-        "CertificateCreated": "Certificat créé avec succès pour %s %s"
+        "CertificateCreated": "Certificat créé avec succès pour %s %s",
+        "CannotCarryCertificate": "Vous ne pouvez pas porter un certificat rempli pour le moment."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Vous n'avez pas l'emploi requis pour utiliser ceci"
     },
     "BadWordFilter": {
         "FailedFilter": "Vous ne pouvez pas utiliser le nom %s %s, il contient un mot interdit"
+    },
+    "NameFilter": {
+        "InvalidName": "Ce nom n’est pas autorisé. Utilisez uniquement des lettres et évitez les mots interdits."
     },
     "FilledCertificate": {
         "Description": "Certificat pour le changement légal de nom en %s %s"

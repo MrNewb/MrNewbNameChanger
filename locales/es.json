@@ -15,15 +15,55 @@
         "LastName": "Apellido",
         "DescriptionLastName": "Ingrese el apellido para el certificado de matrimonio."
     },
+    "PedNameChangeMenu": {
+        "Title": "Solicitud de cambio legal de nombre",
+        "FirstName": "Nombre",
+        "DescriptionFirstName": "Nombre",
+        "LastName": "Apellido",
+        "DescriptionLastName": "Apellido"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Solicitar cambio legal de nombre",
+        "NotEnoughMoney": "Necesitas $%s para un cambio legal de nombre.",
+        "OnCooldown": "Debes esperar %s antes de cambiar tu nombre de nuevo.",
+        "TooFar": "Estás demasiado lejos del empleado de registros.",
+        "Failed": "No se pudo completar el cambio de nombre."
+    },
+    "Certificate": {
+        "Issuer": "Departamento de Registros",
+        "Subtitle": "Estado de San Andreas",
+        "Certifies": "Este documento certifica que",
+        "Petitions": "Este documento solicita que",
+        "IssuedOn": "Emitido el",
+        "CertificateNo": "Certificado n.º",
+        "Registrar": "Registrador del estado civil",
+        "Confirm": "Presentar",
+        "Close": "Cancelar",
+        "FileHint": "Solo letras · 32 caracteres · se presenta de inmediato",
+        "Marriage": {
+            "Title": "Certificado de matrimonio",
+            "Body": "Ha sido unido legalmente en matrimonio y está autorizado a usar el nombre legal indicado arriba en todos los documentos oficiales.",
+            "PetitionBody": "Al presentarlo, los nombres de arriba se registran como legalmente unidos en matrimonio."
+        },
+        "NameChange": {
+            "Title": "Certificado de cambio legal de nombre",
+            "Body": "Ha solicitado y obtenido un cambio legal de nombre. El nuevo nombre legal de arriba entra en vigor de inmediato al presentarlo.",
+            "PetitionBody": "Al presentarlo, el nombre de arriba se convierte en el nombre legal registrado."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Nombre cambiado exitosamente a %s %s",
-        "CertificateCreated": "Certificado creado exitosamente para %s %s"
+        "CertificateCreated": "Certificado creado exitosamente para %s %s",
+        "CannotCarryCertificate": "No puedes llevar un certificado rellenado ahora mismo."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "No tienes el trabajo requerido para usar esto"
     },
     "BadWordFilter": {
         "FailedFilter": "No puedes usar el nombre %s %s, contiene una palabra prohibida"
+    },
+    "NameFilter": {
+        "InvalidName": "Ese nombre no está permitido. Usa solo letras y evita palabras restringidas."
     },
     "FilledCertificate": {
         "Description": "Certificado para el cambio legal de nombre a %s %s"

@@ -15,15 +15,55 @@
         "LastName": "Vezetéknév",
         "DescriptionLastName": "Add meg a vezetéknevet a házassági okmányhoz."
     },
+    "PedNameChangeMenu": {
+        "Title": "Hivatalos névváltoztatási kérelem",
+        "FirstName": "Keresztnév",
+        "DescriptionFirstName": "Keresztnév",
+        "LastName": "Vezetéknév",
+        "DescriptionLastName": "Vezetéknév"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Hivatalos névváltoztatás kérése",
+        "NotEnoughMoney": "Hivatalos névváltoztatáshoz $%s szükséges.",
+        "OnCooldown": "%s-t kell várnod, mielőtt újra megváltoztathatnád a neved.",
+        "TooFar": "Túl messze vagy az anyakönyvi ügyintézőtől.",
+        "Failed": "A névváltoztatást nem sikerült befejezni."
+    },
+    "Certificate": {
+        "Issuer": "Anyakönyvi Hivatal",
+        "Subtitle": "San Andreas állam",
+        "Certifies": "Ez a dokumentum tanúsítja, hogy",
+        "Petitions": "Ez a dokumentum kérelmezi, hogy",
+        "IssuedOn": "Kiadva",
+        "CertificateNo": "Igazolvány száma",
+        "Registrar": "Anyakönyvvezető",
+        "Confirm": "Benyújtás",
+        "Close": "Mégse",
+        "FileHint": "Csak betűk · 32 karakter · azonnal benyújtásra kerül",
+        "Marriage": {
+            "Title": "Házassági anyakönyvi kivonat",
+            "Body": "Törvényesen házasságot kötött, és jogosult a fenti hivatalos nevet minden hivatalos dokumentumon használni.",
+            "PetitionBody": "Benyújtáskor a fenti nevek törvényesen házasságot kötöttként kerülnek rögzítésre."
+        },
+        "NameChange": {
+            "Title": "Hivatalos névváltoztatási igazolás",
+            "Body": "Hivatalos névváltoztatást kérelmezett és kapott. A fenti új hivatalos név a benyújtáskor azonnal hatályba lép.",
+            "PetitionBody": "Benyújtáskor a fenti név válik a nyilvántartott hivatalos névvé."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "A név sikeresen megváltoztatva erre: %s %s",
-        "CertificateCreated": "Tanúsítvány sikeresen létrehozva ehhez: %s %s"
+        "CertificateCreated": "Tanúsítvány sikeresen létrehozva ehhez: %s %s",
+        "CannotCarryCertificate": "Jelenleg nem vihetsz magaddal kitöltött igazolást."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nincs meg a szükséges munkád ennek használatához"
     },
     "BadWordFilter": {
         "FailedFilter": "Nem használhatod a %s %s nevet, káromkodást tartalmaz"
+    },
+    "NameFilter": {
+        "InvalidName": "Ez a név nem engedélyezett. Csak betűket használj, és kerüld a tiltott szavakat."
     },
     "FilledCertificate": {
         "Description": "Tanúsítvány a törvényes névváltoztatáshoz erre: %s %s"

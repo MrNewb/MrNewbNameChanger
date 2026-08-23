@@ -15,15 +15,55 @@
         "LastName": "성",
         "DescriptionLastName": "결혼 증명서에 들어갈 성을 입력하세요."
     },
+    "PedNameChangeMenu": {
+        "Title": "법적 개명 신청",
+        "FirstName": "이름",
+        "DescriptionFirstName": "이름",
+        "LastName": "성",
+        "DescriptionLastName": "성"
+    },
+    "PedNameChange": {
+        "TargetLabel": "법적 개명 요청",
+        "NotEnoughMoney": "법적 개명에는 $%s가 필요합니다.",
+        "OnCooldown": "이름을 다시 바꾸려면 %s를 기다려야 합니다.",
+        "TooFar": "기록 담당자로부터 너무 멀리 떨어져 있습니다.",
+        "Failed": "개명을 완료할 수 없습니다."
+    },
+    "Certificate": {
+        "Issuer": "기록부",
+        "Subtitle": "산 안드레아스 주",
+        "Certifies": "이 문서는 다음을 증명합니다",
+        "Petitions": "이 문서는 다음을 신청합니다",
+        "IssuedOn": "발급일",
+        "CertificateNo": "증명서 번호",
+        "Registrar": "호적 등록관",
+        "Confirm": "제출",
+        "Close": "취소",
+        "FileHint": "문자만 · 32자 · 즉시 제출됨",
+        "Marriage": {
+            "Title": "결혼 증명서",
+            "Body": "법적으로 혼인하였으며, 위의 법적 성명을 모든 공식 문서에 사용할 권한이 있습니다.",
+            "PetitionBody": "제출 시 위의 성명이 법적으로 혼인한 것으로 기록됩니다."
+        },
+        "NameChange": {
+            "Title": "법적 개명 증명서",
+            "Body": "법적 개명을 신청하여 승인받았습니다. 위의 새 법적 성명은 제출과 동시에 효력이 발생합니다.",
+            "PetitionBody": "제출 시 위의 성명이 기록상의 법적 성명이 됩니다."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "이름이 %s %s로 성공적으로 변경되었습니다",
-        "CertificateCreated": "%s %s에 대한 증명서가 성공적으로 생성되었습니다"
+        "CertificateCreated": "%s %s에 대한 증명서가 성공적으로 생성되었습니다",
+        "CannotCarryCertificate": "지금은 작성된 증명서를 들 수 없습니다."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "이것을 사용하는 데 필요한 직업이 없습니다"
     },
     "BadWordFilter": {
         "FailedFilter": "이름 %s %s를 사용할 수 없습니다. 금지된 단어가 포함되어 있습니다"
+    },
+    "NameFilter": {
+        "InvalidName": "허용되지 않는 이름입니다. 문자만 사용하고 제한된 단어를 피하세요."
     },
     "FilledCertificate": {
         "Description": "%s %s로의 법적 이름 변경 증명서"

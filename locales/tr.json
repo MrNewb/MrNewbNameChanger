@@ -15,15 +15,55 @@
         "LastName": "Soyad",
         "DescriptionLastName": "Evlilik sertifikası için soyadı girin."
     },
+    "PedNameChangeMenu": {
+        "Title": "Yasal isim değişikliği talebi",
+        "FirstName": "Ad",
+        "DescriptionFirstName": "Ad",
+        "LastName": "Soyad",
+        "DescriptionLastName": "Soyad"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Yasal isim değişikliği iste",
+        "NotEnoughMoney": "Yasal bir isim değişikliği için $%s gerekir.",
+        "OnCooldown": "Adınızı tekrar değiştirmeden önce %s beklemelisiniz.",
+        "TooFar": "Kayıt memurundan çok uzaktasınız.",
+        "Failed": "İsim değişikliği tamamlanamadı."
+    },
+    "Certificate": {
+        "Issuer": "Kayıt Dairesi",
+        "Subtitle": "San Andreas Eyaleti",
+        "Certifies": "Bu belge şunu belgeler",
+        "Petitions": "Bu belge şunu talep eder",
+        "IssuedOn": "Düzenlenme tarihi",
+        "CertificateNo": "Sertifika no.",
+        "Registrar": "Nüfus kayıt memuru",
+        "Confirm": "Dosyala",
+        "Close": "İptal",
+        "FileHint": "Yalnızca harfler · 32 karakter · hemen dosyalanır",
+        "Marriage": {
+            "Title": "Evlilik belgesi",
+            "Body": "Yasal olarak evlilikle birleşmiştir ve yukarıdaki yasal adı tüm resmi belgelerde kullanmaya yetkilidir.",
+            "PetitionBody": "Dosyalama üzerine yukarıdaki adlar yasal olarak evlilikle birleşmiş olarak kaydedilir."
+        },
+        "NameChange": {
+            "Title": "Yasal isim değişikliği belgesi",
+            "Body": "Yasal isim değişikliği için başvurmuş ve onay almıştır. Yukarıdaki yeni yasal ad, dosyalama ile birlikte hemen yürürlüğe girer.",
+            "PetitionBody": "Dosyalama üzerine yukarıdaki ad, kayıtlardaki yasal ad olur."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "İsim başarıyla %s %s olarak değiştirildi",
-        "CertificateCreated": "%s %s için sertifika başarıyla oluşturuldu"
+        "CertificateCreated": "%s %s için sertifika başarıyla oluşturuldu",
+        "CannotCarryCertificate": "Şu anda doldurulmuş bir sertifika taşıyamazsınız."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Bunu kullanmak için gerekli işe sahip değilsiniz"
     },
     "BadWordFilter": {
         "FailedFilter": "%s %s ismini kullanamazsınız, kötü bir kelime içeriyor"
+    },
+    "NameFilter": {
+        "InvalidName": "Bu ada izin verilmiyor. Yalnızca harf kullanın ve kısıtlı kelimelerden kaçının."
     },
     "FilledCertificate": {
         "Description": "%s %s için yasal isim değişikliği sertifikası"

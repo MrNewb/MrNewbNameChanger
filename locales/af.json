@@ -15,15 +15,55 @@
         "LastName": "Van",
         "DescriptionLastName": "Sit die van in vir die huweliksertifikaat."
     },
+    "PedNameChangeMenu": {
+        "Title": "Wettige Naamveranderingsversoek",
+        "FirstName": "Voornaam",
+        "DescriptionFirstName": "Voornaam",
+        "LastName": "Van",
+        "DescriptionLastName": "Van"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Versoek Wettige Naamverandering",
+        "NotEnoughMoney": "Jy benodig $%s vir ’n wettige naamverandering.",
+        "OnCooldown": "Jy moet %s wag voor jy jou naam weer kan verander.",
+        "TooFar": "Jy is te ver van die rekordsbeampte.",
+        "Failed": "Die naamverandering kon nie voltooi word nie."
+    },
+    "Certificate": {
+        "Issuer": "Departement van Rekords",
+        "Subtitle": "Staat van San Andreas",
+        "Certifies": "Hierdie dokument sertifiseer dat",
+        "Petitions": "Hierdie dokument versoek dat",
+        "IssuedOn": "Uitgereik op",
+        "CertificateNo": "Sertifikaatnr.",
+        "Registrar": "Registrateur van belangrike rekords",
+        "Confirm": "Lê in",
+        "Close": "Kanselleer",
+        "FileHint": "Slegs letters · 32 karakters · lê dadelik in",
+        "Marriage": {
+            "Title": "Huweliksertifikaat",
+            "Body": "Is wettig in die huwelik verbind en mag die wettige naam hierbo op alle amptelike dokumente gebruik.",
+            "PetitionBody": "By indiening word die name hierbo as wettig in die huwelik verbind aangeteken."
+        },
+        "NameChange": {
+            "Title": "Sertifikaat van Wettige Naamverandering",
+            "Body": "Het ’n wettige naamverandering versoek en ontvang. Die nuwe wettige naam hierbo tree dadelik in werking by indiening.",
+            "PetitionBody": "By indiening word die naam hierbo die wettige naam van rekord."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Naam suksesvol verander na %s %s",
-        "CertificateCreated": "Sertifikaat suksesvol geskep vir %s %s"
+        "CertificateCreated": "Sertifikaat suksesvol geskep vir %s %s",
+        "CannotCarryCertificate": "Jy kan nie nou ’n ingevulde sertifikaat saamdra nie."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Jy het nie die nodige werk om dit te gebruik nie"
     },
     "BadWordFilter": {
         "FailedFilter": "Jy kan nie die naam %s %s gebruik nie, dit bevat 'n slegte woord"
+    },
+    "NameFilter": {
+        "InvalidName": "Daardie naam word nie toegelaat nie. Gebruik slegs letters en vermy beperkte woorde."
     },
     "FilledCertificate": {
         "Description": "Sertifikaat vir wettige naamverandering na %s %s"

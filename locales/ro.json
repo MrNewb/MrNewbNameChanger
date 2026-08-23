@@ -15,15 +15,55 @@
         "LastName": "Nume de Familie",
         "DescriptionLastName": "Introdu numele de familie pentru certificatul de căsătorie."
     },
+    "PedNameChangeMenu": {
+        "Title": "Cerere de schimbare legală a numelui",
+        "FirstName": "Prenume",
+        "DescriptionFirstName": "Prenume",
+        "LastName": "Nume",
+        "DescriptionLastName": "Nume"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Solicită schimbarea legală a numelui",
+        "NotEnoughMoney": "Ai nevoie de $%s pentru o schimbare legală a numelui.",
+        "OnCooldown": "Trebuie să aștepți %s înainte de a-ți schimba din nou numele.",
+        "TooFar": "Ești prea departe de funcționarul de stare civilă.",
+        "Failed": "Schimbarea numelui nu a putut fi finalizată."
+    },
+    "Certificate": {
+        "Issuer": "Departamentul de stare civilă",
+        "Subtitle": "Statul San Andreas",
+        "Certifies": "Acest document certifică faptul că",
+        "Petitions": "Acest document solicită ca",
+        "IssuedOn": "Eliberat la",
+        "CertificateNo": "Certificat nr.",
+        "Registrar": "Ofițer de stare civilă",
+        "Confirm": "Depune",
+        "Close": "Anulează",
+        "FileHint": "Doar litere · 32 de caractere · se depune imediat",
+        "Marriage": {
+            "Title": "Certificat de căsătorie",
+            "Body": "A fost unit(ă) legal prin căsătorie și este autorizat(ă) să folosească numele legal de mai sus pe toate documentele oficiale.",
+            "PetitionBody": "La depunere, numele de mai sus sunt înregistrate ca unite legal prin căsătorie."
+        },
+        "NameChange": {
+            "Title": "Certificat de schimbare legală a numelui",
+            "Body": "A solicitat și a primit o schimbare legală a numelui. Noul nume legal de mai sus intră în vigoare imediat la depunere.",
+            "PetitionBody": "La depunere, numele de mai sus devine numele legal din evidențe."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Numele a fost schimbat cu succes în %s %s",
-        "CertificateCreated": "Certificatul a fost creat cu succes pentru %s %s"
+        "CertificateCreated": "Certificatul a fost creat cu succes pentru %s %s",
+        "CannotCarryCertificate": "Nu poți purta un certificat completat acum."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nu ai jobul necesar pentru a folosi aceasta"
     },
     "BadWordFilter": {
         "FailedFilter": "Nu poți folosi numele %s %s, conține un cuvânt rău"
+    },
+    "NameFilter": {
+        "InvalidName": "Acel nume nu este permis. Folosește doar litere și evită cuvintele restricționate."
     },
     "FilledCertificate": {
         "Description": "Certificat pentru schimbarea legală a numelui în %s %s"

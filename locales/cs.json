@@ -15,15 +15,55 @@
         "LastName": "Prezime",
         "DescriptionLastName": "Unesite prezime za sertifikat braka."
     },
+    "PedNameChangeMenu": {
+        "Title": "Žádost o legální změnu jména",
+        "FirstName": "Jméno",
+        "DescriptionFirstName": "Jméno",
+        "LastName": "Příjmení",
+        "DescriptionLastName": "Příjmení"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Požádat o legální změnu jména",
+        "NotEnoughMoney": "Na legální změnu jména potřebujete $%s.",
+        "OnCooldown": "Před další změnou jména musíte počkat %s.",
+        "TooFar": "Jste příliš daleko od úředníka matriky.",
+        "Failed": "Změnu jména se nepodařilo dokončit."
+    },
+    "Certificate": {
+        "Issuer": "Oddělení matriky",
+        "Subtitle": "Stát San Andreas",
+        "Certifies": "Tento dokument osvědčuje, že",
+        "Petitions": "Tento dokument žádá, aby",
+        "IssuedOn": "Vydáno dne",
+        "CertificateNo": "Číslo certifikátu",
+        "Registrar": "Matrikář",
+        "Confirm": "Podat",
+        "Close": "Zrušit",
+        "FileHint": "Pouze písmena · 32 znaků · podá se ihned",
+        "Marriage": {
+            "Title": "Oddací list",
+            "Body": "Byli zákonně oddáni a jsou oprávněni používat výše uvedené legální jméno na všech oficiálních dokumentech.",
+            "PetitionBody": "Po podání jsou výše uvedená jména zapsána jako zákonně oddaná."
+        },
+        "NameChange": {
+            "Title": "Osvědčení o legální změně jména",
+            "Body": "Bylo podáno a schváleno žádání o legální změnu jména. Nové legální jméno výše nabývá účinnosti ihned po podání.",
+            "PetitionBody": "Po podání se jméno výše stává legálním jménem v evidenci."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Ime je uspešno promenjeno u %s %s",
-        "CertificateCreated": "Sertifikat je uspešno kreiran za %s %s"
+        "CertificateCreated": "Sertifikat je uspešno kreiran za %s %s",
+        "CannotCarryCertificate": "Momentálně nemůžete nést vyplněný certifikát."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nemate potreban posao da biste ovo koristili"
     },
     "BadWordFilter": {
         "FailedFilter": "Ne možete koristiti ime %s %s, sadrži lošu reč"
+    },
+    "NameFilter": {
+        "InvalidName": "Toto jméno není povoleno. Používejte pouze písmena a vyhněte se zakázaným slovům."
     },
     "FilledCertificate": {
         "Description": "Sertifikat za legalnu promenu imena u %s %s"

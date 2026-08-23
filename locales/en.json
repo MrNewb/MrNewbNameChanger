@@ -1,29 +1,69 @@
 {
     "NameChangeMenu": {
-        "Title":"Name Change Document",
+        "Title": "Name Change Document",
         "Submit": "Submit New Name",
         "FirstName": "First Name",
-        "DescriptionFirstName": "Put In The First Name You Want.",
+        "DescriptionFirstName": "First name",
         "LastName": "Last Name",
-        "DescriptionLastName": "Put In The Last Name You Want."
+        "DescriptionLastName": "Last name"
     },
     "MarriageMenu": {
         "Title": "Marriage Certificate",
         "Submit": "Submit New Name",
         "FirstName": "First Name",
-        "DescriptionFirstName": "Put In The First Name For The Marriage Certificate.",
+        "DescriptionFirstName": "First name",
         "LastName": "Last Name",
-        "DescriptionLastName": "Put In The Last Name For The Marriage Certificate."
+        "DescriptionLastName": "Last name"
+    },
+    "PedNameChangeMenu": {
+        "Title": "Legal Name Change Request",
+        "FirstName": "First Name",
+        "DescriptionFirstName": "First name",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Last name"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Request Legal Name Change",
+        "NotEnoughMoney": "You need $%s for a legal name change.",
+        "OnCooldown": "You must wait %s before changing your name again.",
+        "TooFar": "You are too far from the records clerk.",
+        "Failed": "The name change could not be completed."
+    },
+    "Certificate": {
+        "Issuer": "Department of Records",
+        "Subtitle": "State of San Andreas",
+        "Certifies": "This document certifies that",
+        "Petitions": "This document petitions that",
+        "IssuedOn": "Issued on",
+        "CertificateNo": "Certificate no.",
+        "Registrar": "Registrar of vital records",
+        "Confirm": "File",
+        "Close": "Cancel",
+        "FileHint": "Letters only · 32 characters · files immediately",
+        "Marriage": {
+            "Title": "Certificate of Marriage",
+            "Body": "Has been lawfully joined in marriage and is authorized to use the legal name shown above on all official documents.",
+            "PetitionBody": "Upon filing, the names above are recorded as lawfully joined in marriage."
+        },
+        "NameChange": {
+            "Title": "Certificate of Legal Name Change",
+            "Body": "Has petitioned for and been granted a legal change of name. The new legal name above is effective immediately upon filing.",
+            "PetitionBody": "Upon filing, the name above becomes the legal name of record."
+        }
     },
     "Notifications": {
-        "NameChangeSuccess": "Successfully Changed Name To %s %s",
-        "CertificateCreated": "Successfully Created Certificate For %s %s"
+        "NameChangeSuccess": "Your name is now %s %s.",
+        "CertificateCreated": "Filled a certificate for %s %s.",
+        "CannotCarryCertificate": "You cannot carry a filled certificate right now."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "You Do Not Have The Job Required To Use This"
+        "YouDoNotHaveTheJob": "You don't have the job required to use this."
     },
     "BadWordFilter": {
-        "FailedFilter": "You Cannot Use The Name %s %s, It Contains A Bad Word"
+        "FailedFilter": "You can't use the name %s %s. It contains a restricted word."
+    },
+    "NameFilter": {
+        "InvalidName": "That name is not allowed. Use letters only and avoid restricted words."
     },
     "FilledCertificate": {
         "Description": "Certificate for legal name change to %s %s"

@@ -15,15 +15,55 @@
         "LastName": "Sukunimi",
         "DescriptionLastName": "Syötä sukunimi avioliittotodistukseen."
     },
+    "PedNameChangeMenu": {
+        "Title": "Virallinen nimenmuutospyyntö",
+        "FirstName": "Etunimi",
+        "DescriptionFirstName": "Etunimi",
+        "LastName": "Sukunimi",
+        "DescriptionLastName": "Sukunimi"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Pyydä virallista nimenmuutosta",
+        "NotEnoughMoney": "Tarvitset $%s viralliseen nimenmuutokseen.",
+        "OnCooldown": "Sinun on odotettava %s ennen kuin voit vaihtaa nimeäsi uudelleen.",
+        "TooFar": "Olet liian kaukana rekisterivirkailijasta.",
+        "Failed": "Nimenmuutosta ei voitu suorittaa."
+    },
+    "Certificate": {
+        "Issuer": "Rekisteriosasto",
+        "Subtitle": "San Andreasin osavaltio",
+        "Certifies": "Tämä asiakirja todistaa, että",
+        "Petitions": "Tämä asiakirja pyytää, että",
+        "IssuedOn": "Myönnetty",
+        "CertificateNo": "Todistus nro",
+        "Registrar": "Väestörekisterin pitäjä",
+        "Confirm": "Jätä",
+        "Close": "Peruuta",
+        "FileHint": "Vain kirjaimia · 32 merkkiä · jätetään heti",
+        "Marriage": {
+            "Title": "Vihkitodistus",
+            "Body": "On laillisesti vihitty ja oikeutettu käyttämään yllä olevaa laillista nimeä kaikissa virallisissa asiakirjoissa.",
+            "PetitionBody": "Jättämisen yhteydessä yllä olevat nimet merkitään laillisesti vihityiksi."
+        },
+        "NameChange": {
+            "Title": "Todistus laillisesta nimenmuutoksesta",
+            "Body": "On hakenut ja saanut laillisen nimenmuutoksen. Yllä oleva uusi laillinen nimi tulee voimaan heti jättämisen yhteydessä.",
+            "PetitionBody": "Jättämisen yhteydessä yllä olevasta nimestä tulee rekisteröity laillinen nimi."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Nimi vaihdettu onnistuneesti nimeen %s %s",
-        "CertificateCreated": "Todistus luotu onnistuneesti henkilölle %s %s"
+        "CertificateCreated": "Todistus luotu onnistuneesti henkilölle %s %s",
+        "CannotCarryCertificate": "Et voi kantaa täytettyä todistusta juuri nyt."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Sinulla ei ole tarvittavaa työtä tämän käyttöön"
     },
     "BadWordFilter": {
         "FailedFilter": "Et voi käyttää nimeä %s %s, se sisältää sopimattoman sanan"
+    },
+    "NameFilter": {
+        "InvalidName": "Tuo nimi ei ole sallittu. Käytä vain kirjaimia ja vältä kiellettyjä sanoja."
     },
     "FilledCertificate": {
         "Description": "Todistus laillisesta nimenmuutoksesta nimeen %s %s"

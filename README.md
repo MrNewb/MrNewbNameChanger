@@ -1,71 +1,41 @@
 # MrNewbNameChanger
 
-> **FiveM Character Name System** - Seamless in-game name changing with Community Bridge integration and real-time updates across supported frameworks.
+Name-change vouchers, marriage certificates, and an optional records clerk. No relog.
 
-![GitHub Stars](https://img.shields.io/github/stars/MrNewb/MrNewbNameChanger?style=for-the-badge&color=FFD700)
+[Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [GitHub](https://github.com/MrNewb/MrNewbNameChanger) · [Discord](https://discord.gg/mrnewbscripts)
 
-[![Discord](https://img.shields.io/discord/1204398264812830720?label=Discord&logo=discord&color=7289DA&style=for-the-badge)](https://discord.gg/mrnewbscripts) [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/R5R76BIM9) [![Documentation](https://img.shields.io/badge/Docs-GitBook-blue?style=for-the-badge&logo=gitbook)](https://mrnewbs-scrips.gitbook.io/guide)
+## Install
 
----
+Needs [ox_lib](https://github.com/overextended/ox_lib), [oxmysql](https://github.com/overextended/oxmysql), and [Newb_Bridge](https://github.com/MrNewb/Newb_Bridge).
 
-## Overview
+```cfg
+ensure ox_lib
+ensure oxmysql
+ensure Newb_Bridge
+ensure MrNewbNameChanger
+```
 
-**MrNewb Name Changer** introduces a convenient item-based system that allows players to seamlessly modify their character's first and last names without requiring a relog. Built with Community Bridge integration for universal framework compatibility.
+Item defs: [docs](https://mrnewb.github.io/docs/mrnewbnamechanger/install).
 
-### Key Features
+## Config
 
-- **Framework Compatibility** - QBCore, Qbox/QBX, and ESX via Community Bridge
-- **Real-Time Updates** - Instant name changes without relog
-- **Modern Interface** - Works with most popular input menus (see bridge for compatibility list (many))
+`configs/config.lua` — item names, `NameFilter` (length + bad words), marriage job gate, records clerk (`Enabled` ships `false`; set `true` to spawn the NPC).
 
----
+```lua
+bridge.inventory.addItem(src, 'namechangevoucher', 1)
+```
 
-## Compatibility
+Records clerk has a per-character cooldown (`Config.RecordsClerk.Cooldown`) so the paid NPC cannot be spammed. Vouchers and certificates have no cooldown — using the item is the cost.
 
-### Required Dependencies
-![Community Bridge](https://img.shields.io/badge/Requires-Community_Bridge-critical?style=for-the-badge&logo=bridge&logoColor=white)
+```lua
+-- other resources, server-side; still runs the name filter
+local ok = exports.MrNewbNameChanger:ChangePlayerName(src, 'Jane', 'Doe')
+```
 
-- **[Community Bridge](https://github.com/MrNewb/community_bridge)** - Cross-framework compatibility layer
+After a successful write (voucher, certificate, clerk, or that export) the server fires a local event other resources can listen for:
 
-### Supported Frameworks
-![QBCore](https://img.shields.io/badge/QBCore-✅_Compatible-green?style=flat-square) ![Qbox](https://img.shields.io/badge/Qbox/QBX-✅_Compatible-green?style=flat-square) ![ESX](https://img.shields.io/badge/ESX-✅_Compatible-green?style=flat-square)
-
-- QBCore
-- Qbox/QBX
-- ESX
-
----
-
-## Features
-
-- Item-based system
-- Real-time character updates (no relog required)
-- Automatic item consumption
-- Input validation and error handling for badwords
-- Framework auto-detection
-
----
-
-## Usage
-
-### For Players
-1. Acquire the Name Changer item
-2. Use the item to open the input dialog
-3. Enter your desired first and last name
-4. Confirm - your name updates instantly without relog
-
----
-
-## Support & Documentation
-
-- **[Tebex](https://mrnewbscripts.tebex.io/)**
-- **[Install guide](https://mrnewbs-scrips.gitbook.io/guide)**
-- **[Youtube](https://www.youtube.com/@mrnewb2819)**
-- **[GitHub Repository](https://github.com/MrNewb/MrNewbNameChanger)**
-
-### Community
-[![Discord](https://discordapp.com/api/guilds/1204398264812830720/widget.png?style=banner2)](https://discord.gg/mrnewbscripts)
-
-**Join our Discord for support, feature requests, and community feedback.**
-
----
+```lua
+AddEventHandler('MrNewbNameChanger:Server:NameChanged', function(src, identifier, firstName, lastName)
+    -- logs, MDT, whatever you need
+end)
+```

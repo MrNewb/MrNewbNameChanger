@@ -15,15 +15,55 @@
         "LastName": "Etternavn",
         "DescriptionLastName": "Skriv inn etternavnet for ekteskapsattesten."
     },
+    "PedNameChangeMenu": {
+        "Title": "Forespørsel om lovlig navneendring",
+        "FirstName": "Fornavn",
+        "DescriptionFirstName": "Fornavn",
+        "LastName": "Etternavn",
+        "DescriptionLastName": "Etternavn"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Be om lovlig navneendring",
+        "NotEnoughMoney": "Du trenger $%s for en lovlig navneendring.",
+        "OnCooldown": "Du må vente %s før du kan endre navnet ditt igjen.",
+        "TooFar": "Du er for langt unna registerføreren.",
+        "Failed": "Navneendringen kunne ikke fullføres."
+    },
+    "Certificate": {
+        "Issuer": "Registeravdelingen",
+        "Subtitle": "Staten San Andreas",
+        "Certifies": "Dette dokumentet bekrefter at",
+        "Petitions": "Dette dokumentet anmoder om at",
+        "IssuedOn": "Utstedt den",
+        "CertificateNo": "Attestnr.",
+        "Registrar": "Registerfører for personlige forhold",
+        "Confirm": "Lever inn",
+        "Close": "Avbryt",
+        "FileHint": "Kun bokstaver · 32 tegn · leveres inn med en gang",
+        "Marriage": {
+            "Title": "Vielsesattest",
+            "Body": "Er lovlig viet og er autorisert til å bruke det juridiske navnet ovenfor på alle offisielle dokumenter.",
+            "PetitionBody": "Ved innlevering registreres navnene ovenfor som lovlig viet."
+        },
+        "NameChange": {
+            "Title": "Attest for lovlig navneendring",
+            "Body": "Har søkt om og fått innvilget en lovlig navneendring. Det nye juridiske navnet ovenfor trer i kraft umiddelbart ved innlevering.",
+            "PetitionBody": "Ved innlevering blir navnet ovenfor det juridiske navnet i registret."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Navn endret til %s %s",
-        "CertificateCreated": "Sertifikat opprettet for %s %s"
+        "CertificateCreated": "Sertifikat opprettet for %s %s",
+        "CannotCarryCertificate": "Du kan ikke bære et utfylt sertifikat akkurat nå."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Du har ikke den nødvendige jobben for å bruke dette"
     },
     "BadWordFilter": {
         "FailedFilter": "Du kan ikke bruke navnet %s %s, det inneholder et dårlig ord"
+    },
+    "NameFilter": {
+        "InvalidName": "Det navnet er ikke tillatt. Bruk kun bokstaver og unngå begrensede ord."
     },
     "FilledCertificate": {
         "Description": "Sertifikat for lovlig navneendring til %s %s"

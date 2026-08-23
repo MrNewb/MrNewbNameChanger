@@ -15,15 +15,55 @@
         "LastName": "Efternamn",
         "DescriptionLastName": "Ange efternamnet för äktenskapsbeviset."
     },
+    "PedNameChangeMenu": {
+        "Title": "Ansökan om laglig namnändring",
+        "FirstName": "Förnamn",
+        "DescriptionFirstName": "Förnamn",
+        "LastName": "Efternamn",
+        "DescriptionLastName": "Efternamn"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Begär laglig namnändring",
+        "NotEnoughMoney": "Du behöver $%s för en laglig namnändring.",
+        "OnCooldown": "Du måste vänta %s innan du kan ändra namnet igen.",
+        "TooFar": "Du är för långt från registerföreståndaren.",
+        "Failed": "Namnändringen kunde inte slutföras."
+    },
+    "Certificate": {
+        "Issuer": "Registeravdelningen",
+        "Subtitle": "Delstaten San Andreas",
+        "Certifies": "Detta dokument intygar att",
+        "Petitions": "Detta dokument anhåller om att",
+        "IssuedOn": "Utfärdat den",
+        "CertificateNo": "Intygsnr.",
+        "Registrar": "Registeransvarig för personakter",
+        "Confirm": "Lämna in",
+        "Close": "Avbryt",
+        "FileHint": "Endast bokstäver · 32 tecken · lämnas in omedelbart",
+        "Marriage": {
+            "Title": "Vigselbevis",
+            "Body": "Har lagligen ingått äktenskap och är behörig att använda det juridiska namnet ovan på alla officiella dokument.",
+            "PetitionBody": "Vid inlämning registreras namnen ovan som lagligen gifta."
+        },
+        "NameChange": {
+            "Title": "Intyg om laglig namnändring",
+            "Body": "Har ansökt om och beviljats en laglig namnändring. Det nya juridiska namnet ovan gäller omedelbart vid inlämning.",
+            "PetitionBody": "Vid inlämning blir namnet ovan det juridiska namnet i registret."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Namn ändrat till %s %s",
-        "CertificateCreated": "Certifikat skapat för %s %s"
+        "CertificateCreated": "Certifikat skapat för %s %s",
+        "CannotCarryCertificate": "Du kan inte bära ett ifyllt intyg just nu."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Du har inte det jobb som krävs för att använda detta"
     },
     "BadWordFilter": {
         "FailedFilter": "Du kan inte använda namnet %s %s, det innehåller ett dåligt ord"
+    },
+    "NameFilter": {
+        "InvalidName": "Det namnet är inte tillåtet. Använd endast bokstäver och undvik begränsade ord."
     },
     "FilledCertificate": {
         "Description": "Certifikat för laglig namnändring till %s %s"

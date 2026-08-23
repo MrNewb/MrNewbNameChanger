@@ -15,15 +15,55 @@
         "LastName": "Achternaam",
         "DescriptionLastName": "Voer de achternaam in voor de huwelijksakte."
     },
+    "PedNameChangeMenu": {
+        "Title": "Verzoek tot wettelijke naamsverandering",
+        "FirstName": "Voornaam",
+        "DescriptionFirstName": "Voornaam",
+        "LastName": "Achternaam",
+        "DescriptionLastName": "Achternaam"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Wettelijke naamsverandering aanvragen",
+        "NotEnoughMoney": "Je hebt $%s nodig voor een wettelijke naamsverandering.",
+        "OnCooldown": "Je moet %s wachten voordat je je naam opnieuw kunt wijzigen.",
+        "TooFar": "Je bent te ver van de ambtenaar van de burgerlijke stand.",
+        "Failed": "De naamsverandering kon niet worden voltooid."
+    },
+    "Certificate": {
+        "Issuer": "Afdeling Burgerlijke Stand",
+        "Subtitle": "Staat San Andreas",
+        "Certifies": "Dit document verklaart dat",
+        "Petitions": "Dit document verzoekt dat",
+        "IssuedOn": "Afgegeven op",
+        "CertificateNo": "Certificaatnr.",
+        "Registrar": "Ambtenaar van de burgerlijke stand",
+        "Confirm": "Indienen",
+        "Close": "Annuleren",
+        "FileHint": "Alleen letters · 32 tekens · wordt direct ingediend",
+        "Marriage": {
+            "Title": "Huwelijksakte",
+            "Body": "Is wettelijk in het huwelijk verbonden en mag de hierboven vermelde wettelijke naam op alle officiële documenten gebruiken.",
+            "PetitionBody": "Bij indiening worden de namen hierboven geregistreerd als wettelijk in het huwelijk verbonden."
+        },
+        "NameChange": {
+            "Title": "Akte van wettelijke naamsverandering",
+            "Body": "Heeft een wettelijke naamsverandering aangevraagd en verkregen. De nieuwe wettelijke naam hierboven treedt direct bij indiening in werking.",
+            "PetitionBody": "Bij indiening wordt de naam hierboven de wettelijke naam in het register."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Naam succesvol gewijzigd naar %s %s",
-        "CertificateCreated": "Certificaat succesvol aangemaakt voor %s %s"
+        "CertificateCreated": "Certificaat succesvol aangemaakt voor %s %s",
+        "CannotCarryCertificate": "Je kunt nu geen ingevuld certificaat dragen."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Je hebt de vereiste baan niet om dit te gebruiken"
     },
     "BadWordFilter": {
         "FailedFilter": "Je kunt de naam %s %s niet gebruiken, het bevat een slecht woord"
+    },
+    "NameFilter": {
+        "InvalidName": "Die naam is niet toegestaan. Gebruik alleen letters en vermijd verboden woorden."
     },
     "FilledCertificate": {
         "Description": "Certificaat voor legale naamsverandering naar %s %s"

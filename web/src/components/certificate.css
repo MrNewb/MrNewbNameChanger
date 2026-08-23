@@ -1,0 +1,507 @@
+.certificate-app {
+  --paper-inset-top: 6.5%;
+  --paper-inset-inline: 8.5%;
+  --paper-inset-bottom: 7.5%;
+  --paper-ink: #2f2418;
+  --paper-ink-muted: #5a4a3a;
+  --paper-ink-hint: #6b5a48;
+  --paper-rule: rgba(47, 36, 24, 0.55);
+  --paper-wax: #8b1e2d;
+  --paper-wax-edge: #5c1010;
+  --paper-gold: #b08a4a;
+  --paper-shadow: rgba(24, 18, 12, 0.48);
+  --paper-error: #7a2e2e;
+  --paper-font: Georgia, 'Times New Roman', Times, serif;
+  --paper-ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: var(--paper-ui);
+}
+
+.certificate-veil {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 10, 14, 0.48);
+  pointer-events: none;
+  animation: certificate-veil-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.paper-shell {
+  position: relative;
+  z-index: 1;
+  animation: certificate-lay 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.certificate-app--closing {
+  pointer-events: none;
+}
+
+.certificate-app--closing .certificate-veil {
+  animation: certificate-veil-out 160ms cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+.certificate-app--closing .paper-shell {
+  animation: certificate-lift 180ms cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+.paper-container {
+  position: relative;
+  height: min(92vh, 58rem);
+  width: auto;
+  aspect-ratio: 1600 / 2133;
+  margin-inline: auto;
+  overflow: hidden;
+  box-shadow: 18px 20px 1.2rem var(--paper-shadow);
+}
+
+.paper-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  filter: contrast(1.04) saturate(0.9) brightness(1.01);
+}
+
+.paper-grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.11;
+  mix-blend-mode: multiply;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(50, 40, 30, 0.35) 0.45px, transparent 0.46px),
+    radial-gradient(circle at 72% 68%, rgba(45, 36, 28, 0.28) 0.4px, transparent 0.41px);
+  background-size: 3px 3px, 4px 4px;
+}
+
+.paper-fiber-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+  background-image: repeating-linear-gradient(
+    94deg,
+    transparent,
+    transparent 1px,
+    rgba(64, 52, 40, 0.14) 1px,
+    rgba(64, 52, 40, 0.14) 2px
+  );
+}
+
+.paper-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 92% 88% at 50% 48%, transparent 58%, rgba(110, 96, 78, 0.14) 100%);
+  mix-blend-mode: multiply;
+}
+
+.certificate-sheet {
+  position: absolute;
+  inset: var(--paper-inset-top) var(--paper-inset-inline) var(--paper-inset-bottom);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  color: var(--paper-ink);
+  background: transparent;
+}
+
+.certificate-header {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--paper-gold);
+  text-align: center;
+}
+
+.certificate-issuer {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--paper-ink-muted);
+}
+
+.certificate-subtitle,
+.certificate-input__label,
+.certificate-field__label,
+.certificate-signature__caption {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--paper-ink-muted);
+}
+
+.certificate-hint {
+  margin: 0.7rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: var(--paper-ink-muted);
+  text-align: center;
+}
+
+.certificate-subtitle {
+  margin-top: 0.2rem;
+  color: var(--paper-ink);
+}
+
+.certificate-title {
+  margin: 0.55rem 0 0;
+  font-family: var(--paper-font);
+  font-size: clamp(1.15rem, 2.4vh, 1.55rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--paper-ink);
+  text-wrap: balance;
+}
+
+.certificate-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 1.1rem;
+}
+
+.certificate-lead {
+  margin: 0;
+  font-family: var(--paper-font);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--paper-ink-muted);
+  text-align: center;
+}
+
+.certificate-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.15rem;
+  margin: 1.05rem 0 0;
+}
+
+.certificate-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.certificate-input__field {
+  width: 100%;
+  min-height: 2.35rem;
+  padding: 0.2rem 0.1rem 0.35rem;
+  border: 0;
+  border-bottom: 1px solid var(--paper-ink);
+  border-radius: 0;
+  background: transparent;
+  color: var(--paper-ink);
+  font-family: var(--paper-font);
+  font-size: 1.15rem;
+  line-height: 1.35;
+  transition: border-color 120ms ease;
+}
+
+.certificate-input__field::placeholder {
+  color: var(--paper-ink-hint);
+  font-family: var(--paper-ui);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.certificate-input__field:focus {
+  outline: none;
+  border-bottom-color: var(--paper-ink);
+  box-shadow: 0 1px 0 var(--paper-ink);
+}
+
+.certificate-input__field:focus-visible {
+  outline: none;
+}
+
+.certificate-inputs--error {
+  animation: certificate-shake 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.certificate-name {
+  margin: 1.05rem 0 0;
+  min-height: 2.4rem;
+  padding: 0.25rem 0.35rem 0.4rem;
+  border-bottom: 1px solid var(--paper-ink);
+  font-family: var(--paper-font);
+  font-size: clamp(1.4rem, 3vh, 1.85rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--paper-ink);
+  text-align: center;
+}
+
+.certificate-name--empty {
+  color: var(--paper-ink-hint);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.certificate-error {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--paper-error);
+  text-align: center;
+}
+
+.certificate-text {
+  margin: 0.9rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--paper-ink);
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.certificate-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 1.25rem;
+  align-items: end;
+  margin-top: 1.15rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--paper-rule);
+}
+
+.certificate-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.certificate-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--paper-rule);
+}
+
+.certificate-field__value {
+  font-family: var(--paper-font);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--paper-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.certificate-field__value--mono {
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.certificate-signature {
+  width: 11rem;
+  padding-top: 0.85rem;
+  text-align: center;
+}
+
+.certificate-signature__line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto 0.3rem;
+  background: var(--paper-ink);
+}
+
+.certificate-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.certificate-cancel {
+  order: 2;
+  border: 0;
+  padding: 0.2rem 0.15rem;
+  background: transparent;
+  color: var(--paper-ink-muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.certificate-cancel:hover {
+  color: var(--paper-ink);
+}
+
+.certificate-cancel:focus-visible {
+  outline: none;
+  color: var(--paper-ink);
+  box-shadow: 0 1px 0 var(--paper-ink);
+}
+
+.certificate-file:focus-visible {
+  outline: none;
+  box-shadow: 2px 3px 8px rgba(24, 18, 12, 0.35);
+}
+
+.certificate-file {
+  order: 1;
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--paper-wax);
+  color: #f5ebe0;
+  font-family: var(--paper-font);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 3px 8px rgba(24, 18, 12, 0.35);
+  transition: background 150ms ease, transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.certificate-file:hover:not(:disabled) {
+  background: #a61e1e;
+  transform: scale(1.04);
+}
+
+.certificate-file:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.certificate-file--stamping {
+  animation: certificate-stamp 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes certificate-veil-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes certificate-veil-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes certificate-lay {
+  from {
+    opacity: 0;
+    transform: translateY(-2.35rem) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(-0.45deg);
+  }
+}
+
+@keyframes certificate-lift {
+  from {
+    opacity: 1;
+    transform: translateY(0) rotate(-0.45deg);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1.15rem) rotate(2.2deg);
+  }
+}
+
+@keyframes certificate-stamp {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.84);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes certificate-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.35rem);
+  }
+  75% {
+    transform: translateX(0.35rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .paper-container {
+    width: min(36rem, 96vw);
+    height: auto;
+    max-height: 92vh;
+    aspect-ratio: 1600 / 2133;
+  }
+
+  .certificate-inputs,
+  .certificate-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-actions {
+    flex-direction: column-reverse;
+  }
+
+  .certificate-signature {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificate-veil,
+  .paper-shell,
+  .certificate-app--closing .certificate-veil,
+  .certificate-app--closing .paper-shell,
+  .certificate-inputs--error,
+  .certificate-file--stamping {
+    animation: none;
+  }
+
+  .certificate-input__field,
+  .certificate-file {
+    transition: none;
+  }
+
+  .certificate-file:hover:not(:disabled) {
+    transform: none;
+  }
+}

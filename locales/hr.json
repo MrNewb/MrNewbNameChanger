@@ -1,6 +1,6 @@
 {
     "NameChangeMenu": {
-        "Title":"Dokument za promjenu imena",
+        "Title": "Dokument za promjenu imena",
         "Submit": "Pošalji novo ime",
         "FirstName": "Ime",
         "DescriptionFirstName": "Unesite ime koje želite.",
@@ -15,15 +15,55 @@
         "LastName": "Prezime",
         "DescriptionLastName": "Unesite prezime za vjenčani list."
     },
+    "PedNameChangeMenu": {
+        "Title": "Zahtjev za legalnu promjenu imena",
+        "FirstName": "Ime",
+        "DescriptionFirstName": "Ime",
+        "LastName": "Prezime",
+        "DescriptionLastName": "Prezime"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Zatraži legalnu promjenu imena",
+        "NotEnoughMoney": "Za legalnu promjenu imena trebate $%s.",
+        "OnCooldown": "Morate pričekati %s prije nego što ponovno promijenite ime.",
+        "TooFar": "Predaleko ste od matičara.",
+        "Failed": "Promjena imena nije mogla biti dovršena."
+    },
+    "Certificate": {
+        "Issuer": "Odjel matičnih knjiga",
+        "Subtitle": "Država San Andreas",
+        "Certifies": "Ovaj dokument potvrđuje da",
+        "Petitions": "Ovaj dokument traži da",
+        "IssuedOn": "Izdano dana",
+        "CertificateNo": "Broj potvrde",
+        "Registrar": "Matičar",
+        "Confirm": "Podnesi",
+        "Close": "Odustani",
+        "FileHint": "Samo slova · 32 znaka · podnosi se odmah",
+        "Marriage": {
+            "Title": "Vjenčani list",
+            "Body": "Zakonito je sklopljen brak i ovlašten je koristiti gore navedeno legalno ime na svim službenim dokumentima.",
+            "PetitionBody": "Pri podnošenju gore navedena imena se upisuju kao zakonito vjenčana."
+        },
+        "NameChange": {
+            "Title": "Potvrda o legalnoj promjeni imena",
+            "Body": "Podnesen je i odobren zahtjev za legalnu promjenu imena. Novo legalno ime gore stupa na snagu odmah pri podnošenju.",
+            "PetitionBody": "Pri podnošenju ime gore postaje legalno ime u evidenciji."
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "Ime uspješno promijenjeno u %s %s",
-        "CertificateCreated": "Uspješno kreiran certifikat za %s %s"
+        "CertificateCreated": "Uspješno kreiran certifikat za %s %s",
+        "CannotCarryCertificate": "Trenutačno ne možete nositi ispunjenu potvrdu."
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nemate posao potreban za korištenje ovog"
     },
     "BadWordFilter": {
         "FailedFilter": "Ne možete koristiti ime %s %s, sadrži neprimjerenu riječ"
+    },
+    "NameFilter": {
+        "InvalidName": "To ime nije dopušteno. Koristite samo slova i izbjegavajte zabranjene riječi."
     },
     "FilledCertificate": {
         "Description": "Certifikat za zakonsku promjenu imena u %s %s"

@@ -15,15 +15,55 @@
         "LastName": "姓氏",
         "DescriptionLastName": "輸入結婚證上的姓氏。"
     },
+    "PedNameChangeMenu": {
+        "Title": "法定更名申請",
+        "FirstName": "名",
+        "DescriptionFirstName": "名",
+        "LastName": "姓",
+        "DescriptionLastName": "姓"
+    },
+    "PedNameChange": {
+        "TargetLabel": "申請法定更名",
+        "NotEnoughMoney": "法定更名需要 $%s。",
+        "OnCooldown": "再次更改姓名前必須等待 %s。",
+        "TooFar": "你離登記員太遠了。",
+        "Failed": "無法完成更名。"
+    },
+    "Certificate": {
+        "Issuer": "記錄局",
+        "Subtitle": "聖安地列斯州",
+        "Certifies": "本文件證明",
+        "Petitions": "本文件申請",
+        "IssuedOn": "簽發於",
+        "CertificateNo": "證書編號",
+        "Registrar": "戶籍登記官",
+        "Confirm": "提交",
+        "Close": "取消",
+        "FileHint": "僅限字母 · 32 個字元 · 立即提交",
+        "Marriage": {
+            "Title": "結婚證書",
+            "Body": "已依法結婚，並獲准在所有正式文件上使用上方法定姓名。",
+            "PetitionBody": "提交後，上方姓名將登記為依法結婚。"
+        },
+        "NameChange": {
+            "Title": "法定更名證書",
+            "Body": "已申請並獲准法定更名。上方新法定姓名在提交後立即生效。",
+            "PetitionBody": "提交後，上方姓名將成為登記的法定姓名。"
+        }
+    },
     "Notifications": {
         "NameChangeSuccess": "成功將姓名更改為 %s %s",
-        "CertificateCreated": "成功為 %s %s 創建證書"
+        "CertificateCreated": "成功為 %s %s 創建證書",
+        "CannotCarryCertificate": "你現在無法攜帶已填寫的證書。"
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "您沒有使用此功能所需的工作"
     },
     "BadWordFilter": {
         "FailedFilter": "您不能使用姓名 %s %s，它包含不當詞彙"
+    },
+    "NameFilter": {
+        "InvalidName": "該姓名不被允許。請僅使用字母並避免受限詞語。"
     },
     "FilledCertificate": {
         "Description": "合法更改姓名為 %s %s 的證書"
