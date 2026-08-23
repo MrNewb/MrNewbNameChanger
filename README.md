@@ -27,7 +27,7 @@ Clerk cooldown is `Config.RecordsClerk.Cooldown`, per character, in memory. A re
 bridge.inventory.addItem(src, 'namechangevoucher', 1)
 ```
 
-From other resources, server-side. Still runs the name filter:
+From other resources, server-side. Still runs the name filter. Does not consume an item or start the clerk cooldown:
 
 ```lua
 local ok = exports.MrNewbNameChanger:ChangePlayerName(src, 'Jane', 'Doe')
@@ -40,3 +40,5 @@ AddEventHandler('MrNewbNameChanger:Server:NameChanged', function(src, identifier
     -- logs, MDT, etc
 end)
 ```
+
+Full export and event docs: [mrnewb.github.io/docs/mrnewbnamechanger/exports](https://mrnewb.github.io/docs/mrnewbnamechanger/exports).
