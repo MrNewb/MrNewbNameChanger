@@ -1,6 +1,6 @@
 local function trimName(value)
     if type(value) ~= 'string' then return '' end
-    return value:gsub('^%s*(.-)%s*$', '%1')
+    return (value:gsub('^%s*(.-)%s*$', '%1'))
 end
 
 local function isLettersOnly(name)
@@ -11,11 +11,9 @@ local function hasBadWord(name)
     local words = Config.NameFilter and Config.NameFilter.BadWords or {}
     local lowered = name:lower()
 
-    for i = 1, #words do
-        local word = words[i]
-        if type(word) == 'string' and word ~= '' and lowered:find(word:lower(), 1, true) then
-            return true
-        end
+    for wordIndex = 1, #words do
+        local word = words[wordIndex]
+        if type(word) == 'string' and word ~= '' and lowered:find(word:lower(), 1, true) then return true end
     end
 
     return false

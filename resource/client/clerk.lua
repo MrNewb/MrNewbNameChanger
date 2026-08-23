@@ -1,130 +1,101 @@
-lib.locale()
+if not Config.RecordsClerk or not Config.RecordsClerk.Enabled then return end
 
-local clientPoints = {}
+local activeClerkInteractions = {}
+local nameChangeCooldownEndsAt = 0
+local nameChangeInProgress = false
 
-local function formatCooldown(seconds)
-    seconds = math.ceil(seconds)
-    if seconds >= 3600 then
-        local hours = math.floor(seconds / 3600)
-        local minutes = math.ceil((seconds % 3600) / 60)
-        return ('%s h %s m'):format(hours, minutes)
+local function getNameChangeCooldownRemaining()
+    if nameChangeCooldownEndsAt == 0 then return 0 end
+
+    local remainingSeconds = math.ceil((nameChangeCooldownEndsAt - GetGameTimer()) / 1000)
+    if remainingSeconds <= 0 then
+        nameChangeCooldownEndsAt = 0
+        return 0
     end
-
-    if seconds >= 60 then
-        return ('%s m'):format(math.ceil(seconds / 60))
-    end
-
-    return ('%s s'):format(seconds)
+    return remainingSeconds
 end
 
-local function openPedNameChange(locationId)
-    local locations = Config.RecordsClerk and Config.RecordsClerk.Locations
-    if not locations or not locations[locationId] then return end
-
-    local remaining = lib.callback.await('MrNewbNameChanger:Callback:GetPedCooldown', false)
-    if remaining and remaining > 0 then
-        bridge.notifications.notify({
-            description = locale('PedNameChange.OnCooldown', formatCooldown(remaining)),
-            type = 'error',
-            duration = 6000,
-        })
+local function setNameChangeCooldown(remainingSeconds)
+    if type(remainingSeconds) ~= 'number' or remainingSeconds <= 0 then
+        nameChangeCooldownEndsAt = 0
         return
     end
+    nameChangeCooldownEndsAt = GetGameTimer() + math.ceil(remainingSeconds) * 1000
+end
+
+local function startClerkNameChange(locationId)
+    if nameChangeInProgress then return end
+    if getNameChangeCooldownRemaining() > 0 then return end
+    if not Config.RecordsClerk.Locations[locationId] then return end
+
+    nameChangeInProgress = true
 
     local firstName, lastName = ShowCertificate('namechange', {
         allowInput = true,
         menuType = 'ped',
     })
-    if not firstName or not lastName then return end
 
-    TriggerServerEvent('MrNewbNameChanger:Server:PedNameChange', locationId, firstName, lastName)
+    if firstName and lastName then
+        local cooldownRemaining = lib.callback.await('MrNewbNameChanger:Callback:PedNameChange', false, locationId, firstName, lastName)
+        if type(cooldownRemaining) == 'number' and cooldownRemaining > 0 then
+            setNameChangeCooldown(cooldownRemaining)
+        end
+    end
+
+    nameChangeInProgress = false
 end
 
-local function createRecordsClerkPoint(id, data)
-    local point = {
-        id = id,
-        coords = data.Coords,
-        model = data.Model or 's_m_m_judge_01',
-        label = data.Label or locale('PedNameChange.TargetLabel'),
-        icon = data.Icon or 'fa-solid fa-id-card',
-        scenario = data.Scenario or 'WORLD_HUMAN_CLIPBOARD',
-        spawnRadius = data.SpawnRadius or 50.0,
-        interactDistance = data.InteractDistance or 2.5,
-        interactionId = nil,
-    }
-
-    function point.register()
-        if not point.coords then return end
-
-        point.interactionId = ('mrnewb_namechange_%s'):format(point.id:gsub('%s+', '_'):lower())
-
-        exports[bridge.name]:AddInteraction(point.interactionId, {
-            model = point.model,
-            coords = vector3(point.coords.x, point.coords.y, point.coords.z),
-            heading = point.coords.w or 0.0,
-            radius = point.spawnRadius,
-            scenario = point.scenario,
-            options = {
-                {
-                    name = ('NameChangePed_%s'):format(point.id),
-                    label = point.label,
-                    icon = point.icon,
-                    distance = point.interactDistance,
-                    onSelect = function()
-                        openPedNameChange(point.id)
-                    end,
+function CreateRecordsClerkLocations()
+    for locationId, location in pairs(Config.RecordsClerk.Locations or {}) do
+        if not activeClerkInteractions[locationId] and type(location) == 'table' and location.Coords then
+            local interactionId = ('MrNewbNameChanger:clerk:%s'):format(locationId)
+            exports[bridge.name]:AddInteraction(interactionId, {
+                model = location.Model or 's_m_m_judge_01',
+                coords = vector3(location.Coords.x, location.Coords.y, location.Coords.z),
+                heading = location.Coords.w or 0.0,
+                radius = location.SpawnRadius or 50.0,
+                scenario = location.Scenario or 'WORLD_HUMAN_CLIPBOARD',
+                options = {
+                    {
+                        name = interactionId,
+                        label = location.Label or locale('PedNameChange.TargetLabel'),
+                        icon = location.Icon or 'fa-solid fa-id-card',
+                        distance = location.InteractDistance or 2.5,
+                        canInteract = function()
+                            return not nameChangeInProgress and getNameChangeCooldownRemaining() <= 0
+                        end,
+                        onSelect = function()
+                            startClerkNameChange(locationId)
+                        end,
+                    },
                 },
-            },
-        })
-    end
-
-    function point.destroy()
-        if point.interactionId then
-            exports[bridge.name]:RemoveInteraction(point.interactionId)
-            point.interactionId = nil
-        end
-    end
-
-    return point
-end
-
-function CreatePedNameChangeLocations()
-    local clerkConfig = Config.RecordsClerk
-    if not clerkConfig or not clerkConfig.Enabled then return end
-
-    for id, entry in pairs(clerkConfig.Locations or {}) do
-        if not clientPoints[id] then
-            clientPoints[id] = createRecordsClerkPoint(id, entry)
-            clientPoints[id]:register()
+            })
+            activeClerkInteractions[locationId] = interactionId
         end
     end
 end
 
-function RemovePedNameChangeLocations()
-    for id, point in pairs(clientPoints) do
-        point:destroy()
-        clientPoints[id] = nil
+function RemoveRecordsClerkLocations()
+    for locationId, interactionId in pairs(activeClerkInteractions) do
+        exports[bridge.name]:RemoveInteraction(interactionId)
+        activeClerkInteractions[locationId] = nil
     end
 end
 
-AddEventHandler('Newb_Bridge:client:playerLoad', function()
-    Wait(1000)
-    CreatePedNameChangeLocations()
-end)
-
+AddEventHandler('Newb_Bridge:client:playerLoad', CreateRecordsClerkLocations)
 AddEventHandler('Newb_Bridge:client:playerUnload', function()
-    RemovePedNameChangeLocations()
+    nameChangeInProgress = false
+    nameChangeCooldownEndsAt = 0
+    RemoveRecordsClerkLocations()
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
-    RemovePedNameChangeLocations()
+    RemoveRecordsClerkLocations()
 end)
 
-AddEventHandler('onResourceStart', function(resourceName)
-    if GetCurrentResourceName() ~= resourceName then return end
-    CreateThread(function()
-        Wait(500)
-        CreatePedNameChangeLocations()
-    end)
+CreateThread(function()
+    Wait(500)
+    if next(activeClerkInteractions) then return end
+    CreateRecordsClerkLocations()
 end)

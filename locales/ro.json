@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "Document de Schimbare a Numelui",
-        "Submit": "Trimite Numele Nou",
         "FirstName": "Prenume",
-        "DescriptionFirstName": "Introdu prenumele pe care îl vrei.",
+        "DescriptionFirstName": "Prenume",
         "LastName": "Nume de Familie",
-        "DescriptionLastName": "Introdu numele de familie pe care îl vrei."
+        "DescriptionLastName": "Nume de Familie"
     },
     "MarriageMenu": {
-        "Title": "Certificat de Căsătorie",
-        "Submit": "Trimite Numele Nou",
         "FirstName": "Prenume",
-        "DescriptionFirstName": "Introdu prenumele pentru certificatul de căsătorie.",
+        "DescriptionFirstName": "Prenume",
         "LastName": "Nume de Familie",
-        "DescriptionLastName": "Introdu numele de familie pentru certificatul de căsătorie."
+        "DescriptionLastName": "Nume de Familie"
     },
     "PedNameChangeMenu": {
-        "Title": "Cerere de schimbare legală a numelui",
         "FirstName": "Prenume",
         "DescriptionFirstName": "Prenume",
         "LastName": "Nume",
         "DescriptionLastName": "Nume"
     },
     "PedNameChange": {
-        "TargetLabel": "Solicită schimbarea legală a numelui",
-        "NotEnoughMoney": "Ai nevoie de $%s pentru o schimbare legală a numelui.",
-        "OnCooldown": "Trebuie să aștepți %s înainte de a-ți schimba din nou numele.",
-        "TooFar": "Ești prea departe de funcționarul de stare civilă.",
-        "Failed": "Schimbarea numelui nu a putut fi finalizată."
+        "TargetLabel": "Schimbă numele",
+        "NotEnoughMoney": "Ai nevoie de $%s ca să-ți schimbi numele.",
+        "OnCooldown": "Așteaptă %s înainte să schimbi numele din nou.",
+        "TooFar": "Ești prea departe de funcționar.",
+        "Failed": "Schimbarea numelui a eșuat."
     },
     "Certificate": {
         "Issuer": "Departamentul de stare civilă",
         "Subtitle": "Statul San Andreas",
-        "Certifies": "Acest document certifică faptul că",
-        "Petitions": "Acest document solicită ca",
-        "IssuedOn": "Eliberat la",
+        "Certifies": "Se certifică faptul că",
+        "Petitions": "Se solicită ca",
+        "IssuedOn": "Emis",
         "CertificateNo": "Certificat nr.",
         "Registrar": "Ofițer de stare civilă",
         "Confirm": "Depune",
         "Close": "Anulează",
-        "FileHint": "Doar litere · 32 de caractere · se depune imediat",
+        "FileHint": "Doar litere, max. %s caractere",
         "Marriage": {
             "Title": "Certificat de căsătorie",
-            "Body": "A fost unit(ă) legal prin căsătorie și este autorizat(ă) să folosească numele legal de mai sus pe toate documentele oficiale.",
-            "PetitionBody": "La depunere, numele de mai sus sunt înregistrate ca unite legal prin căsătorie."
+            "Body": "este căsătorit(ă) legal sub acest nume.",
+            "PetitionBody": "să fie înregistrat(ă) ca fiind căsătorit(ă) sub acest nume."
         },
         "NameChange": {
-            "Title": "Certificat de schimbare legală a numelui",
-            "Body": "A solicitat și a primit o schimbare legală a numelui. Noul nume legal de mai sus intră în vigoare imediat la depunere.",
-            "PetitionBody": "La depunere, numele de mai sus devine numele legal din evidențe."
-        }
+            "Title": "Certificat de schimbare a numelui",
+            "Body": "este cunoscut(ă) de acum sub acest nume.",
+            "PetitionBody": "să fie înregistrat ca nume legal."
+        },
+        "Unavailable": "Certificatul nu s-a putut deschide."
     },
     "Notifications": {
-        "NameChangeSuccess": "Numele a fost schimbat cu succes în %s %s",
-        "CertificateCreated": "Certificatul a fost creat cu succes pentru %s %s",
-        "CannotCarryCertificate": "Nu poți purta un certificat completat acum."
+        "NameChangeSuccess": "Numele tău este acum %s %s.",
+        "CertificateCreated": "Certificat completat pentru %s %s.",
+        "CannotCarryCertificate": "Nu poți duce încă un certificat."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "Nu ai jobul necesar pentru a folosi aceasta"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Nu poți folosi numele %s %s, conține un cuvânt rău"
+        "YouDoNotHaveTheJob": "Nu ai jobul pentru asta."
     },
     "NameFilter": {
-        "InvalidName": "Acel nume nu este permis. Folosește doar litere și evită cuvintele restricționate."
+        "InvalidName": "Doar litere. Numele ăsta nu e permis."
     },
     "FilledCertificate": {
-        "Description": "Certificat pentru schimbarea legală a numelui în %s %s"
+        "Description": "Schimbare de nume în %s %s"
     }
 }

@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "Document van Naamsverandering",
-        "Submit": "Nieuwe Naam Indienen",
         "FirstName": "Voornaam",
-        "DescriptionFirstName": "Voer de voornaam in die je wilt.",
+        "DescriptionFirstName": "Voornaam",
         "LastName": "Achternaam",
-        "DescriptionLastName": "Voer de achternaam in die je wilt."
+        "DescriptionLastName": "Achternaam"
     },
     "MarriageMenu": {
-        "Title": "Huwelijksakte",
-        "Submit": "Nieuwe Naam Indienen",
         "FirstName": "Voornaam",
-        "DescriptionFirstName": "Voer de voornaam in voor de huwelijksakte.",
+        "DescriptionFirstName": "Voornaam",
         "LastName": "Achternaam",
-        "DescriptionLastName": "Voer de achternaam in voor de huwelijksakte."
+        "DescriptionLastName": "Achternaam"
     },
     "PedNameChangeMenu": {
-        "Title": "Verzoek tot wettelijke naamsverandering",
         "FirstName": "Voornaam",
         "DescriptionFirstName": "Voornaam",
         "LastName": "Achternaam",
         "DescriptionLastName": "Achternaam"
     },
     "PedNameChange": {
-        "TargetLabel": "Wettelijke naamsverandering aanvragen",
-        "NotEnoughMoney": "Je hebt $%s nodig voor een wettelijke naamsverandering.",
-        "OnCooldown": "Je moet %s wachten voordat je je naam opnieuw kunt wijzigen.",
-        "TooFar": "Je bent te ver van de ambtenaar van de burgerlijke stand.",
-        "Failed": "De naamsverandering kon niet worden voltooid."
+        "TargetLabel": "Naam wijzigen",
+        "NotEnoughMoney": "Je hebt $%s nodig om je naam te wijzigen.",
+        "OnCooldown": "Wacht %s voordat je je naam opnieuw wijzigt.",
+        "TooFar": "Je bent te ver van de ambtenaar.",
+        "Failed": "Naamswijziging mislukt."
     },
     "Certificate": {
         "Issuer": "Afdeling Burgerlijke Stand",
         "Subtitle": "Staat San Andreas",
-        "Certifies": "Dit document verklaart dat",
-        "Petitions": "Dit document verzoekt dat",
-        "IssuedOn": "Afgegeven op",
+        "Certifies": "Dit verklaart dat",
+        "Petitions": "Dit verzoekt dat",
+        "IssuedOn": "Afgegeven",
         "CertificateNo": "Certificaatnr.",
-        "Registrar": "Ambtenaar van de burgerlijke stand",
+        "Registrar": "Ambtenaar burgerlijke stand",
         "Confirm": "Indienen",
         "Close": "Annuleren",
-        "FileHint": "Alleen letters · 32 tekens · wordt direct ingediend",
+        "FileHint": "Alleen letters, max. %s tekens",
         "Marriage": {
             "Title": "Huwelijksakte",
-            "Body": "Is wettelijk in het huwelijk verbonden en mag de hierboven vermelde wettelijke naam op alle officiële documenten gebruiken.",
-            "PetitionBody": "Bij indiening worden de namen hierboven geregistreerd als wettelijk in het huwelijk verbonden."
+            "Body": "wettelijk getrouwd is onder deze naam.",
+            "PetitionBody": "als getrouwd onder deze naam wordt ingeschreven."
         },
         "NameChange": {
-            "Title": "Akte van wettelijke naamsverandering",
-            "Body": "Heeft een wettelijke naamsverandering aangevraagd en verkregen. De nieuwe wettelijke naam hierboven treedt direct bij indiening in werking.",
-            "PetitionBody": "Bij indiening wordt de naam hierboven de wettelijke naam in het register."
-        }
+            "Title": "Akte van naamsverandering",
+            "Body": "voortaan onder deze naam bekend staat.",
+            "PetitionBody": "als wettelijke naam wordt ingeschreven."
+        },
+        "Unavailable": "Akte kon niet worden geopend."
     },
     "Notifications": {
-        "NameChangeSuccess": "Naam succesvol gewijzigd naar %s %s",
-        "CertificateCreated": "Certificaat succesvol aangemaakt voor %s %s",
-        "CannotCarryCertificate": "Je kunt nu geen ingevuld certificaat dragen."
+        "NameChangeSuccess": "Je naam is nu %s %s.",
+        "CertificateCreated": "Akte ingevuld voor %s %s.",
+        "CannotCarryCertificate": "Je kunt geen extra akte dragen."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "Je hebt de vereiste baan niet om dit te gebruiken"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Je kunt de naam %s %s niet gebruiken, het bevat een slecht woord"
+        "YouDoNotHaveTheJob": "Je hebt de baan hiervoor niet."
     },
     "NameFilter": {
-        "InvalidName": "Die naam is niet toegestaan. Gebruik alleen letters en vermijd verboden woorden."
+        "InvalidName": "Alleen letters. Die naam mag niet."
     },
     "FilledCertificate": {
-        "Description": "Certificaat voor legale naamsverandering naar %s %s"
+        "Description": "Naamswijziging naar %s %s"
     }
 }

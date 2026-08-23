@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Naamveranderingsdokument",
-        "Submit": "Dien Nuwe Naam In",
         "FirstName": "Voornaam",
-        "DescriptionFirstName": "Sit die voornaam in wat jy wil hê.",
+        "DescriptionFirstName": "Voornaam",
         "LastName": "Van",
-        "DescriptionLastName": "Sit die van in wat jy wil hê."
+        "DescriptionLastName": "Van"
     },
     "MarriageMenu": {
-        "Title": "Huweliksertifikaat",
-        "Submit": "Dien Nuwe Naam In",
         "FirstName": "Voornaam",
-        "DescriptionFirstName": "Sit die voornaam in vir die huweliksertifikaat.",
+        "DescriptionFirstName": "Voornaam",
         "LastName": "Van",
-        "DescriptionLastName": "Sit die van in vir die huweliksertifikaat."
+        "DescriptionLastName": "Van"
     },
     "PedNameChangeMenu": {
-        "Title": "Wettige Naamveranderingsversoek",
         "FirstName": "Voornaam",
         "DescriptionFirstName": "Voornaam",
         "LastName": "Van",
@@ -39,7 +34,7 @@
         "Registrar": "Registrateur van belangrike rekords",
         "Confirm": "Lê in",
         "Close": "Kanselleer",
-        "FileHint": "Slegs letters · 32 karakters · lê dadelik in",
+        "FileHint": "Slegs letters, %s karakters, lê dadelik in",
         "Marriage": {
             "Title": "Huweliksertifikaat",
             "Body": "Is wettig in die huwelik verbind en mag die wettige naam hierbo op alle amptelike dokumente gebruik.",
@@ -49,7 +44,8 @@
             "Title": "Sertifikaat van Wettige Naamverandering",
             "Body": "Het ’n wettige naamverandering versoek en ontvang. Die nuwe wettige naam hierbo tree dadelik in werking by indiening.",
             "PetitionBody": "By indiening word die naam hierbo die wettige naam van rekord."
-        }
+        },
+        "Unavailable": "Die sertifikaat kon nie oopgemaak word nie"
     },
     "Notifications": {
         "NameChangeSuccess": "Naam suksesvol verander na %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Jy het nie die nodige werk om dit te gebruik nie"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Jy kan nie die naam %s %s gebruik nie, dit bevat 'n slegte woord"
     },
     "NameFilter": {
         "InvalidName": "Daardie naam word nie toegelaat nie. Gebruik slegs letters en vermy beperkte woorde."

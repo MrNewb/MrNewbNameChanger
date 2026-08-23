@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Névváltoztatási Okmány",
-        "Submit": "Új Név Beküldése",
         "FirstName": "Keresztnév",
-        "DescriptionFirstName": "Add meg a kívánt keresztnevet.",
+        "DescriptionFirstName": "Keresztnév",
         "LastName": "Vezetéknév",
-        "DescriptionLastName": "Add meg a kívánt vezetéknevet."
+        "DescriptionLastName": "Vezetéknév"
     },
     "MarriageMenu": {
-        "Title": "Házassági Okmány",
-        "Submit": "Új Név Beküldése",
         "FirstName": "Keresztnév",
-        "DescriptionFirstName": "Add meg a keresztnevet a házassági okmányhoz.",
+        "DescriptionFirstName": "Keresztnév",
         "LastName": "Vezetéknév",
-        "DescriptionLastName": "Add meg a vezetéknevet a házassági okmányhoz."
+        "DescriptionLastName": "Vezetéknév"
     },
     "PedNameChangeMenu": {
-        "Title": "Hivatalos névváltoztatási kérelem",
         "FirstName": "Keresztnév",
         "DescriptionFirstName": "Keresztnév",
         "LastName": "Vezetéknév",
@@ -39,7 +34,7 @@
         "Registrar": "Anyakönyvvezető",
         "Confirm": "Benyújtás",
         "Close": "Mégse",
-        "FileHint": "Csak betűk · 32 karakter · azonnal benyújtásra kerül",
+        "FileHint": "Csak betűk, %s karakter, azonnal benyújtásra kerül",
         "Marriage": {
             "Title": "Házassági anyakönyvi kivonat",
             "Body": "Törvényesen házasságot kötött, és jogosult a fenti hivatalos nevet minden hivatalos dokumentumon használni.",
@@ -49,7 +44,8 @@
             "Title": "Hivatalos névváltoztatási igazolás",
             "Body": "Hivatalos névváltoztatást kérelmezett és kapott. A fenti új hivatalos név a benyújtáskor azonnal hatályba lép.",
             "PetitionBody": "Benyújtáskor a fenti név válik a nyilvántartott hivatalos névvé."
-        }
+        },
+        "Unavailable": "A tanúsítványt nem sikerült megnyitni"
     },
     "Notifications": {
         "NameChangeSuccess": "A név sikeresen megváltoztatva erre: %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nincs meg a szükséges munkád ennek használatához"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Nem használhatod a %s %s nevet, káromkodást tartalmaz"
     },
     "NameFilter": {
         "InvalidName": "Ez a név nem engedélyezett. Csak betűket használj, és kerüld a tiltott szavakat."

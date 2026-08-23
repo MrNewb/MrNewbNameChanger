@@ -20,6 +20,7 @@ function normalizePayload(data: CertificateOpenPayload): CertificateOpenPayload 
     lastName: data.lastName ?? '',
     allowConfirm: data.allowConfirm !== false,
     allowInput: data.allowInput === true,
+    maxLength: Number(data.maxLength) > 0 ? Number(data.maxLength) : 32,
     issuedDate: data.issuedDate ?? '',
     certificateNo: data.certificateNo ?? '',
     labels: {

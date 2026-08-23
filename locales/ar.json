@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "وثيقة تغيير الاسم",
-        "Submit": "إرسال الاسم الجديد",
         "FirstName": "الاسم الأول",
-        "DescriptionFirstName": "أدخل الاسم الأول الذي تريده.",
+        "DescriptionFirstName": "الاسم الأول",
         "LastName": "اسم العائلة",
-        "DescriptionLastName": "أدخل اسم العائلة الذي تريده."
+        "DescriptionLastName": "اسم العائلة"
     },
     "MarriageMenu": {
-        "Title": "شهادة الزواج",
-        "Submit": "إرسال الاسم الجديد",
         "FirstName": "الاسم الأول",
-        "DescriptionFirstName": "أدخل الاسم الأول لشهادة الزواج.",
+        "DescriptionFirstName": "الاسم الأول",
         "LastName": "اسم العائلة",
-        "DescriptionLastName": "أدخل اسم العائلة لشهادة الزواج."
+        "DescriptionLastName": "اسم العائلة"
     },
     "PedNameChangeMenu": {
-        "Title": "طلب تغيير الاسم القانوني",
         "FirstName": "الاسم الأول",
         "DescriptionFirstName": "الاسم الأول",
         "LastName": "اسم العائلة",
@@ -39,7 +34,7 @@
         "Registrar": "مسجل السجلات الحيوية",
         "Confirm": "تقديم",
         "Close": "إلغاء",
-        "FileHint": "أحرف فقط · 32 حرفًا · يُقدَّم فورًا",
+        "FileHint": "أحرف فقط, %s حرفًا, يُقدَّم فورًا",
         "Marriage": {
             "Title": "شهادة زواج",
             "Body": "تم الزواج قانونيًا ويُسمح باستخدام الاسم القانوني أعلاه في جميع الوثائق الرسمية.",
@@ -49,7 +44,8 @@
             "Title": "شهادة تغيير الاسم القانوني",
             "Body": "تم تقديم طلب لتغيير الاسم القانوني والموافقة عليه. يصبح الاسم القانوني الجديد أعلاه ساريًا فور التقديم.",
             "PetitionBody": "عند التقديم، يصبح الاسم أعلاه الاسم القانوني المسجَّل."
-        }
+        },
+        "Unavailable": "تعذر فتح الشهادة"
     },
     "Notifications": {
         "NameChangeSuccess": "تم تغيير الاسم بنجاح إلى %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "ليس لديك الوظيفة المطلوبة لاستخدام هذا"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "لا يمكنك استخدام الاسم %s %s، يحتوي على كلمة سيئة"
     },
     "NameFilter": {
         "InvalidName": "هذا الاسم غير مسموح. استخدم الأحرف فقط وتجنب الكلمات المحظورة."

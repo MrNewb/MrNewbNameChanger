@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "Documento de Cambio de Nombre",
-        "Submit": "Enviar Nuevo Nombre",
         "FirstName": "Nombre",
-        "DescriptionFirstName": "Ingrese el nombre que desea.",
+        "DescriptionFirstName": "Nombre",
         "LastName": "Apellido",
-        "DescriptionLastName": "Ingrese el apellido que desea."
+        "DescriptionLastName": "Apellido"
     },
     "MarriageMenu": {
-        "Title": "Certificado de Matrimonio",
-        "Submit": "Enviar Nuevo Nombre",
         "FirstName": "Nombre",
-        "DescriptionFirstName": "Ingrese el nombre para el certificado de matrimonio.",
+        "DescriptionFirstName": "Nombre",
         "LastName": "Apellido",
-        "DescriptionLastName": "Ingrese el apellido para el certificado de matrimonio."
+        "DescriptionLastName": "Apellido"
     },
     "PedNameChangeMenu": {
-        "Title": "Solicitud de cambio legal de nombre",
         "FirstName": "Nombre",
         "DescriptionFirstName": "Nombre",
         "LastName": "Apellido",
         "DescriptionLastName": "Apellido"
     },
     "PedNameChange": {
-        "TargetLabel": "Solicitar cambio legal de nombre",
-        "NotEnoughMoney": "Necesitas $%s para un cambio legal de nombre.",
-        "OnCooldown": "Debes esperar %s antes de cambiar tu nombre de nuevo.",
-        "TooFar": "Estás demasiado lejos del empleado de registros.",
-        "Failed": "No se pudo completar el cambio de nombre."
+        "TargetLabel": "Cambiar nombre",
+        "NotEnoughMoney": "Necesitas $%s para cambiar el nombre.",
+        "OnCooldown": "Espera %s antes de volver a cambiar el nombre.",
+        "TooFar": "Estás demasiado lejos del empleado.",
+        "Failed": "No se pudo cambiar el nombre."
     },
     "Certificate": {
         "Issuer": "Departamento de Registros",
         "Subtitle": "Estado de San Andreas",
-        "Certifies": "Este documento certifica que",
-        "Petitions": "Este documento solicita que",
-        "IssuedOn": "Emitido el",
+        "Certifies": "Se certifica que",
+        "Petitions": "Se solicita que",
+        "IssuedOn": "Emitido",
         "CertificateNo": "Certificado n.º",
-        "Registrar": "Registrador del estado civil",
+        "Registrar": "Oficial del registro",
         "Confirm": "Presentar",
         "Close": "Cancelar",
-        "FileHint": "Solo letras · 32 caracteres · se presenta de inmediato",
+        "FileHint": "Solo letras, máximo %s caracteres",
         "Marriage": {
             "Title": "Certificado de matrimonio",
-            "Body": "Ha sido unido legalmente en matrimonio y está autorizado a usar el nombre legal indicado arriba en todos los documentos oficiales.",
-            "PetitionBody": "Al presentarlo, los nombres de arriba se registran como legalmente unidos en matrimonio."
+            "Body": "está legalmente casado/a con este nombre.",
+            "PetitionBody": "quede registrado como casado/a con este nombre."
         },
         "NameChange": {
-            "Title": "Certificado de cambio legal de nombre",
-            "Body": "Ha solicitado y obtenido un cambio legal de nombre. El nuevo nombre legal de arriba entra en vigor de inmediato al presentarlo.",
-            "PetitionBody": "Al presentarlo, el nombre de arriba se convierte en el nombre legal registrado."
-        }
+            "Title": "Certificado de cambio de nombre",
+            "Body": "pasa a llamarse así.",
+            "PetitionBody": "quede registrado como su nombre legal."
+        },
+        "Unavailable": "No se pudo abrir el certificado."
     },
     "Notifications": {
-        "NameChangeSuccess": "Nombre cambiado exitosamente a %s %s",
-        "CertificateCreated": "Certificado creado exitosamente para %s %s",
-        "CannotCarryCertificate": "No puedes llevar un certificado rellenado ahora mismo."
+        "NameChangeSuccess": "Tu nombre es ahora %s %s.",
+        "CertificateCreated": "Certificado rellenado para %s %s.",
+        "CannotCarryCertificate": "No puedes llevar otro certificado."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "No tienes el trabajo requerido para usar esto"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "No puedes usar el nombre %s %s, contiene una palabra prohibida"
+        "YouDoNotHaveTheJob": "No tienes el trabajo para esto."
     },
     "NameFilter": {
-        "InvalidName": "Ese nombre no está permitido. Usa solo letras y evita palabras restringidas."
+        "InvalidName": "Solo letras. Ese nombre no está permitido."
     },
     "FilledCertificate": {
-        "Description": "Certificado para el cambio legal de nombre a %s %s"
+        "Description": "Cambio de nombre a %s %s"
     }
 }

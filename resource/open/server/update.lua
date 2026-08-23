@@ -1,8 +1,3 @@
---[[
-	Framework-specific character name write. Override for custom multi-char / identity resources.
-	Returns true when the live player name was updated.
-]]
-
 ---@param src number
 ---@param firstName string
 ---@param lastName string
@@ -18,42 +13,39 @@ function OpenUpdatePlayerName(src, firstName, lastName)
 		local charInfo = player.PlayerData.charinfo or {}
 		charInfo.firstname = firstName
 		charInfo.lastname = lastName
+
 		player.Functions.SetPlayerData('charinfo', charInfo)
 		player.Functions.Save()
-		player.Functions.UpdatePlayerData(false)
-		TriggerClientEvent('QBCore:Player:UpdatePlayerData', src)
 		return true
 	end
 
 	if framework == 'qbx_core' then
-		local player = exports.qbx_core:GetPlayer(src)
-		if not player then return false end
+		if not exports.qbx_core:GetPlayer(src) then return false end
 
-		local charInfo = player.PlayerData.charinfo or {}
-		charInfo.firstname = firstName
-		charInfo.lastname = lastName
-		player.Functions.SetPlayerData('charinfo', charInfo)
-		player.Functions.Save()
-		player.Functions.UpdatePlayerData(false)
-		TriggerClientEvent('QBCore:Player:UpdatePlayerData', src)
+		exports.qbx_core:SetCharInfo(src, 'firstname', firstName)
+		exports.qbx_core:SetCharInfo(src, 'lastname', lastName)
+		exports.qbx_core:Save(src)
 		return true
 	end
 
 	if framework == 'es_extended' then
-		-- probably works?
 		local ESX = exports.es_extended:getSharedObject()
 		local xPlayer = ESX.GetPlayerFromId(src)
 		if not xPlayer then return false end
 
-		xPlayer.setName(('%s %s'):format(firstName, lastName))
+		if type(xPlayer.setName) == 'function' then
+			xPlayer.setName(('%s %s'):format(firstName, lastName))
+		end
+
 		xPlayer.set('firstName', firstName)
 		xPlayer.set('lastName', lastName)
-		MySQL.update.await('UPDATE users SET firstname = ?, lastname = ? WHERE identifier = ?', {
+
+		local affected = MySQL.update.await('UPDATE users SET firstname = ?, lastname = ? WHERE identifier = ?', {
 			firstName,
 			lastName,
 			xPlayer.identifier,
 		})
-		return true
+		return (affected or 0) > 0
 	end
 
 	return false

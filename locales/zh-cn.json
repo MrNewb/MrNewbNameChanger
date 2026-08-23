@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "姓名更改文件",
-        "Submit": "提交新姓名",
         "FirstName": "名字",
-        "DescriptionFirstName": "输入您想要的名字。",
+        "DescriptionFirstName": "名字",
         "LastName": "姓氏",
-        "DescriptionLastName": "输入您想要的姓氏。"
+        "DescriptionLastName": "姓氏"
     },
     "MarriageMenu": {
-        "Title": "结婚证",
-        "Submit": "提交新姓名",
         "FirstName": "名字",
-        "DescriptionFirstName": "输入结婚证上的名字。",
+        "DescriptionFirstName": "名字",
         "LastName": "姓氏",
-        "DescriptionLastName": "输入结婚证上的姓氏。"
+        "DescriptionLastName": "姓氏"
     },
     "PedNameChangeMenu": {
-        "Title": "法定更名申请",
         "FirstName": "名",
         "DescriptionFirstName": "名",
         "LastName": "姓",
         "DescriptionLastName": "姓"
     },
     "PedNameChange": {
-        "TargetLabel": "申请法定更名",
-        "NotEnoughMoney": "法定更名需要 $%s。",
-        "OnCooldown": "再次更改姓名前必须等待 %s。",
-        "TooFar": "你离登记员太远了。",
-        "Failed": "无法完成更名。"
+        "TargetLabel": "改名",
+        "NotEnoughMoney": "改名需要 $%s。",
+        "OnCooldown": "等 %s 后再改名。",
+        "TooFar": "离职员太远了。",
+        "Failed": "改名失败。"
     },
     "Certificate": {
         "Issuer": "记录局",
         "Subtitle": "圣安地列斯州",
-        "Certifies": "本文件证明",
-        "Petitions": "本文件申请",
-        "IssuedOn": "签发于",
+        "Certifies": "兹证明",
+        "Petitions": "兹申请",
+        "IssuedOn": "签发",
         "CertificateNo": "证书编号",
-        "Registrar": "户籍登记官",
+        "Registrar": "登记员",
         "Confirm": "提交",
         "Close": "取消",
-        "FileHint": "仅限字母 · 32 个字符 · 立即提交",
+        "FileHint": "仅限字母，最多 %s 个字符",
         "Marriage": {
             "Title": "结婚证书",
-            "Body": "已依法结婚，并获准在所有正式文件上使用上方法定姓名。",
-            "PetitionBody": "提交后，上方姓名将登记为依法结婚。"
+            "Body": "已用此姓名合法结婚。",
+            "PetitionBody": "登记为以此姓名结婚。"
         },
         "NameChange": {
-            "Title": "法定更名证书",
-            "Body": "已申请并获准法定更名。上方新法定姓名在提交后立即生效。",
-            "PetitionBody": "提交后，上方姓名将成为登记的法定姓名。"
-        }
+            "Title": "更名证明",
+            "Body": "现用此姓名。",
+            "PetitionBody": "登记为此法定姓名。"
+        },
+        "Unavailable": "打不开证书。"
     },
     "Notifications": {
-        "NameChangeSuccess": "成功将姓名更改为 %s %s",
-        "CertificateCreated": "成功为 %s %s 创建证书",
-        "CannotCarryCertificate": "你现在无法携带已填写的证书。"
+        "NameChangeSuccess": "你的名字现在是 %s %s。",
+        "CertificateCreated": "已为 %s %s 填好证书。",
+        "CannotCarryCertificate": "带不了另一份证书。"
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "您没有使用此功能所需的工作"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "您不能使用姓名 %s %s，它包含不当词汇"
+        "YouDoNotHaveTheJob": "你没有这份工作。"
     },
     "NameFilter": {
-        "InvalidName": "该姓名不被允许。请仅使用字母并避免受限词语。"
+        "InvalidName": "只能用字母。这个名字不行。"
     },
     "FilledCertificate": {
-        "Description": "合法更改姓名为 %s %s 的证书"
+        "Description": "更名为 %s %s"
     }
 }

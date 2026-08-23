@@ -14,7 +14,7 @@ function isLettersOnly(value: string) {
 }
 
 export function Certificate({ payload, onClose }: CertificateProps) {
-  const { allowConfirm, allowInput, issuedDate, certificateNo, labels, inputLabels } = payload;
+  const { allowConfirm, allowInput, maxLength, issuedDate, certificateNo, labels, inputLabels } = payload;
   const [firstName, setFirstName] = useState(payload.firstName ?? '');
   const [lastName, setLastName] = useState(payload.lastName ?? '');
   const [nameError, setNameError] = useState('');
@@ -35,9 +35,10 @@ export function Certificate({ payload, onClose }: CertificateProps) {
   }, [closing, onClose]);
 
   const dismiss = useCallback(() => {
+    if (submitting || closing) return;
     postNui('certificateResult', { confirmed: false });
     closeOverlay();
-  }, [closeOverlay]);
+  }, [closeOverlay, closing, submitting]);
 
   const fileCertificate = async () => {
     if (!allowConfirm || !canConfirm || submitting || closing) return;
@@ -68,6 +69,10 @@ export function Certificate({ payload, onClose }: CertificateProps) {
       setStamping(false);
     }
   };
+
+  useEffect(() => {
+    postNui('certificateReady');
+  }, []);
 
   useEffect(() => {
     setFirstName(payload.firstName ?? '');
@@ -134,7 +139,7 @@ export function Certificate({ payload, onClose }: CertificateProps) {
                       className="certificate-input__field"
                       type="text"
                       value={firstName}
-                      maxLength={32}
+                      maxLength={maxLength}
                       placeholder={inputLabels.firstNameHint}
                       autoComplete="off"
                       spellCheck={false}
@@ -152,7 +157,7 @@ export function Certificate({ payload, onClose }: CertificateProps) {
                       className="certificate-input__field"
                       type="text"
                       value={lastName}
-                      maxLength={32}
+                      maxLength={maxLength}
                       placeholder={inputLabels.lastNameHint}
                       autoComplete="off"
                       spellCheck={false}
@@ -166,7 +171,7 @@ export function Certificate({ payload, onClose }: CertificateProps) {
                 </div>
               ) : (
                 <p className={`certificate-name${legalName ? '' : ' certificate-name--empty'}`}>
-                  {legalName || '—'}
+                  {legalName}
                 </p>
               )}
 
@@ -202,7 +207,7 @@ export function Certificate({ payload, onClose }: CertificateProps) {
               </div>
 
               <div className="certificate-actions">
-                <button type="button" className="certificate-cancel" onClick={dismiss}>
+                <button type="button" className="certificate-cancel" onClick={dismiss} disabled={submitting}>
                   {labels.close}
                 </button>
                 {allowConfirm ? (

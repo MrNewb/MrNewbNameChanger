@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "Name Change Document",
-        "Submit": "Submit New Name",
         "FirstName": "First Name",
         "DescriptionFirstName": "First name",
         "LastName": "Last Name",
         "DescriptionLastName": "Last name"
     },
     "MarriageMenu": {
-        "Title": "Marriage Certificate",
-        "Submit": "Submit New Name",
         "FirstName": "First Name",
         "DescriptionFirstName": "First name",
         "LastName": "Last Name",
         "DescriptionLastName": "Last name"
     },
     "PedNameChangeMenu": {
-        "Title": "Legal Name Change Request",
         "FirstName": "First Name",
         "DescriptionFirstName": "First name",
         "LastName": "Last Name",
         "DescriptionLastName": "Last name"
     },
     "PedNameChange": {
-        "TargetLabel": "Request Legal Name Change",
-        "NotEnoughMoney": "You need $%s for a legal name change.",
-        "OnCooldown": "You must wait %s before changing your name again.",
-        "TooFar": "You are too far from the records clerk.",
-        "Failed": "The name change could not be completed."
+        "TargetLabel": "Change Name",
+        "NotEnoughMoney": "You need $%s to change your name.",
+        "OnCooldown": "Wait %s before changing your name again.",
+        "TooFar": "You're too far from the clerk.",
+        "Failed": "Name change failed."
     },
     "Certificate": {
         "Issuer": "Department of Records",
         "Subtitle": "State of San Andreas",
-        "Certifies": "This document certifies that",
-        "Petitions": "This document petitions that",
-        "IssuedOn": "Issued on",
+        "Certifies": "This certifies that",
+        "Petitions": "This petitions that",
+        "IssuedOn": "Issued",
         "CertificateNo": "Certificate no.",
-        "Registrar": "Registrar of vital records",
+        "Registrar": "City Clerk",
         "Confirm": "File",
         "Close": "Cancel",
-        "FileHint": "Letters only · 32 characters · files immediately",
+        "FileHint": "Letters only, %s characters max",
         "Marriage": {
             "Title": "Certificate of Marriage",
-            "Body": "Has been lawfully joined in marriage and is authorized to use the legal name shown above on all official documents.",
-            "PetitionBody": "Upon filing, the names above are recorded as lawfully joined in marriage."
+            "Body": "is legally married under this name.",
+            "PetitionBody": "be recorded as married under this name."
         },
         "NameChange": {
-            "Title": "Certificate of Legal Name Change",
-            "Body": "Has petitioned for and been granted a legal change of name. The new legal name above is effective immediately upon filing.",
-            "PetitionBody": "Upon filing, the name above becomes the legal name of record."
-        }
+            "Title": "Certificate of Name Change",
+            "Body": "is now known by this name.",
+            "PetitionBody": "be recorded as their legal name."
+        },
+        "Unavailable": "Couldn't open the certificate."
     },
     "Notifications": {
         "NameChangeSuccess": "Your name is now %s %s.",
-        "CertificateCreated": "Filled a certificate for %s %s.",
-        "CannotCarryCertificate": "You cannot carry a filled certificate right now."
+        "CertificateCreated": "Filled out a certificate for %s %s.",
+        "CannotCarryCertificate": "You can't carry another certificate."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "You don't have the job required to use this."
-    },
-    "BadWordFilter": {
-        "FailedFilter": "You can't use the name %s %s. It contains a restricted word."
+        "YouDoNotHaveTheJob": "You don't have the job for this."
     },
     "NameFilter": {
-        "InvalidName": "That name is not allowed. Use letters only and avoid restricted words."
+        "InvalidName": "Letters only. That name isn't allowed."
     },
     "FilledCertificate": {
-        "Description": "Certificate for legal name change to %s %s"
+        "Description": "Name change to %s %s"
     }
 }

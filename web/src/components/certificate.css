@@ -221,14 +221,11 @@
   letter-spacing: 0;
 }
 
-.certificate-input__field:focus {
-  outline: none;
-  border-bottom-color: var(--paper-ink);
-  box-shadow: 0 1px 0 var(--paper-ink);
-}
-
+.certificate-input__field:focus,
 .certificate-input__field:focus-visible {
   outline: none;
+  box-shadow: none;
+  border-bottom-color: var(--paper-ink);
 }
 
 .certificate-inputs--error {

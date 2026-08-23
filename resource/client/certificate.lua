@@ -1,16 +1,13 @@
-lib.locale()
-
 local certificateResult
+local awaitingCertificate = false
+local uiAcknowledged = false
+
+local readyTimeoutMs = 2000
+local resultTimeoutMs = 300000
 
 local monthNames = {
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December',
-}
-
-local menuPrefixes = {
-    marriage = 'MarriageMenu',
-    personal = 'NameChangeMenu',
-    ped = 'PedNameChangeMenu',
 }
 
 local function formatIssuedDate()
@@ -23,72 +20,23 @@ local function formatCertificateDateStamp()
     return ('%04d%02d%02d'):format(year, month, day)
 end
 
-local function buildInputLabels(menuType)
-    local prefix = menuPrefixes[menuType] or menuPrefixes.personal
-    return {
-        firstName = locale(prefix .. '.FirstName'),
-        lastName = locale(prefix .. '.LastName'),
-        firstNameHint = locale(prefix .. '.DescriptionFirstName'),
-        lastNameHint = locale(prefix .. '.DescriptionLastName'),
-    }
-end
-
-local function buildLabels(documentType, allowInput)
-    local prefix = documentType == 'marriage' and 'Certificate.Marriage' or 'Certificate.NameChange'
-    return {
-        issuer = locale('Certificate.Issuer'),
-        title = locale(prefix .. '.Title'),
-        subtitle = locale('Certificate.Subtitle'),
-        lead = allowInput and locale('Certificate.Petitions') or locale('Certificate.Certifies'),
-        body = allowInput and locale(prefix .. '.PetitionBody') or locale(prefix .. '.Body'),
-        issuedOn = locale('Certificate.IssuedOn'),
-        certificateNo = locale('Certificate.CertificateNo'),
-        registrar = locale('Certificate.Registrar'),
-        confirm = locale('Certificate.Confirm'),
-        close = locale('Certificate.Close'),
-        fileHint = locale('Certificate.FileHint'),
-        invalidName = locale('NameFilter.InvalidName'),
-    }
-end
-
 local function buildCertificateNo(documentType)
     local prefix = documentType == 'marriage' and 'MC' or 'NC'
     return ('%s-%s-%s'):format(prefix, formatCertificateDateStamp(), lib.string.random('AAAA1111'))
 end
 
-RegisterNUICallback('certificateResult', function(data, cb)
-    if type(data) ~= 'table' then
-        cb({ ok = false })
-        return
-    end
-
-    if data.confirmed == true then
-        local firstName, lastName = ParsePlayerName(data.firstName, data.lastName)
-        if not firstName or not lastName then
-            cb({ ok = false })
-            return
-        end
-        certificateResult = {
-            confirmed = true,
-            firstName = firstName,
-            lastName = lastName,
-        }
-    else
-        certificateResult = { confirmed = false }
-    end
+local function finishCertificate(result)
+    if not awaitingCertificate then return end
 
     SetNuiFocus(false, false)
-    cb({ ok = true })
-end)
+    certificateResult = result
+    awaitingCertificate = false
+end
 
-function ShowCertificate(documentType, options)
-    options = options or {}
-
-    local allowInput = options.allowInput == true
-    local allowConfirm = options.allowConfirm ~= false
-    local menuType = options.menuType or (documentType == 'marriage' and 'marriage' or 'personal')
-
+local function openCertificateUi(documentType, options, allowInput, allowConfirm, maxLength, labels, inputLabels)
     certificateResult = nil
+    awaitingCertificate = true
+    uiAcknowledged = false
 
     SendNUIMessage({
         action = 'openCertificate',
@@ -97,40 +45,105 @@ function ShowCertificate(documentType, options)
         lastName = options.lastName or '',
         allowConfirm = allowConfirm,
         allowInput = allowInput,
+        maxLength = maxLength,
         issuedDate = formatIssuedDate(),
         certificateNo = buildCertificateNo(documentType),
-        labels = buildLabels(documentType, allowInput),
-        inputLabels = allowInput and buildInputLabels(menuType) or nil,
+        labels = labels,
+        inputLabels = inputLabels,
     })
 
     SetNuiFocus(true, true)
+end
 
-    while certificateResult == nil do
+local function waitForCertificateReady()
+    local deadline = GetGameTimer() + readyTimeoutMs
+    while awaitingCertificate and not uiAcknowledged and GetGameTimer() < deadline do
         Wait(50)
     end
 
-    if not certificateResult.confirmed then
+    if awaitingCertificate and not uiAcknowledged then
+        finishCertificate({ confirmed = false })
+        bridge.notifications.notify({ description = locale('Certificate.Unavailable'), type = 'error' })
+        return false
+    end
+
+    return true
+end
+
+local function waitForCertificateResult()
+    local deadline = GetGameTimer() + resultTimeoutMs
+    while awaitingCertificate and GetGameTimer() < deadline do
+        Wait(50)
+    end
+
+    if awaitingCertificate then
+        finishCertificate({ confirmed = false })
+        bridge.notifications.notify({ description = locale('Certificate.Unavailable'), type = 'error' })
+        return false
+    end
+
+    return true
+end
+
+local function resolveCertificateNames(options, allowInput)
+    if not certificateResult or not certificateResult.confirmed then
         return nil, nil
     end
 
-    local firstName = certificateResult.firstName
-    local lastName = certificateResult.lastName
-
-    if allowInput and (firstName == '' or lastName == '') then
-        return nil, nil
+    if not allowInput then
+        return ParsePlayerName(options.firstName, options.lastName)
     end
 
-    if allowInput then
-        return ParsePlayerName(firstName, lastName)
+    return ParsePlayerName(certificateResult.firstName, certificateResult.lastName)
+end
+
+RegisterNUICallback('certificateReady', function(_, cb)
+    uiAcknowledged = true
+    cb(1)
+end)
+
+RegisterNUICallback('certificateResult', function(data, cb)
+    if not awaitingCertificate or type(data) ~= 'table' then
+        cb({ ok = false })
+        return
     end
 
-    return ParsePlayerName(options.firstName, options.lastName)
+    if data.confirmed ~= true then
+        finishCertificate({ confirmed = false })
+        cb({ ok = true })
+        return
+    end
+
+    local firstName, lastName = ParsePlayerName(data.firstName, data.lastName)
+    if not firstName or not lastName then
+        cb({ ok = false })
+        return
+    end
+
+    finishCertificate({ confirmed = true, firstName = firstName, lastName = lastName })
+    cb({ ok = true })
+end)
+
+function ShowCertificate(documentType, options)
+    if awaitingCertificate then return end
+
+    options = options or {}
+
+    local allowInput = options.allowInput == true
+    local allowConfirm = options.allowConfirm ~= false
+    local menuType = options.menuType or (documentType == 'marriage' and 'marriage' or 'personal')
+    local maxLength = Config.NameFilter and Config.NameFilter.MaxLength or 32
+    local labels, inputLabels = BuildCertificateLabels(documentType, allowInput, maxLength, menuType)
+
+    openCertificateUi(documentType, options, allowInput, allowConfirm, maxLength, labels, inputLabels)
+    if not waitForCertificateReady() then return end
+    if not waitForCertificateResult() then return end
+
+    return resolveCertificateNames(options, allowInput)
 end
 
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName ~= GetCurrentResourceName() then return end
+    finishCertificate({ confirmed = false })
     SetNuiFocus(false, false)
-    if certificateResult == nil then
-        certificateResult = { confirmed = false }
-    end
 end)

@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Dokument Promene Imena",
-        "Submit": "Pošaljite Novo Ime",
         "FirstName": "Ime",
-        "DescriptionFirstName": "Unesite ime koje želite.",
+        "DescriptionFirstName": "Ime",
         "LastName": "Prezime",
-        "DescriptionLastName": "Unesite prezime koje želite."
+        "DescriptionLastName": "Prezime"
     },
     "MarriageMenu": {
-        "Title": "Sertifikat Braka",
-        "Submit": "Pošaljite Novo Ime",
         "FirstName": "Ime",
-        "DescriptionFirstName": "Unesite ime za sertifikat braka.",
+        "DescriptionFirstName": "Ime",
         "LastName": "Prezime",
-        "DescriptionLastName": "Unesite prezime za sertifikat braka."
+        "DescriptionLastName": "Prezime"
     },
     "PedNameChangeMenu": {
-        "Title": "Žádost o legální změnu jména",
         "FirstName": "Jméno",
         "DescriptionFirstName": "Jméno",
         "LastName": "Příjmení",
@@ -39,7 +34,7 @@
         "Registrar": "Matrikář",
         "Confirm": "Podat",
         "Close": "Zrušit",
-        "FileHint": "Pouze písmena · 32 znaků · podá se ihned",
+        "FileHint": "Pouze písmena, %s znaků, podá se ihned",
         "Marriage": {
             "Title": "Oddací list",
             "Body": "Byli zákonně oddáni a jsou oprávněni používat výše uvedené legální jméno na všech oficiálních dokumentech.",
@@ -49,7 +44,8 @@
             "Title": "Osvědčení o legální změně jména",
             "Body": "Bylo podáno a schváleno žádání o legální změnu jména. Nové legální jméno výše nabývá účinnosti ihned po podání.",
             "PetitionBody": "Po podání se jméno výše stává legálním jménem v evidenci."
-        }
+        },
+        "Unavailable": "Certifikát se nepodařilo otevřít"
     },
     "Notifications": {
         "NameChangeSuccess": "Ime je uspešno promenjeno u %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nemate potreban posao da biste ovo koristili"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Ne možete koristiti ime %s %s, sadrži lošu reč"
     },
     "NameFilter": {
         "InvalidName": "Toto jméno není povoleno. Používejte pouze písmena a vyhněte se zakázaným slovům."

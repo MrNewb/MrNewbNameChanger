@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Nimen Muutosdokumentti",
-        "Submit": "Lähetä Uusi Nimi",
         "FirstName": "Etunimi",
-        "DescriptionFirstName": "Syötä haluamasi etunimi.",
+        "DescriptionFirstName": "Etunimi",
         "LastName": "Sukunimi",
-        "DescriptionLastName": "Syötä haluamasi sukunimi."
+        "DescriptionLastName": "Sukunimi"
     },
     "MarriageMenu": {
-        "Title": "Avioliittotodistus",
-        "Submit": "Lähetä Uusi Nimi",
         "FirstName": "Etunimi",
-        "DescriptionFirstName": "Syötä etunimi avioliittotodistukseen.",
+        "DescriptionFirstName": "Etunimi",
         "LastName": "Sukunimi",
-        "DescriptionLastName": "Syötä sukunimi avioliittotodistukseen."
+        "DescriptionLastName": "Sukunimi"
     },
     "PedNameChangeMenu": {
-        "Title": "Virallinen nimenmuutospyyntö",
         "FirstName": "Etunimi",
         "DescriptionFirstName": "Etunimi",
         "LastName": "Sukunimi",
@@ -39,7 +34,7 @@
         "Registrar": "Väestörekisterin pitäjä",
         "Confirm": "Jätä",
         "Close": "Peruuta",
-        "FileHint": "Vain kirjaimia · 32 merkkiä · jätetään heti",
+        "FileHint": "Vain kirjaimia, %s merkkiä, jätetään heti",
         "Marriage": {
             "Title": "Vihkitodistus",
             "Body": "On laillisesti vihitty ja oikeutettu käyttämään yllä olevaa laillista nimeä kaikissa virallisissa asiakirjoissa.",
@@ -49,7 +44,8 @@
             "Title": "Todistus laillisesta nimenmuutoksesta",
             "Body": "On hakenut ja saanut laillisen nimenmuutoksen. Yllä oleva uusi laillinen nimi tulee voimaan heti jättämisen yhteydessä.",
             "PetitionBody": "Jättämisen yhteydessä yllä olevasta nimestä tulee rekisteröity laillinen nimi."
-        }
+        },
+        "Unavailable": "Todistusta ei voitu avata"
     },
     "Notifications": {
         "NameChangeSuccess": "Nimi vaihdettu onnistuneesti nimeen %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Sinulla ei ole tarvittavaa työtä tämän käyttöön"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Et voi käyttää nimeä %s %s, se sisältää sopimattoman sanan"
     },
     "NameFilter": {
         "InvalidName": "Tuo nimi ei ole sallittu. Käytä vain kirjaimia ja vältä kiellettyjä sanoja."

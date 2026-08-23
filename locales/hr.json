@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Dokument za promjenu imena",
-        "Submit": "Pošalji novo ime",
         "FirstName": "Ime",
-        "DescriptionFirstName": "Unesite ime koje želite.",
+        "DescriptionFirstName": "Ime",
         "LastName": "Prezime",
-        "DescriptionLastName": "Unesite prezime koje želite."
+        "DescriptionLastName": "Prezime"
     },
     "MarriageMenu": {
-        "Title": "Vjenčani list",
-        "Submit": "Pošalji novo ime",
         "FirstName": "Ime",
-        "DescriptionFirstName": "Unesite ime za vjenčani list.",
+        "DescriptionFirstName": "Ime",
         "LastName": "Prezime",
-        "DescriptionLastName": "Unesite prezime za vjenčani list."
+        "DescriptionLastName": "Prezime"
     },
     "PedNameChangeMenu": {
-        "Title": "Zahtjev za legalnu promjenu imena",
         "FirstName": "Ime",
         "DescriptionFirstName": "Ime",
         "LastName": "Prezime",
@@ -39,7 +34,7 @@
         "Registrar": "Matičar",
         "Confirm": "Podnesi",
         "Close": "Odustani",
-        "FileHint": "Samo slova · 32 znaka · podnosi se odmah",
+        "FileHint": "Samo slova, %s znaka, podnosi se odmah",
         "Marriage": {
             "Title": "Vjenčani list",
             "Body": "Zakonito je sklopljen brak i ovlašten je koristiti gore navedeno legalno ime na svim službenim dokumentima.",
@@ -49,7 +44,8 @@
             "Title": "Potvrda o legalnoj promjeni imena",
             "Body": "Podnesen je i odobren zahtjev za legalnu promjenu imena. Novo legalno ime gore stupa na snagu odmah pri podnošenju.",
             "PetitionBody": "Pri podnošenju ime gore postaje legalno ime u evidenciji."
-        }
+        },
+        "Unavailable": "Potvrdu nije bilo moguće otvoriti"
     },
     "Notifications": {
         "NameChangeSuccess": "Ime uspješno promijenjeno u %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Nemate posao potreban za korištenje ovog"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Ne možete koristiti ime %s %s, sadrži neprimjerenu riječ"
     },
     "NameFilter": {
         "InvalidName": "To ime nije dopušteno. Koristite samo slova i izbjegavajte zabranjene riječi."

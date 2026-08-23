@@ -13,7 +13,7 @@
 --		  Docs Are Always Available At -- https://mrnewb.github.io/docs/
 --
 
-Config = {}
+Config = Config or {}
 
 Config.Debug = false
 
@@ -45,7 +45,7 @@ Config.RecordsClerk = {
     Enabled = false,
     Price = 10000,
     Account = 'cash', -- cash | bank
-    Cooldown = 86400, -- seconds per character
+    Cooldown = 86400, -- seconds, in memory, per character
     Locations = {
         CityHall = {
             Coords = vector4(-540.6024, -206.1626, 37.6498, 207.1927),

@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "İsim Değişikliği Belgesi",
-        "Submit": "Yeni İsim Gönder",
         "FirstName": "Ad",
-        "DescriptionFirstName": "İstediğiniz adı girin.",
+        "DescriptionFirstName": "Ad",
         "LastName": "Soyad",
-        "DescriptionLastName": "İstediğiniz soyadı girin."
+        "DescriptionLastName": "Soyad"
     },
     "MarriageMenu": {
-        "Title": "Evlilik Sertifikası",
-        "Submit": "Yeni İsim Gönder",
         "FirstName": "Ad",
-        "DescriptionFirstName": "Evlilik sertifikası için adı girin.",
+        "DescriptionFirstName": "Ad",
         "LastName": "Soyad",
-        "DescriptionLastName": "Evlilik sertifikası için soyadı girin."
+        "DescriptionLastName": "Soyad"
     },
     "PedNameChangeMenu": {
-        "Title": "Yasal isim değişikliği talebi",
         "FirstName": "Ad",
         "DescriptionFirstName": "Ad",
         "LastName": "Soyad",
@@ -39,7 +34,7 @@
         "Registrar": "Nüfus kayıt memuru",
         "Confirm": "Dosyala",
         "Close": "İptal",
-        "FileHint": "Yalnızca harfler · 32 karakter · hemen dosyalanır",
+        "FileHint": "Yalnızca harfler, %s karakter, hemen dosyalanır",
         "Marriage": {
             "Title": "Evlilik belgesi",
             "Body": "Yasal olarak evlilikle birleşmiştir ve yukarıdaki yasal adı tüm resmi belgelerde kullanmaya yetkilidir.",
@@ -49,7 +44,8 @@
             "Title": "Yasal isim değişikliği belgesi",
             "Body": "Yasal isim değişikliği için başvurmuş ve onay almıştır. Yukarıdaki yeni yasal ad, dosyalama ile birlikte hemen yürürlüğe girer.",
             "PetitionBody": "Dosyalama üzerine yukarıdaki ad, kayıtlardaki yasal ad olur."
-        }
+        },
+        "Unavailable": "Belge açılamadı"
     },
     "Notifications": {
         "NameChangeSuccess": "İsim başarıyla %s %s olarak değiştirildi",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Bunu kullanmak için gerekli işe sahip değilsiniz"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "%s %s ismini kullanamazsınız, kötü bir kelime içeriyor"
     },
     "NameFilter": {
         "InvalidName": "Bu ada izin verilmiyor. Yalnızca harf kullanın ve kısıtlı kelimelerden kaçının."

@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "Dokument Zmiany Nazwiska",
-        "Submit": "Prześlij Nowe Nazwisko",
         "FirstName": "Imię",
-        "DescriptionFirstName": "Wprowadź imię, które chcesz.",
+        "DescriptionFirstName": "Imię",
         "LastName": "Nazwisko",
-        "DescriptionLastName": "Wprowadź nazwisko, które chcesz."
+        "DescriptionLastName": "Nazwisko"
     },
     "MarriageMenu": {
-        "Title": "Akt Małżeństwa",
-        "Submit": "Prześlij Nowe Nazwisko",
         "FirstName": "Imię",
-        "DescriptionFirstName": "Wprowadź imię dla aktu małżeństwa.",
+        "DescriptionFirstName": "Imię",
         "LastName": "Nazwisko",
-        "DescriptionLastName": "Wprowadź nazwisko dla aktu małżeństwa."
+        "DescriptionLastName": "Nazwisko"
     },
     "PedNameChangeMenu": {
-        "Title": "Wniosek o prawną zmianę imienia i nazwiska",
         "FirstName": "Imię",
         "DescriptionFirstName": "Imię",
         "LastName": "Nazwisko",
         "DescriptionLastName": "Nazwisko"
     },
     "PedNameChange": {
-        "TargetLabel": "Poproś o prawną zmianę imienia i nazwiska",
-        "NotEnoughMoney": "Potrzebujesz $%s na prawną zmianę imienia i nazwiska.",
-        "OnCooldown": "Musisz poczekać %s, zanim ponownie zmienisz imię i nazwisko.",
-        "TooFar": "Jesteś za daleko od urzędnika stanu cywilnego.",
-        "Failed": "Nie udało się dokończyć zmiany imienia i nazwiska."
+        "TargetLabel": "Zmień imię i nazwisko",
+        "NotEnoughMoney": "Potrzebujesz $%s, żeby zmienić imię i nazwisko.",
+        "OnCooldown": "Poczekaj %s, zanim zmienisz je ponownie.",
+        "TooFar": "Jesteś za daleko od urzędnika.",
+        "Failed": "Zmiana imienia i nazwiska nie wyszła."
     },
     "Certificate": {
         "Issuer": "Urząd Stanu Cywilnego",
         "Subtitle": "Stan San Andreas",
-        "Certifies": "Niniejszy dokument poświadcza, że",
-        "Petitions": "Niniejszy dokument wnosi o to, by",
-        "IssuedOn": "Wydano dnia",
+        "Certifies": "Poświadcza się, że",
+        "Petitions": "Wnosi się, by",
+        "IssuedOn": "Wydano",
         "CertificateNo": "Nr zaświadczenia",
-        "Registrar": "Kierownik urzędu stanu cywilnego",
+        "Registrar": "Kierownik USC",
         "Confirm": "Złóż",
         "Close": "Anuluj",
-        "FileHint": "Tylko litery · 32 znaki · składa się natychmiast",
+        "FileHint": "Tylko litery, max. %s znaków",
         "Marriage": {
             "Title": "Akt małżeństwa",
-            "Body": "Został prawnie połączony małżeństwem i jest uprawniony do używania powyższego imienia i nazwiska na wszystkich oficjalnych dokumentach.",
-            "PetitionBody": "Po złożeniu powyższe imiona i nazwiska są rejestrowane jako prawnie połączone małżeństwem."
+            "Body": "jest prawnie w związku małżeńskim pod tym nazwiskiem.",
+            "PetitionBody": "został wpisany jako małżeństwo pod tym nazwiskiem."
         },
         "NameChange": {
-            "Title": "Zaświadczenie o prawnej zmianie imienia i nazwiska",
-            "Body": "Wniesiono i przyznano prawną zmianę imienia i nazwiska. Nowe imię i nazwisko powyżej obowiązuje natychmiast po złożeniu.",
-            "PetitionBody": "Po złożeniu powyższe imię i nazwisko staje się prawnym imieniem i nazwiskiem w rejestrze."
-        }
+            "Title": "Akt zmiany imienia i nazwiska",
+            "Body": "jest od teraz znany pod tym imieniem i nazwiskiem.",
+            "PetitionBody": "zostało wpisane jako imię i nazwisko prawne."
+        },
+        "Unavailable": "Nie udało się otworzyć aktu."
     },
     "Notifications": {
-        "NameChangeSuccess": "Nazwisko pomyślnie zmienione na %s %s",
-        "CertificateCreated": "Certyfikat pomyślnie utworzony dla %s %s",
-        "CannotCarryCertificate": "Nie możesz teraz nieść wypełnionego certyfikatu."
+        "NameChangeSuccess": "Twoje imię i nazwisko to teraz %s %s.",
+        "CertificateCreated": "Wypełniono akt dla %s %s.",
+        "CannotCarryCertificate": "Nie uniesiesz kolejnego aktu."
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "Nie masz wymaganej pracy, aby to wykorzystać"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Nie możesz użyć nazwiska %s %s, zawiera nieprzyzwoite słowo"
+        "YouDoNotHaveTheJob": "Nie masz do tego roboty."
     },
     "NameFilter": {
-        "InvalidName": "To imię i nazwisko nie jest dozwolone. Używaj tylko liter i unikaj zabronionych słów."
+        "InvalidName": "Tylko litery. Tego imienia nie wolno."
     },
     "FilledCertificate": {
-        "Description": "Certyfikat prawnej zmiany nazwiska na %s %s"
+        "Description": "Zmiana nazwiska na %s %s"
     }
 }

@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Navneskiftedokument",
-        "Submit": "Indsend Nyt Navn",
         "FirstName": "Fornavn",
-        "DescriptionFirstName": "Indtast det fornavn du ønsker.",
+        "DescriptionFirstName": "Fornavn",
         "LastName": "Efternavn",
-        "DescriptionLastName": "Indtast det efternavn du ønsker."
+        "DescriptionLastName": "Efternavn"
     },
     "MarriageMenu": {
-        "Title": "Vielsesattest",
-        "Submit": "Indsend Nyt Navn",
         "FirstName": "Fornavn",
-        "DescriptionFirstName": "Indtast fornavnet til vielsesattesten.",
+        "DescriptionFirstName": "Fornavn",
         "LastName": "Efternavn",
-        "DescriptionLastName": "Indtast efternavnet til vielsesattesten."
+        "DescriptionLastName": "Efternavn"
     },
     "PedNameChangeMenu": {
-        "Title": "Anmodning om lovligt navneskifte",
         "FirstName": "Fornavn",
         "DescriptionFirstName": "Fornavn",
         "LastName": "Efternavn",
@@ -39,7 +34,7 @@
         "Registrar": "Registerfører for personlige forhold",
         "Confirm": "Indgiv",
         "Close": "Annuller",
-        "FileHint": "Kun bogstaver · 32 tegn · indgives med det samme",
+        "FileHint": "Kun bogstaver, %s tegn, indgives med det samme",
         "Marriage": {
             "Title": "Vielsesattest",
             "Body": "Er lovligt viet og er berettiget til at bruge det juridiske navn ovenfor på alle officielle dokumenter.",
@@ -49,7 +44,8 @@
             "Title": "Attest for lovligt navneskifte",
             "Body": "Har ansøgt om og fået bevilget et lovligt navneskifte. Det nye juridiske navn ovenfor træder i kraft straks ved indgivelse.",
             "PetitionBody": "Ved indgivelse bliver navnet ovenfor det juridiske navn i registret."
-        }
+        },
+        "Unavailable": "Certifikatet kunne ikke åbnes"
     },
     "Notifications": {
         "NameChangeSuccess": "Navn ændret til %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Du har ikke det job der kræves for at bruge dette"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Du kan ikke bruge navnet %s %s, det indeholder et dårligt ord"
     },
     "NameFilter": {
         "InvalidName": "Det navn er ikke tilladt. Brug kun bogstaver og undgå begrænsede ord."

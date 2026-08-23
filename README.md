@@ -1,6 +1,6 @@
 # MrNewbNameChanger
 
-Name-change vouchers, marriage certificates, and an optional records clerk. No relog.
+Vouchers, marriage certificates, and an optional records clerk. Name updates live. No relog.
 
 [Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [GitHub](https://github.com/MrNewb/MrNewbNameChanger) · [Discord](https://discord.gg/mrnewbscripts)
 
@@ -19,23 +19,24 @@ Item defs: [docs](https://mrnewb.github.io/docs/mrnewbnamechanger/install).
 
 ## Config
 
-`configs/config.lua` — item names, `NameFilter` (length + bad words), marriage job gate, records clerk (`Enabled` ships `false`; set `true` to spawn the NPC).
+`configs/config.lua` has the item names, `NameFilter` (length + blocked words), the marriage job gate, and the records clerk. Clerk ships off (`Enabled = false`).
+
+Clerk cooldown is `Config.RecordsClerk.Cooldown`, per character, in memory. A restart clears it. Vouchers and certificates don't have one; using the item is the cost.
 
 ```lua
 bridge.inventory.addItem(src, 'namechangevoucher', 1)
 ```
 
-Records clerk has a per-character cooldown (`Config.RecordsClerk.Cooldown`) so the paid NPC cannot be spammed. Vouchers and certificates have no cooldown — using the item is the cost.
+From other resources, server-side. Still runs the name filter:
 
 ```lua
--- other resources, server-side; still runs the name filter
 local ok = exports.MrNewbNameChanger:ChangePlayerName(src, 'Jane', 'Doe')
 ```
 
-After a successful write (voucher, certificate, clerk, or that export) the server fires a local event other resources can listen for:
+After a successful write (voucher, certificate, clerk, or that export):
 
 ```lua
 AddEventHandler('MrNewbNameChanger:Server:NameChanged', function(src, identifier, firstName, lastName)
-    -- logs, MDT, whatever you need
+    -- logs, MDT, etc
 end)
 ```

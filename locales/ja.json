@@ -1,71 +1,64 @@
 {
     "NameChangeMenu": {
-        "Title": "姓名変更書類",
-        "Submit": "新しい名前を送信",
         "FirstName": "名前",
-        "DescriptionFirstName": "希望する名前を入力してください。",
+        "DescriptionFirstName": "名前",
         "LastName": "姓",
-        "DescriptionLastName": "希望する姓を入力してください。"
+        "DescriptionLastName": "姓"
     },
     "MarriageMenu": {
-        "Title": "結婚証明書",
-        "Submit": "新しい名前を送信",
         "FirstName": "名前",
-        "DescriptionFirstName": "結婚証明書の名前を入力してください。",
+        "DescriptionFirstName": "名前",
         "LastName": "姓",
-        "DescriptionLastName": "結婚証明書の姓を入力してください。"
+        "DescriptionLastName": "姓"
     },
     "PedNameChangeMenu": {
-        "Title": "正式な改名申請",
         "FirstName": "名",
         "DescriptionFirstName": "名",
         "LastName": "姓",
         "DescriptionLastName": "姓"
     },
     "PedNameChange": {
-        "TargetLabel": "正式な改名を申請する",
-        "NotEnoughMoney": "正式な改名には $%s が必要です。",
-        "OnCooldown": "再度名前を変更するまで %s 待つ必要があります。",
-        "TooFar": "記録係から遠すぎます。",
-        "Failed": "改名を完了できませんでした。"
+        "TargetLabel": "改名する",
+        "NotEnoughMoney": "改名には $%s 必要です。",
+        "OnCooldown": "次の改名まで %s 待ってください。",
+        "TooFar": "窓口から遠すぎます。",
+        "Failed": "改名に失敗しました。"
     },
     "Certificate": {
         "Issuer": "記録局",
         "Subtitle": "サンアンドレアス州",
-        "Certifies": "本書は次のことを証明します",
-        "Petitions": "本書は次のことを申請します",
-        "IssuedOn": "発行日",
+        "Certifies": "ここに証明する",
+        "Petitions": "ここに申請する",
+        "IssuedOn": "発行",
         "CertificateNo": "証明書番号",
-        "Registrar": "戸籍登録官",
+        "Registrar": "戸籍係",
         "Confirm": "提出",
         "Close": "キャンセル",
-        "FileHint": "文字のみ · 32文字 · すぐに提出されます",
+        "FileHint": "英字のみ、最大 %s 文字",
         "Marriage": {
             "Title": "結婚証明書",
-            "Body": "法的に婚姻し、上記の正式氏名をすべての公的文書で使用することが認められています。",
-            "PetitionBody": "提出時に、上記の氏名が法的に婚姻したものとして記録されます。"
+            "Body": "この氏名で法的に婚姻している。",
+            "PetitionBody": "この氏名での婚姻として記録される。"
         },
         "NameChange": {
-            "Title": "正式改名証明書",
-            "Body": "正式な改名を申請し、承認されました。上記の新しい正式氏名は提出と同時に有効になります。",
-            "PetitionBody": "提出時に、上記の氏名が記録上の正式氏名になります。"
-        }
+            "Title": "改名証明書",
+            "Body": "今後この氏名を用いる。",
+            "PetitionBody": "この氏名を戸籍上の氏名として記録する。"
+        },
+        "Unavailable": "証明書を開けませんでした。"
     },
     "Notifications": {
-        "NameChangeSuccess": "名前が %s %s に正常に変更されました",
-        "CertificateCreated": "%s %s の証明書が正常に作成されました",
-        "CannotCarryCertificate": "現在、記入済みの証明書を持てません。"
+        "NameChangeSuccess": "氏名は %s %s になりました。",
+        "CertificateCreated": "%s %s の証明書を記入した。",
+        "CannotCarryCertificate": "これ以上証明書を持てません。"
     },
     "JobRequired": {
-        "YouDoNotHaveTheJob": "これを使用するために必要な職業を持っていません"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "名前 %s %s は使用できません。不適切な単語が含まれています"
+        "YouDoNotHaveTheJob": "この仕事ではありません。"
     },
     "NameFilter": {
-        "InvalidName": "その名前は使用できません。文字のみを使い、制限された語句を避けてください。"
+        "InvalidName": "英字のみ。その名前は使えません。"
     },
     "FilledCertificate": {
-        "Description": "%s %s への法的な姓名変更の証明書"
+        "Description": "%s %s への改名"
     }
 }

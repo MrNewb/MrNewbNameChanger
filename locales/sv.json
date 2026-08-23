@@ -1,22 +1,17 @@
 {
     "NameChangeMenu": {
-        "Title": "Dokument för Namnändring",
-        "Submit": "Skicka Nytt Namn",
         "FirstName": "Förnamn",
-        "DescriptionFirstName": "Ange det förnamn du vill ha.",
+        "DescriptionFirstName": "Förnamn",
         "LastName": "Efternamn",
-        "DescriptionLastName": "Ange det efternamn du vill ha."
+        "DescriptionLastName": "Efternamn"
     },
     "MarriageMenu": {
-        "Title": "Äktenskapsbevis",
-        "Submit": "Skicka Nytt Namn",
         "FirstName": "Förnamn",
-        "DescriptionFirstName": "Ange förnamnet för äktenskapsbeviset.",
+        "DescriptionFirstName": "Förnamn",
         "LastName": "Efternamn",
-        "DescriptionLastName": "Ange efternamnet för äktenskapsbeviset."
+        "DescriptionLastName": "Efternamn"
     },
     "PedNameChangeMenu": {
-        "Title": "Ansökan om laglig namnändring",
         "FirstName": "Förnamn",
         "DescriptionFirstName": "Förnamn",
         "LastName": "Efternamn",
@@ -39,7 +34,7 @@
         "Registrar": "Registeransvarig för personakter",
         "Confirm": "Lämna in",
         "Close": "Avbryt",
-        "FileHint": "Endast bokstäver · 32 tecken · lämnas in omedelbart",
+        "FileHint": "Endast bokstäver, %s tecken, lämnas in omedelbart",
         "Marriage": {
             "Title": "Vigselbevis",
             "Body": "Har lagligen ingått äktenskap och är behörig att använda det juridiska namnet ovan på alla officiella dokument.",
@@ -49,7 +44,8 @@
             "Title": "Intyg om laglig namnändring",
             "Body": "Har ansökt om och beviljats en laglig namnändring. Det nya juridiska namnet ovan gäller omedelbart vid inlämning.",
             "PetitionBody": "Vid inlämning blir namnet ovan det juridiska namnet i registret."
-        }
+        },
+        "Unavailable": "Intyget kunde inte öppnas"
     },
     "Notifications": {
         "NameChangeSuccess": "Namn ändrat till %s %s",
@@ -58,9 +54,6 @@
     },
     "JobRequired": {
         "YouDoNotHaveTheJob": "Du har inte det jobb som krävs för att använda detta"
-    },
-    "BadWordFilter": {
-        "FailedFilter": "Du kan inte använda namnet %s %s, det innehåller ett dåligt ord"
     },
     "NameFilter": {
         "InvalidName": "Det namnet är inte tillåtet. Använd endast bokstäver och undvik begränsade ord."
