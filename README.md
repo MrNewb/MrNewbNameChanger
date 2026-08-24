@@ -1,12 +1,24 @@
 # MrNewbNameChanger
 
-Vouchers, marriage certificates, and an optional records clerk. Name updates live. No relog.
+Vouchers, marriage certificates, and an optional records clerk. Names update live — no relog.
 
-[Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [GitHub](https://github.com/MrNewb/MrNewbNameChanger) · [Discord](https://discord.gg/mrnewbscripts)
+[Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [Install guide](https://mrnewb.github.io/docs/mrnewbnamechanger/install) · [Tebex](https://mrnewbscripts.tebex.io/) · [Discord](https://discord.gg/mrnewbscripts)
+
+![Name change voucher](%5BINSTALL%5D/images/namechangevoucher.png)
+
+## Features
+
+- `namechangevoucher` — personal name change
+- Blank marriage certificate — officiant fills it, recipient uses the signed copy
+- Optional job gate for officiants (`Config.Marriage`)
+- Optional paid records clerk (`Config.RecordsClerk`, ships off)
+- Letter-only name filter, max length, blocked words
+- Paper certificate NUI for filing and viewing
+- `ChangePlayerName` export plus `MrNewbNameChanger:Server:NameChanged` after a successful write
 
 ## Install
 
-Needs [ox_lib](https://github.com/overextended/ox_lib), [oxmysql](https://github.com/overextended/oxmysql), and [Newb_Bridge](https://github.com/MrNewb/Newb_Bridge).
+Needs [ox_lib](https://github.com/overextended/ox_lib), [oxmysql](https://github.com/overextended/oxmysql), and [Newb_Bridge](https://github.com/MrNewb/Newb_Bridge). Items, images, and start order: [install guide](https://mrnewb.github.io/docs/mrnewbnamechanger/install).
 
 ```cfg
 ensure ox_lib
@@ -15,30 +27,18 @@ ensure Newb_Bridge
 ensure MrNewbNameChanger
 ```
 
-Item defs: [docs](https://mrnewb.github.io/docs/mrnewbnamechanger/install).
+Do not add `server.export` on the ox_inventory items. Omit `consume` on the defs.
 
 ## Config
 
-`configs/config.lua` has the item names, `NameFilter` (length + blocked words), the marriage job gate, and the records clerk. Clerk ships off (`Enabled = false`).
-
-Clerk cooldown is `Config.RecordsClerk.Cooldown`, per character, in memory. A restart clears it. Vouchers and certificates don't have one; using the item is the cost.
+`configs/config.lua` — item names, `NameFilter`, marriage job gate, records clerk. Clerk cooldown is per character, in memory; a restart clears it.
 
 ```lua
 bridge.inventory.addItem(src, 'namechangevoucher', 1)
-```
 
-From other resources, server-side. Still runs the name filter. Does not consume an item or start the clerk cooldown:
-
-```lua
 local ok = exports.MrNewbNameChanger:ChangePlayerName(src, 'Jane', 'Doe')
 ```
 
-After a successful write (voucher, certificate, clerk, or that export):
+Override `OpenUpdatePlayerName` in `resource/open/server/update.lua` for custom identity stacks.
 
-```lua
-AddEventHandler('MrNewbNameChanger:Server:NameChanged', function(src, identifier, firstName, lastName)
-    -- logs, MDT, etc
-end)
-```
-
-Full export and event docs: [mrnewb.github.io/docs/mrnewbnamechanger/exports](https://mrnewb.github.io/docs/mrnewbnamechanger/exports).
+[Server exports](https://mrnewb.github.io/docs/mrnewbnamechanger/exports/server-exports) · [Server events](https://mrnewb.github.io/docs/mrnewbnamechanger/exports/server-events).
