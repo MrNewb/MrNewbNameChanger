@@ -5,7 +5,7 @@ lua54 'yes'
 name 'MrNewbNameChanger'
 author 'MrNewb'
 description 'Name change vouchers, marriage certificates, and bad-word filtering'
-version '3.0.1'
+version '3.0.2'
 
 ui_page 'web/build/index.html'
 

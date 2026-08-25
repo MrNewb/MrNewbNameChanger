@@ -58,10 +58,14 @@ local function chargeClerkNameChange(src, identifier)
     local account = clerk.Account or 'cash'
     if not allowedAccounts[account] then account = 'cash' end
 
-    if bridge.framework.getMoney(src, account) < price then
+    local balance = bridge.framework.getMoney(src, account)
+    if balance < 0 then
         clerkCooldowns[identifier] = previousChange
-        bridge.notifications.notify(src, { description = locale('PedNameChange.NotEnoughMoney', price), type = 'error', duration = 6000 })
-        return false
+        return false, bridge.notifications.notify(src, { description = locale('PedNameChange.NotEnoughMoney', price), type = 'error', duration = 6000 })
+    end
+    if balance < price then
+        clerkCooldowns[identifier] = previousChange
+        return false, bridge.notifications.notify(src, { description = locale('PedNameChange.NotEnoughMoney', price), type = 'error', duration = 6000 })
     end
 
     if not bridge.framework.removeMoney(src, account, price) then

@@ -22,7 +22,7 @@
         "NotEnoughMoney": "You need $%s to change your name.",
         "OnCooldown": "Wait %s before changing your name again.",
         "TooFar": "You're too far from the clerk.",
-        "Failed": "Name change failed."
+        "Failed": "Couldnt change your name."
     },
     "Certificate": {
         "Issuer": "Department of Records",
