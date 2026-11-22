@@ -5,7 +5,7 @@ lua54 'yes'
 name 'MrNewbNameChanger'
 author 'MrNewb'
 description 'Name change vouchers, marriage certificates, and bad-word filtering'
-version '3.0.2'
+version '3.0.3'
 
 ui_page 'web/build/index.html'
 
@@ -48,9 +48,5 @@ dependencies {
 }
 
 escrow_ignore {
-    'configs/*.lua',
-    'locales/*.json',
-    'resource/open/**/*',
-    'resource/**/*.lua',
-    'web/**/*',
+    '**/*',
 }

@@ -82,8 +82,8 @@ function RemoveRecordsClerkLocations()
     end
 end
 
-AddEventHandler('Newb_Bridge:client:playerLoad', CreateRecordsClerkLocations)
-AddEventHandler('Newb_Bridge:client:playerUnload', function()
+AddEventHandler('Newb_Bridge:client:playerLoaded', CreateRecordsClerkLocations)
+AddEventHandler('Newb_Bridge:client:playerUnloaded', function()
     nameChangeInProgress = false
     nameChangeCooldownEndsAt = 0
     RemoveRecordsClerkLocations()
