@@ -1,8 +1,12 @@
 # MrNewbNameChanger
 
+![MrNewbNameChanger](.github/assets/banner.webp)
+
 Vouchers, marriage certificates, and an optional records clerk. Names update live — no relog.
 
-[Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [Install guide](https://mrnewb.github.io/docs/mrnewbnamechanger/install) · [Tebex](https://mrnewbscripts.tebex.io/) · [Discord](https://discord.gg/mrnewbscripts)
+[Documentation](https://mrnewb.github.io/docs/mrnewbnamechanger) · [Install guide](https://mrnewb.github.io/docs/mrnewbnamechanger/install) · [Tebex](https://mrnewbscripts.tebex.io/) · [Discord](https://discord.gg/mrnewbscripts) · [Short](https://www.youtube.com/shorts/NyFLOw_8qTc)
+
+<a href="https://www.youtube.com/shorts/NyFLOw_8qTc"><img src=".github/assets/short.webp" alt="MrNewbNameChanger on YouTube Shorts" width="200"></a>
 
 ![Name change voucher](%5BINSTALL%5D/images/namechangevoucher.png)
 
