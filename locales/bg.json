@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Свидетелство за законна смяна на име на %s %s"
+    },
+    "Date": {
+        "Month1": "януари",
+        "Month2": "февруари",
+        "Month3": "март",
+        "Month4": "април",
+        "Month5": "май",
+        "Month6": "юни",
+        "Month7": "юли",
+        "Month8": "август",
+        "Month9": "септември",
+        "Month10": "октомври",
+        "Month11": "ноември",
+        "Month12": "декември",
+        "Unknown": "Неизвестно",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s ч %s мин",
+        "Minutes": "%s мин",
+        "Seconds": "%s сек"
     }
 }

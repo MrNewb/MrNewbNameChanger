@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "%s %s(으)로 개명"
+    },
+    "Date": {
+        "Month1": "1월",
+        "Month2": "2월",
+        "Month3": "3월",
+        "Month4": "4월",
+        "Month5": "5월",
+        "Month6": "6월",
+        "Month7": "7월",
+        "Month8": "8월",
+        "Month9": "9월",
+        "Month10": "10월",
+        "Month11": "11월",
+        "Month12": "12월",
+        "Unknown": "알 수 없음",
+        "Format": "%s %s일, %s년"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s시간 %s분",
+        "Minutes": "%s분",
+        "Seconds": "%s초"
     }
 }

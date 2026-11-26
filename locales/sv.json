@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Certifikat för laglig namnändring till %s %s"
+    },
+    "Date": {
+        "Month1": "januari",
+        "Month2": "februari",
+        "Month3": "mars",
+        "Month4": "april",
+        "Month5": "maj",
+        "Month6": "juni",
+        "Month7": "juli",
+        "Month8": "augusti",
+        "Month9": "september",
+        "Month10": "oktober",
+        "Month11": "november",
+        "Month12": "december",
+        "Unknown": "Okänt",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s min",
+        "Minutes": "%s min",
+        "Seconds": "%s s"
     }
 }

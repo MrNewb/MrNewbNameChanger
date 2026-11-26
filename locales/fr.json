@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Changement de nom en %s %s"
+    },
+    "Date": {
+        "Month1": "janvier",
+        "Month2": "février",
+        "Month3": "mars",
+        "Month4": "avril",
+        "Month5": "mai",
+        "Month6": "juin",
+        "Month7": "juillet",
+        "Month8": "août",
+        "Month9": "septembre",
+        "Month10": "octobre",
+        "Month11": "novembre",
+        "Month12": "décembre",
+        "Unknown": "Inconnu",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s min",
+        "Minutes": "%s min",
+        "Seconds": "%s s"
     }
 }

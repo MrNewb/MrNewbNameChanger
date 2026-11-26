@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Tanúsítvány a törvényes névváltoztatáshoz erre: %s %s"
+    },
+    "Date": {
+        "Month1": "január",
+        "Month2": "február",
+        "Month3": "március",
+        "Month4": "április",
+        "Month5": "május",
+        "Month6": "június",
+        "Month7": "július",
+        "Month8": "augusztus",
+        "Month9": "szeptember",
+        "Month10": "október",
+        "Month11": "november",
+        "Month12": "december",
+        "Unknown": "Ismeretlen",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s ó %s p",
+        "Minutes": "%s p",
+        "Seconds": "%s mp"
     }
 }

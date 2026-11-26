@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "%s %s में कानूनी नाम परिवर्तन के लिए प्रमाण पत्र"
+    },
+    "Date": {
+        "Month1": "जनवरी",
+        "Month2": "फरवरी",
+        "Month3": "मार्च",
+        "Month4": "अप्रैल",
+        "Month5": "मई",
+        "Month6": "जून",
+        "Month7": "जुलाई",
+        "Month8": "अगस्त",
+        "Month9": "सितंबर",
+        "Month10": "अक्टूबर",
+        "Month11": "नवंबर",
+        "Month12": "दिसंबर",
+        "Unknown": "अज्ञात",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s घं %s मि",
+        "Minutes": "%s मि",
+        "Seconds": "%s से"
     }
 }

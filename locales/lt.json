@@ -1,0 +1,85 @@
+{
+    "NameChangeMenu": {
+        "FirstName": "Vardas",
+        "DescriptionFirstName": "Vardas",
+        "LastName": "Pavardė",
+        "DescriptionLastName": "Pavardė"
+    },
+    "MarriageMenu": {
+        "FirstName": "Vardas",
+        "DescriptionFirstName": "Vardas",
+        "LastName": "Pavardė",
+        "DescriptionLastName": "Pavardė"
+    },
+    "PedNameChangeMenu": {
+        "FirstName": "Vardas",
+        "DescriptionFirstName": "Vardas",
+        "LastName": "Pavardė",
+        "DescriptionLastName": "Pavardė"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Keisti vardą",
+        "NotEnoughMoney": "Vardui pakeisti tau reikia $%s.",
+        "OnCooldown": "Prieš vėl keisdamas vardą palauk %s.",
+        "TooFar": "Esi per toli nuo tarnautojo.",
+        "Failed": "Nepavyko pakeisti tavo vardo."
+    },
+    "Certificate": {
+        "Issuer": "Registrų skyrius",
+        "Subtitle": "San Andreas valstija",
+        "Certifies": "Šiuo liudijama, kad",
+        "Petitions": "Šiuo prašoma, kad",
+        "IssuedOn": "Išduota",
+        "CertificateNo": "Liudijimo nr.",
+        "Registrar": "Miesto tarnautojas",
+        "Confirm": "Pateikti",
+        "Close": "Atšaukti",
+        "FileHint": "Tik raidės, iki %s simbolių",
+        "Marriage": {
+            "Title": "Santuokos liudijimas",
+            "Body": "yra teisėtai susituokęs šiuo vardu.",
+            "PetitionBody": "būtų įregistruotas kaip susituokęs šiuo vardu."
+        },
+        "NameChange": {
+            "Title": "Vardo keitimo liudijimas",
+            "Body": "dabar yra žinomas šiuo vardu.",
+            "PetitionBody": "būtų įregistruotas kaip teisėtas vardas."
+        },
+        "Unavailable": "Nepavyko atverti liudijimo."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Tavo vardas dabar %s %s.",
+        "CertificateCreated": "Užpildytas liudijimas: %s %s.",
+        "CannotCarryCertificate": "Negali neštis dar vieno liudijimo."
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Neturi šiam veiksmui reikiamo darbo."
+    },
+    "NameFilter": {
+        "InvalidName": "Tik raidės. Šis vardas neleidžiamas."
+    },
+    "FilledCertificate": {
+        "Description": "Vardo keitimas į %s %s"
+    },
+    "Date": {
+        "Month1": "Sausis",
+        "Month2": "Vasaris",
+        "Month3": "Kovas",
+        "Month4": "Balandis",
+        "Month5": "Gegužė",
+        "Month6": "Birželis",
+        "Month7": "Liepa",
+        "Month8": "Rugpjūtis",
+        "Month9": "Rugsėjis",
+        "Month10": "Spalis",
+        "Month11": "Lapkritis",
+        "Month12": "Gruodis",
+        "Unknown": "Nežinoma",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
+    }
+}

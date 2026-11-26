@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "更名为 %s %s"
+    },
+    "Date": {
+        "Month1": "一月",
+        "Month2": "二月",
+        "Month3": "三月",
+        "Month4": "四月",
+        "Month5": "五月",
+        "Month6": "六月",
+        "Month7": "七月",
+        "Month8": "八月",
+        "Month9": "九月",
+        "Month10": "十月",
+        "Month11": "十一月",
+        "Month12": "十二月",
+        "Unknown": "未知",
+        "Format": "%s %s日, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s 小時 %s 分鐘",
+        "Minutes": "%s 分鐘",
+        "Seconds": "%s 秒"
     }
 }

@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Sertifikat for lovlig navneendring til %s %s"
+    },
+    "Date": {
+        "Month1": "januar",
+        "Month2": "februar",
+        "Month3": "mars",
+        "Month4": "april",
+        "Month5": "mai",
+        "Month6": "juni",
+        "Month7": "juli",
+        "Month8": "august",
+        "Month9": "september",
+        "Month10": "oktober",
+        "Month11": "november",
+        "Month12": "desember",
+        "Unknown": "Ukjent",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s t %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

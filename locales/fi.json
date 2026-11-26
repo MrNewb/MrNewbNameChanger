@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Todistus laillisesta nimenmuutoksesta nimeen %s %s"
+    },
+    "Date": {
+        "Month1": "tammikuu",
+        "Month2": "helmikuu",
+        "Month3": "maaliskuu",
+        "Month4": "huhtikuu",
+        "Month5": "toukokuu",
+        "Month6": "kesäkuu",
+        "Month7": "heinäkuu",
+        "Month8": "elokuu",
+        "Month9": "syyskuu",
+        "Month10": "lokakuu",
+        "Month11": "marraskuu",
+        "Month12": "joulukuu",
+        "Unknown": "Tuntematon",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s min",
+        "Minutes": "%s min",
+        "Seconds": "%s s"
     }
 }

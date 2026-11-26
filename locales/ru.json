@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Смена имени на %s %s"
+    },
+    "Date": {
+        "Month1": "Январь",
+        "Month2": "Февраль",
+        "Month3": "Март",
+        "Month4": "Апрель",
+        "Month5": "Май",
+        "Month6": "Июнь",
+        "Month7": "Июль",
+        "Month8": "Август",
+        "Month9": "Сентябрь",
+        "Month10": "Октябрь",
+        "Month11": "Ноябрь",
+        "Month12": "Декабрь",
+        "Unknown": "Неизвестно",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s ч %s мин",
+        "Minutes": "%s мин",
+        "Seconds": "%s с"
     }
 }

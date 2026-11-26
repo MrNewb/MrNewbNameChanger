@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Naamswijziging naar %s %s"
+    },
+    "Date": {
+        "Month1": "januari",
+        "Month2": "februari",
+        "Month3": "maart",
+        "Month4": "april",
+        "Month5": "mei",
+        "Month6": "juni",
+        "Month7": "juli",
+        "Month8": "augustus",
+        "Month9": "september",
+        "Month10": "oktober",
+        "Month11": "november",
+        "Month12": "december",
+        "Unknown": "Onbekend",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s u %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

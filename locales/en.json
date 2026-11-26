@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Name change to %s %s"
+    },
+    "Date": {
+        "Month1": "January",
+        "Month2": "February",
+        "Month3": "March",
+        "Month4": "April",
+        "Month5": "May",
+        "Month6": "June",
+        "Month7": "July",
+        "Month8": "August",
+        "Month9": "September",
+        "Month10": "October",
+        "Month11": "November",
+        "Month12": "December",
+        "Unknown": "Unknown",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

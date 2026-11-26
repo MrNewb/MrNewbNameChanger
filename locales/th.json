@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "ใบสูจิบัตรสำหรับการเปลี่ยนชื่อตามกฎหมายเป็น %s %s"
+    },
+    "Date": {
+        "Month1": "มกราคม",
+        "Month2": "กุมภาพันธ์",
+        "Month3": "มีนาคม",
+        "Month4": "เมษายน",
+        "Month5": "พฤษภาคม",
+        "Month6": "มิถุนายน",
+        "Month7": "กรกฎาคม",
+        "Month8": "สิงหาคม",
+        "Month9": "กันยายน",
+        "Month10": "ตุลาคม",
+        "Month11": "พฤศจิกายน",
+        "Month12": "ธันวาคม",
+        "Unknown": "ไม่ทราบ",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s ชม. %s นาที",
+        "Minutes": "%s นาที",
+        "Seconds": "%s วินาที"
     }
 }

@@ -12,12 +12,12 @@ local function formatCooldown(seconds)
     if seconds >= 3600 then
         local hours = math.floor(seconds / 3600)
         local minutes = math.ceil((seconds % 3600) / 60)
-        return ('%s h %s m'):format(hours, minutes)
+        return locale('Cooldown.HoursMinutes', hours, minutes)
     end
     if seconds >= 60 then
-        return ('%s m'):format(math.ceil(seconds / 60))
+        return locale('Cooldown.Minutes', math.ceil(seconds / 60))
     end
-    return ('%s s'):format(seconds)
+    return locale('Cooldown.Seconds', seconds)
 end
 
 local function getPedCooldownRemaining(identifier)

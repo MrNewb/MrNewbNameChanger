@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Sertifikat za legalnu promenu imena u %s %s"
+    },
+    "Date": {
+        "Month1": "leden",
+        "Month2": "únor",
+        "Month3": "březen",
+        "Month4": "duben",
+        "Month5": "květen",
+        "Month6": "červen",
+        "Month7": "červenec",
+        "Month8": "srpen",
+        "Month9": "září",
+        "Month10": "říjen",
+        "Month11": "listopad",
+        "Month12": "prosinec",
+        "Unknown": "Neznámé",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s min",
+        "Minutes": "%s min",
+        "Seconds": "%s s"
     }
 }

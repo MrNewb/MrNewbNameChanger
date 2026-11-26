@@ -1,0 +1,85 @@
+{
+    "NameChangeMenu": {
+        "FirstName": "First Name",
+        "DescriptionFirstName": "First name",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Last name"
+    },
+    "MarriageMenu": {
+        "FirstName": "First Name",
+        "DescriptionFirstName": "First name",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Last name"
+    },
+    "PedNameChangeMenu": {
+        "FirstName": "First Name",
+        "DescriptionFirstName": "First name",
+        "LastName": "Last Name",
+        "DescriptionLastName": "Last name"
+    },
+    "PedNameChange": {
+        "TargetLabel": "Rename, Arr",
+        "NotEnoughMoney": "Ye need $%s to change yer name.",
+        "OnCooldown": "Wait %s afore changing yer name again.",
+        "TooFar": "Ye be too far from the clerk.",
+        "Failed": "Can't rename ye, matey."
+    },
+    "Certificate": {
+        "Issuer": "Records Office",
+        "Subtitle": "State of San Andreas",
+        "Certifies": "This attests that",
+        "Petitions": "This be a plea that",
+        "IssuedOn": "Issued",
+        "CertificateNo": "Writ no.",
+        "Registrar": "City Clerk",
+        "Confirm": "File",
+        "Close": "Belay",
+        "FileHint": "Letters only, %s letters max",
+        "Marriage": {
+            "Title": "Marriage Writ",
+            "Body": "be wed by law under this name.",
+            "PetitionBody": "be logged as wed under this name."
+        },
+        "NameChange": {
+            "Title": "Name Change Writ",
+            "Body": "be now known by this name.",
+            "PetitionBody": "be logged as yer legal name."
+        },
+        "Unavailable": "Can't open the writ, matey."
+    },
+    "Notifications": {
+        "NameChangeSuccess": "Yer name be %s %s.",
+        "CertificateCreated": "Ye filled a writ fer %s %s.",
+        "CannotCarryCertificate": "Ye can't carry another writ, matey."
+    },
+    "JobRequired": {
+        "YouDoNotHaveTheJob": "Ye lack the job fer this, matey."
+    },
+    "NameFilter": {
+        "InvalidName": "Letters only. That name won't sail."
+    },
+    "FilledCertificate": {
+        "Description": "New name: %s %s"
+    },
+    "Date": {
+        "Month1": "January",
+        "Month2": "February",
+        "Month3": "March",
+        "Month4": "April",
+        "Month5": "May",
+        "Month6": "June",
+        "Month7": "July",
+        "Month8": "August",
+        "Month9": "September",
+        "Month10": "October",
+        "Month11": "November",
+        "Month12": "December",
+        "Unknown": "Unknown",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
+    }
+}

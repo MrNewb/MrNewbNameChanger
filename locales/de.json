@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Namensänderung zu %s %s"
+    },
+    "Date": {
+        "Month1": "Januar",
+        "Month2": "Februar",
+        "Month3": "März",
+        "Month4": "April",
+        "Month5": "Mai",
+        "Month6": "Juni",
+        "Month7": "Juli",
+        "Month8": "August",
+        "Month9": "September",
+        "Month10": "Oktober",
+        "Month11": "November",
+        "Month12": "Dezember",
+        "Unknown": "Unbekannt",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s min",
+        "Minutes": "%s min",
+        "Seconds": "%s s"
     }
 }

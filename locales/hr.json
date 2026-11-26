@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Certifikat za zakonsku promjenu imena u %s %s"
+    },
+    "Date": {
+        "Month1": "siječanj",
+        "Month2": "veljača",
+        "Month3": "ožujak",
+        "Month4": "travanj",
+        "Month5": "svibanj",
+        "Month6": "lipanj",
+        "Month7": "srpanj",
+        "Month8": "kolovoz",
+        "Month9": "rujan",
+        "Month10": "listopad",
+        "Month11": "studeni",
+        "Month12": "prosinac",
+        "Unknown": "Nepoznato",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

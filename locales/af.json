@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Sertifikaat vir wettige naamverandering na %s %s"
+    },
+    "Date": {
+        "Month1": "Januarie",
+        "Month2": "Februarie",
+        "Month3": "Maart",
+        "Month4": "April",
+        "Month5": "Mei",
+        "Month6": "Junie",
+        "Month7": "Julie",
+        "Month8": "Augustus",
+        "Month9": "September",
+        "Month10": "Oktober",
+        "Month11": "November",
+        "Month12": "Desember",
+        "Unknown": "Onbekend",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

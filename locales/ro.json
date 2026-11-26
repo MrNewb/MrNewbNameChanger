@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Schimbare de nume în %s %s"
+    },
+    "Date": {
+        "Month1": "ianuarie",
+        "Month2": "februarie",
+        "Month3": "martie",
+        "Month4": "aprilie",
+        "Month5": "mai",
+        "Month6": "iunie",
+        "Month7": "iulie",
+        "Month8": "august",
+        "Month9": "septembrie",
+        "Month10": "octombrie",
+        "Month11": "noiembrie",
+        "Month12": "decembrie",
+        "Unknown": "Necunoscut",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s h %s m",
+        "Minutes": "%s m",
+        "Seconds": "%s s"
     }
 }

@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "Πιστοποιητικό για νόμιμη αλλαγή ονόματος σε %s %s"
+    },
+    "Date": {
+        "Month1": "Ιανουάριος",
+        "Month2": "Φεβρουάριος",
+        "Month3": "Μάρτιος",
+        "Month4": "Απρίλιος",
+        "Month5": "Μάιος",
+        "Month6": "Ιούνιος",
+        "Month7": "Ιούλιος",
+        "Month8": "Αύγουστος",
+        "Month9": "Σεπτέμβριος",
+        "Month10": "Οκτώβριος",
+        "Month11": "Νοέμβριος",
+        "Month12": "Δεκέμβριος",
+        "Unknown": "Άγνωστο",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s ώ %s λ",
+        "Minutes": "%s λ",
+        "Seconds": "%s δ"
     }
 }

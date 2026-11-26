@@ -5,14 +5,12 @@ local uiAcknowledged = false
 local readyTimeoutMs = 2000
 local resultTimeoutMs = 300000
 
-local monthNames = {
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December',
-}
 
 local function formatIssuedDate()
     local year, month, day = GetLocalTime()
-    return ('%s %d, %d'):format(monthNames[month] or 'Unknown', day, year)
+    local name = locale('Date.Month' .. month)
+    if name == 'Date.Month' .. month then name = locale('Date.Unknown') end
+    return locale('Date.Format', name, day, year)
 end
 
 local function formatCertificateDateStamp()

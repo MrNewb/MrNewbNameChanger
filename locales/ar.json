@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "شهادة تغيير الاسم القانوني إلى %s %s"
+    },
+    "Date": {
+        "Month1": "يناير",
+        "Month2": "فبراير",
+        "Month3": "مارس",
+        "Month4": "أبريل",
+        "Month5": "مايو",
+        "Month6": "يونيو",
+        "Month7": "يوليو",
+        "Month8": "أغسطس",
+        "Month9": "سبتمبر",
+        "Month10": "أكتوبر",
+        "Month11": "نوفمبر",
+        "Month12": "ديسمبر",
+        "Unknown": "غير معروف",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s س %s د",
+        "Minutes": "%s د",
+        "Seconds": "%s ث"
     }
 }

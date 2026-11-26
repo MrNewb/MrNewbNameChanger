@@ -60,5 +60,26 @@
     },
     "FilledCertificate": {
         "Description": "%s %s için yasal isim değişikliği sertifikası"
+    },
+    "Date": {
+        "Month1": "Ocak",
+        "Month2": "Şubat",
+        "Month3": "Mart",
+        "Month4": "Nisan",
+        "Month5": "Mayıs",
+        "Month6": "Haziran",
+        "Month7": "Temmuz",
+        "Month8": "Ağustos",
+        "Month9": "Eylül",
+        "Month10": "Ekim",
+        "Month11": "Kasım",
+        "Month12": "Aralık",
+        "Unknown": "Bilinmiyor",
+        "Format": "%s %s, %s"
+    },
+    "Cooldown": {
+        "HoursMinutes": "%s sa %s dk",
+        "Minutes": "%s dk",
+        "Seconds": "%s sn"
     }
 }
